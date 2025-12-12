@@ -1,0 +1,13 @@
+User-agent: Yandex
+Disallow: /cgi-bin
+Disallow: /search
+Disallow: /nscript
+Disallow: /audio/webplayer.swf
+Host:akkord-gitar.com
+
+User-agent: *
+Disallow: /cgi-bin
+Disallow: /search
+Disallow: /nscript
+Disallow: /audio/webplayer.swf
+Host:akkord-gitar.com

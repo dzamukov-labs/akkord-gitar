@@ -1,0 +1,21 @@
+<LINK rel=stylesheet href="stsearch.css" type=text/css>
+<style>
+h1, h2 {
+margin-top: 5pt;
+margin-bottom: 10pt;
+}
+</style>
+<table width="750" align="center">
+				<tr>
+					<td style="background:  url(../img/ris.jpg) no-repeat; background-repeat: no-repeat;  padding-left: 50pt; padding-right: 50pt; padding-top: 20pt; width: 750px; height: 222px"  align="center"  valign="top">
+						<h2 class="h1" > <a href="../index.htm" title="Переход на главную страницу" style="color: #ffffff;"> Akkord-gitar - Тексты, аккорды, табы к популярным песням и полезные видеоуроки</a></h1>
+						
+						<span class="menu1">
+						<a  href="../index.htm" title="На главную" style="color: #f7e78f; font-size:15px; font-family: Times New Roman; "> <<Главная>> </a>   
+						<a  href="../tabl.htm" title="Таблица аккордов" style="color: #f7e78f; font-size:15px; font-family: Times New Roman; "> <<Таблица аккордов>> </a>   
+						<a  href="../svyaz.htm" title="Обратная связь" style="color: #f7e78f; font-size:15px; font-family: Times New Roman; "> <<Обратная связь>> </a>   
+						<a  href="../partneri.htm" title="Наши партнеры" style="color: #f7e78f; font-size:15px; font-family: Times New Roman; "> <<Партнеры>> </a>   
+						</span>
+					</td>
+				</tr>
+			</table>

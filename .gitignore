@@ -1,0 +1,26 @@
+# Системные файлы macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Аудио файлы (большой размер)
+audio/
+*.mp3
+*.wav
+
+# Временные и служебные файлы
+tmp/
+cookie.txt
+counter.txt
+
+# Резервные копии
+*.bak
+*.old
+*~
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+

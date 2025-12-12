@@ -1,0 +1,29 @@
+<script>
+v=new Array('00','33','66','99','cc','ff')
+
+function dw(z)
+{document.write(z)}
+
+function showit(i,j,k)
+{var mycol='#'+v[i]+v[j]+v[k]
+
+ document.form1.txt.value=mycol
+
+}
+
+function MakeTable()
+{
+ dw('<table width=98%>')
+ for(i=0; i<v.length; i++)
+ {dw('<tr>')
+  for(j=0; j<v.length; j++) {
+  for(k=0; k<v.length; k++) dw('<td bgcolor="#'+v[i]+v[j]+v[k]+'" onclick=showit('+i+','+j+','+k+') title="'+v[i]+v[j]+v[k]+'">&nbsp;</td>')}
+ dw('</tr>')
+ }
+ dw('</table>')
+}
+MakeTable()
+</script>  
+<form name=form1>
+Код цвета <input type=text name=txt size=6>
+</form>
