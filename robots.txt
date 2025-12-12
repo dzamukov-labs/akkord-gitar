@@ -2,12 +2,20 @@ User-agent: Yandex
 Disallow: /cgi-bin
 Disallow: /search
 Disallow: /nscript
+Disallow: /opr
+Disallow: /scripts
+Disallow: /partneri
 Disallow: /audio/webplayer.swf
-Host:akkord-gitar.com
+Host: akkord-gitar.com
 
 User-agent: *
 Disallow: /cgi-bin
 Disallow: /search
 Disallow: /nscript
+Disallow: /opr
+Disallow: /scripts
+Disallow: /partneri
 Disallow: /audio/webplayer.swf
-Host:akkord-gitar.com
+Host: akkord-gitar.com
+
+Sitemap: https://akkord-gitar.com/sitemap.xml
