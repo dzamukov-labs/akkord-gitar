@@ -1,22 +1,22 @@
 <?php
-//Отправка писем===========================
-//Проверяем, нет ли неотправленой почты
+//РћС‚РїСЂР°РІРєР° РїРёСЃРµРј===========================
+//РџСЂРѕРІРµСЂСЏРµРј, РЅРµС‚ Р»Рё РЅРµРѕС‚РїСЂР°РІР»РµРЅРѕР№ РїРѕС‡С‚С‹
 if(file_exists("nscript/admin/send/adr.txt"))
-  {  	//Если есть, определяем  кличество адресов за один раз и интервал отправки
+  {  	//Р•СЃР»Рё РµСЃС‚СЊ, РѕРїСЂРµРґРµР»СЏРµРј  РєР»РёС‡РµСЃС‚РІРѕ Р°РґСЂРµСЃРѕРІ Р·Р° РѕРґРёРЅ СЂР°Р· Рё РёРЅС‚РµСЂРІР°Р» РѕС‚РїСЂР°РІРєРё
   	$f=fopen("nscript/admin/send/count.txt","r");
   	$r=fread($f,100);
   	fclose($f);
   	$tool=explode("*",$r);
 
-  	//Определяем количество отправленных писем и время последней отправки
+  	//РћРїСЂРµРґРµР»СЏРµРј РєРѕР»РёС‡РµСЃС‚РІРѕ РѕС‚РїСЂР°РІР»РµРЅРЅС‹С… РїРёСЃРµРј Рё РІСЂРµРјСЏ РїРѕСЃР»РµРґРЅРµР№ РѕС‚РїСЂР°РІРєРё
   	$f=fopen("nscript/admin/send/count_adr.txt","r");
   	$r=fread($f,100);
   	fclose($f);
   	$conf=explode("*",$r);
-  	//Прошло ли достаточно времени
+  	//РџСЂРѕС€Р»Рѕ Р»Рё РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РІСЂРµРјРµРЅРё
   	if((time()-$conf[1]) > ($tool[1]*60))
-  	   {         //Если прошло, отправляем:
-         //Письмо
+  	   {         //Р•СЃР»Рё РїСЂРѕС€Р»Рѕ, РѕС‚РїСЂР°РІР»СЏРµРј:
+         //РџРёСЃСЊРјРѕ
            $f=fopen("nscript/admin/send/mes.txt","r");
   	       $m=fread($f,filesize("nscript/admin/send/mes.txt"));
   	       fclose($f);
@@ -26,14 +26,14 @@ if(file_exists("nscript/admin/send/adr.txt"))
            $p=$mes[2];
            $message=$mes[1]."\r\n \r\n".$p;
            $mes_unsub="----------------------------------------------------------
-           Для того, чтобы отписаться от рассылки, перейдите по этой ссылке \r\n";
+           Р”Р»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РѕС‚РїРёСЃР°С‚СЊСЃСЏ РѕС‚ СЂР°СЃСЃС‹Р»РєРё, РїРµСЂРµР№РґРёС‚Рµ РїРѕ СЌС‚РѕР№ СЃСЃС‹Р»РєРµ \r\n";
            $message=convert_cyr_string($message,"w","k");
            $subject=convert_cyr_string($subject,"w","k");
            $message=str_replace("\r\n","\n",$message);
            $mes_unsub=convert_cyr_string($mes_unsub,"w","k");
            $link="http://".$_SERVER['SERVER_NAME']."/nscript/unsubscr.php?";
 
-         //Адреса
+         //РђРґСЂРµСЃР°
          $adr=file("nscript/admin/send/adr.txt");
 
          $f=fopen("nscript/admin/mes/unsub.txt","a");
@@ -43,7 +43,7 @@ if(file_exists("nscript/admin/send/adr.txt"))
           {
              $adr[$i]=trim($adr[$i]);             if($n==$tool[0])
               {
-                //Обновляем данные
+                //РћР±РЅРѕРІР»СЏРµРј РґР°РЅРЅС‹Рµ
                 $f=fopen("nscript/admin/send/count_adr.txt","w+");
                 fwrite($f,$conf[0]+$n."*".time()."*".$conf[2]);
                 fclose($f);
@@ -53,7 +53,7 @@ if(file_exists("nscript/admin/send/adr.txt"))
           	fwrite($f,$adr[$i]."*".$id."\r\n");
           	$url="un=$adr[$i]&id=$id";
 
-          	$from="Рассылка";
+          	$from="Р Р°СЃСЃС‹Р»РєР°";
           	$from=convert_cyr_string($from,"w","k");
             Mail($adr[$i], $subject, $message."\r\n".$mes_unsub.$link.$url,
             "From:$from<site@site.ru>\r\n");
@@ -61,13 +61,13 @@ if(file_exists("nscript/admin/send/adr.txt"))
 
           }
 
-          //Сохраняем письмо
+          //РЎРѕС…СЂР°РЅСЏРµРј РїРёСЃСЊРјРѕ
            $f=fopen("nscript/admin/mes/".time(),"w+");
            fwrite($f," "."/*/"." ");
 
             fwrite($f,"/*/");
 
-            fwrite($f,"Для адресов"."/*/");
+            fwrite($f,"Р”Р»СЏ Р°РґСЂРµСЃРѕРІ"."/*/");
 
            foreach($adr_save as $line)
              {
@@ -75,7 +75,7 @@ if(file_exists("nscript/admin/send/adr.txt"))
              }
            fwrite($f,"/*/");
 
-           fwrite($f,"Тема"."/*/");
+           fwrite($f,"РўРµРјР°"."/*/");
            fwrite($f,$mes[0]);
 
            fwrite($f,"/*/");
@@ -89,7 +89,7 @@ if(file_exists("nscript/admin/send/adr.txt"))
 
           if(!@$limit)
         {
-        	//Значит все письма отправлены, удаляем настройки
+        	//Р—РЅР°С‡РёС‚ РІСЃРµ РїРёСЃСЊРјР° РѕС‚РїСЂР°РІР»РµРЅС‹, СѓРґР°Р»СЏРµРј РЅР°СЃС‚СЂРѕР№РєРё
             unlink("nscript/admin/send/adr.txt");
             unlink("nscript/admin/send/mes.txt");
             unlink("nscript/admin/send/count_adr.txt");
@@ -163,13 +163,13 @@ chdir($adrself);
 
 <?php
  echo "<form action='http://".$_SERVER['SERVER_NAME']."/nscript/m.php' method='post'>";
-  //Картинка
+  //РљР°СЂС‚РёРЅРєР°
      if($nscript[16]==1)
        {
         if($nscript[18]=='left') @$imgpos='left';
         if($nscript[18]=='right') @$imgpos='right';
        }
-    //Если заголовок над формой
+    //Р•СЃР»Рё Р·Р°РіРѕР»РѕРІРѕРє РЅР°Рґ С„РѕСЂРјРѕР№
      if($nscript[1]==0)
       {
 
@@ -181,7 +181,7 @@ chdir($adrself);
 
       }
      echo "<div id='nscr_userPar'>";
-     //Если заголовок внутри формы
+     //Р•СЃР»Рё Р·Р°РіРѕР»РѕРІРѕРє РІРЅСѓС‚СЂРё С„РѕСЂРјС‹
       if($nscript[1]==1)
       {
          echo "<div id='nscr_headPar' >";
@@ -191,9 +191,9 @@ chdir($adrself);
         echo "</div>";
       }
 
-     //Подзаголовок
+     //РџРѕРґР·Р°РіРѕР»РѕРІРѕРє
      echo "<div id='nscr_ollPar' >$nscript[2]</div>";
-     //Форма
+     //Р¤РѕСЂРјР°
      echo "<input type='text' name='mail' size=$nscript[22]>&nbsp;
      <input type='submit' value=$nscript[21]>";
      echo "</div>";

@@ -1,18 +1,18 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html><head>
-<title> Akkord-gitar - Поиск по сайту </title>
-<META content="text/html; charset=windows-1251" http-equiv=Content-Type>
+<title> Akkord-gitar - РџРѕРёСЃРє РїРѕ СЃР°Р№С‚Сѓ </title>
+<META content="text/html; charset=UTF-8" http-equiv=Content-Type>
 <META content="MSHTML 6.00.6000.21183" name=GENERATOR>
-<META content="Akkord-gitar | Поиск по сайту Akkord-gitar.com" name=Description> 
-<META content="Akkord-gitar Поиск по сайту, Akkord-gitar поиск" name=Keywords>
-<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<META content="Akkord-gitar | РџРѕРёСЃРє РїРѕ СЃР°Р№С‚Сѓ Akkord-gitar.com" name=Description> 
+<META content="Akkord-gitar РџРѕРёСЃРє РїРѕ СЃР°Р№С‚Сѓ, Akkord-gitar РїРѕРёСЃРє" name=Keywords>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <LINK rel=stylesheet href="st.css" type=text/css>	
 <body  bgcolor="#000000" topmargin="0" rightmargin="0" leftmargin="0">
 <table> 
-<!-- начало шапки и меню-1 -->
+<!-- РЅР°С‡Р°Р»Рѕ С€Р°РїРєРё Рё РјРµРЅСЋ-1 -->
 	<tr>
 		<td rowspan="3" class="ris1">
 		</td>
@@ -20,13 +20,13 @@
 			<table width="750" align="center">
 				<tr>
 					<td  class="ris"  align="center"  valign="top">
-						<h1 class="h1" > <a href="index.htm" title="Переход на главную страницу" style="color: #ffffff;"> Akkord-gitar - Тексты, аккорды, табы к популярным песням и полезные видеоуроки</a></h1>
+						<h1 class="h1" > <a href="index.htm" title="РџРµСЂРµС…РѕРґ РЅР° РіР»Р°РІРЅСѓСЋ СЃС‚СЂР°РЅРёС†Сѓ" style="color: #ffffff;"> Akkord-gitar - РўРµРєСЃС‚С‹, Р°РєРєРѕСЂРґС‹, С‚Р°Р±С‹ Рє РїРѕРїСѓР»СЏСЂРЅС‹Рј РїРµСЃРЅСЏРј Рё РїРѕР»РµР·РЅС‹Рµ РІРёРґРµРѕСѓСЂРѕРєРё</a></h1>
 						
 						<span class="menu1">
-						<a  href="index.htm" title="На главную" style="color: #f7e78f; font-size:15px; font-family: Times New Roman; "> <<Главная>> </a>&nbsp;&nbsp;&nbsp;
-						<a  href="tabl.htm" title="Таблица аккордов" style="color: #f7e78f; font-size:15px; font-family: Times New Roman; "> <<Таблица аккордов>> </a>&nbsp;&nbsp;&nbsp;
-						<a  href="svyaz.htm" title="Обратная связь" style="color: #f7e78f; font-size:15px; font-family: Times New Roman; "> <<Обратная связь>> </a>&nbsp;&nbsp;&nbsp;
-						<a  href="partneri.htm" title="Наши партнеры" style="color: #f7e78f; font-size:15px; font-family: Times New Roman; "> <<Партнеры>> </a>&nbsp;&nbsp;&nbsp;
+						<a  href="index.htm" title="РќР° РіР»Р°РІРЅСѓСЋ" style="color: #f7e78f; font-size:15px; font-family: Times New Roman; "> <<Р“Р»Р°РІРЅР°СЏ>> </a>&nbsp;&nbsp;&nbsp;
+						<a  href="tabl.htm" title="РўР°Р±Р»РёС†Р° Р°РєРєРѕСЂРґРѕРІ" style="color: #f7e78f; font-size:15px; font-family: Times New Roman; "> <<РўР°Р±Р»РёС†Р° Р°РєРєРѕСЂРґРѕРІ>> </a>&nbsp;&nbsp;&nbsp;
+						<a  href="svyaz.htm" title="РћР±СЂР°С‚РЅР°СЏ СЃРІСЏР·СЊ" style="color: #f7e78f; font-size:15px; font-family: Times New Roman; "> <<РћР±СЂР°С‚РЅР°СЏ СЃРІСЏР·СЊ>> </a>&nbsp;&nbsp;&nbsp;
+						<a  href="partneri.htm" title="РќР°С€Рё РїР°СЂС‚РЅРµСЂС‹" style="color: #f7e78f; font-size:15px; font-family: Times New Roman; "> <<РџР°СЂС‚РЅРµСЂС‹>> </a>&nbsp;&nbsp;&nbsp;
 						</span>
 					</td>
 				</tr>
@@ -35,13 +35,13 @@
 		<td rowspan="3" class="ris2" >
 		</td>
 	</tr>
-<!-- конец шапки и меню-1 -->
+<!-- РєРѕРЅРµС† С€Р°РїРєРё Рё РјРµРЅСЋ-1 -->
 	<tr>
-	<!-- Начало информации Akkord-gitar - Тексты, аккорды и табы к популярным песням под гитару - видеоуроки к ним -->
+	<!-- РќР°С‡Р°Р»Рѕ РёРЅС„РѕСЂРјР°С†РёРё Akkord-gitar - РўРµРєСЃС‚С‹, Р°РєРєРѕСЂРґС‹ Рё С‚Р°Р±С‹ Рє РїРѕРїСѓР»СЏСЂРЅС‹Рј РїРµСЃРЅСЏРј РїРѕРґ РіРёС‚Р°СЂСѓ - РІРёРґРµРѕСѓСЂРѕРєРё Рє РЅРёРј -->
 <td class="text" valign="top">
-<h3 class="header"> <a href="index.htm" class="headers">Главная</a> &raquo; Поиск по сайту</h3>
+<h3 class="header"> <a href="index.htm" class="headers">Р“Р»Р°РІРЅР°СЏ</a> &raquo; РџРѕРёСЃРє РїРѕ СЃР°Р№С‚Сѓ</h3>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Блок №1 от 11.01.2014 -->
+<!-- Р‘Р»РѕРє в„–1 РѕС‚ 11.01.2014 -->
 <ins class="adsbygoogle"
      style="display:inline-block;width:728px;height:90px"
      data-ad-client="ca-pub-1031816813726559"
@@ -49,7 +49,7 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-	<h2 class="h2">Поиск по сайту <br><strong title="Akkord-gitar - Тексты, аккорды и табы к популярным песням под гитару - видеоуроки к ним">Akkord-gitar</strong>. Найдите любой аккорд!</h2>
+	<h2 class="h2">РџРѕРёСЃРє РїРѕ СЃР°Р№С‚Сѓ <br><strong title="Akkord-gitar - РўРµРєСЃС‚С‹, Р°РєРєРѕСЂРґС‹ Рё С‚Р°Р±С‹ Рє РїРѕРїСѓР»СЏСЂРЅС‹Рј РїРµСЃРЅСЏРј РїРѕРґ РіРёС‚Р°СЂСѓ - РІРёРґРµРѕСѓСЂРѕРєРё Рє РЅРёРј">Akkord-gitar</strong>. РќР°Р№РґРёС‚Рµ Р»СЋР±РѕР№ Р°РєРєРѕСЂРґ!</h2>
 <noindex>
 <?
 // search by XXBESTXX
@@ -67,34 +67,34 @@ chdir($adrself);
  </noindex>
  <br><br>
  <table><tr><td width="190px">
-<span style="font-size:20px; font-family: Times New Roman; color: #efb856;" title="Весь список групп и исполнителей песен"> Весь список групп и исполнителей песен </span><br>
-<img src="img/toch.gif"><a href="groups/linkin-park.htm" title="Аккорды к песням группы Linkin Park" style="color: #ffffff; font-family: Times New Roman;"> Linkin Park </a><br>
-<img src="img/toch.gif"><a href="groups/agata.htm" title="Аккорды к песням группы Агата кристи" style="color: #ffffff; font-family: Times New Roman;"> Агата кристи </a><br>
-<img src="img/toch.gif"><a href="groups/alisa.htm" title="Аккорды к песням группы Алиса" style="color: #ffffff; font-family: Times New Roman;"> Алиса </a><br>
-<img src="img/toch.gif"><a href="groups/armeiskie.htm" title="Аккорды к песням  Армейские песни" style="color: #ffffff; font-family: Times New Roman;"> Армейские песни </a><br>
-<img src="img/toch.gif"><a href="groups/valentin-strikalo.htm" title="Аккорды к песням Валентина стрыкало " style="color: #ffffff; font-family: Times New Roman;"> Валентин Стрыкало </a><br>
-<img src="img/toch.gif"><a href="groups/gr-oborona.htm" title="Аккорды к песням группы Гражданская оборона" style="color: #ffffff; font-family: Times New Roman;"> Гражданская оборона </a><br>
-<img src="img/toch.gif"><a href="groups/dvorovie.htm" title="Аккорды к песням Дворовые песни" style="color: #ffffff; font-family: Times New Roman;"> Дворовые песни </a><br>
-<img src="img/toch.gif"><a href="groups/ddt.htm" title="Аккорды к песням группы ДДТ" style="color: #ffffff; font-family: Times New Roman;"> ДДТ </a><br>
-<img src="img/toch.gif"><a href="groups/didulya.htm" title="Аккорды к песням Дидюля Валерий" style="color: #ffffff; font-family: Times New Roman;"> Дидюля Валерий </a><br>
-<img src="img/toch.gif"><a href="groups/kino.htm" title="Аккорды к песням группы Кино (Виктор Цой)" style="color: #ffffff; font-family: Times New Roman;"> Кино (Виктор Цой) </a><br>
-<img src="img/toch.gif"><a href="groups/korol-i-shut.htm" title="Аккорды к песням группы Король и Шут" style="color: #ffffff; font-family: Times New Roman;"> Король и Шут </a><br>
-<img src="img/toch.gif"><a href="groups/lube.htm" title="Аккорды к песням группы Любэ" style="color: #ffffff; font-family: Times New Roman;"> Любэ </a><br>
-<img src="img/toch.gif"><a href="groups/muzika-iz-kf.htm" title="Аккорды, табы, ноты к Музыке из кинофильмов к/ф" style="color: #ffffff; font-family: Times New Roman;"> Музыка из кинофильмов </a><br>
-<img src="img/toch.gif"><a href="groups/raznie.htm" title="Аккорды к песням Разные песни" style="color: #ffffff; font-family: Times New Roman;"> Разные песни </a><br>
-<img src="img/toch.gif"><a href="groups/sektorgaza.htm" title="Аккорды к песням группы Сектор Газа" style="color: #ffffff; font-family: Times New Roman;"> Сектор Газа </a><br>
-<img src="img/toch.gif"><a href="groups/trofim.htm" title="Аккорды к песням Трофима" style="color: #ffffff; font-family: Times New Roman;"> Трофим </a><br>
-<img src="img/toch.gif"><a href="groups/faktor2.htm" title="Аккорды к песням группы Фактор 2" style="color: #ffffff; font-family: Times New Roman;"> Фактор 2 </a><br>
-<img src="img/toch.gif"><a href="groups/edward_surovi.htm" title="Аккорды к песням Эдуарда Сурового" style="color: #ffffff; font-family: Times New Roman;"> Эдуард Суровый </a><br>
+<span style="font-size:20px; font-family: Times New Roman; color: #efb856;" title="Р’РµСЃСЊ СЃРїРёСЃРѕРє РіСЂСѓРїРї Рё РёСЃРїРѕР»РЅРёС‚РµР»РµР№ РїРµСЃРµРЅ"> Р’РµСЃСЊ СЃРїРёСЃРѕРє РіСЂСѓРїРї Рё РёСЃРїРѕР»РЅРёС‚РµР»РµР№ РїРµСЃРµРЅ </span><br>
+<img src="img/toch.gif"><a href="groups/linkin-park.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј РіСЂСѓРїРїС‹ Linkin Park" style="color: #ffffff; font-family: Times New Roman;"> Linkin Park </a><br>
+<img src="img/toch.gif"><a href="groups/agata.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј РіСЂСѓРїРїС‹ РђРіР°С‚Р° РєСЂРёСЃС‚Рё" style="color: #ffffff; font-family: Times New Roman;"> РђРіР°С‚Р° РєСЂРёСЃС‚Рё </a><br>
+<img src="img/toch.gif"><a href="groups/alisa.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј РіСЂСѓРїРїС‹ РђР»РёСЃР°" style="color: #ffffff; font-family: Times New Roman;"> РђР»РёСЃР° </a><br>
+<img src="img/toch.gif"><a href="groups/armeiskie.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј  РђСЂРјРµР№СЃРєРёРµ РїРµСЃРЅРё" style="color: #ffffff; font-family: Times New Roman;"> РђСЂРјРµР№СЃРєРёРµ РїРµСЃРЅРё </a><br>
+<img src="img/toch.gif"><a href="groups/valentin-strikalo.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј Р’Р°Р»РµРЅС‚РёРЅР° СЃС‚СЂС‹РєР°Р»Рѕ " style="color: #ffffff; font-family: Times New Roman;"> Р’Р°Р»РµРЅС‚РёРЅ РЎС‚СЂС‹РєР°Р»Рѕ </a><br>
+<img src="img/toch.gif"><a href="groups/gr-oborona.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј РіСЂСѓРїРїС‹ Р“СЂР°Р¶РґР°РЅСЃРєР°СЏ РѕР±РѕСЂРѕРЅР°" style="color: #ffffff; font-family: Times New Roman;"> Р“СЂР°Р¶РґР°РЅСЃРєР°СЏ РѕР±РѕСЂРѕРЅР° </a><br>
+<img src="img/toch.gif"><a href="groups/dvorovie.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј Р”РІРѕСЂРѕРІС‹Рµ РїРµСЃРЅРё" style="color: #ffffff; font-family: Times New Roman;"> Р”РІРѕСЂРѕРІС‹Рµ РїРµСЃРЅРё </a><br>
+<img src="img/toch.gif"><a href="groups/ddt.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј РіСЂСѓРїРїС‹ Р”Р”Рў" style="color: #ffffff; font-family: Times New Roman;"> Р”Р”Рў </a><br>
+<img src="img/toch.gif"><a href="groups/didulya.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј Р”РёРґСЋР»СЏ Р’Р°Р»РµСЂРёР№" style="color: #ffffff; font-family: Times New Roman;"> Р”РёРґСЋР»СЏ Р’Р°Р»РµСЂРёР№ </a><br>
+<img src="img/toch.gif"><a href="groups/kino.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј РіСЂСѓРїРїС‹ РљРёРЅРѕ (Р’РёРєС‚РѕСЂ Р¦РѕР№)" style="color: #ffffff; font-family: Times New Roman;"> РљРёРЅРѕ (Р’РёРєС‚РѕСЂ Р¦РѕР№) </a><br>
+<img src="img/toch.gif"><a href="groups/korol-i-shut.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј РіСЂСѓРїРїС‹ РљРѕСЂРѕР»СЊ Рё РЁСѓС‚" style="color: #ffffff; font-family: Times New Roman;"> РљРѕСЂРѕР»СЊ Рё РЁСѓС‚ </a><br>
+<img src="img/toch.gif"><a href="groups/lube.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј РіСЂСѓРїРїС‹ Р›СЋР±СЌ" style="color: #ffffff; font-family: Times New Roman;"> Р›СЋР±СЌ </a><br>
+<img src="img/toch.gif"><a href="groups/muzika-iz-kf.htm" title="РђРєРєРѕСЂРґС‹, С‚Р°Р±С‹, РЅРѕС‚С‹ Рє РњСѓР·С‹РєРµ РёР· РєРёРЅРѕС„РёР»СЊРјРѕРІ Рє/С„" style="color: #ffffff; font-family: Times New Roman;"> РњСѓР·С‹РєР° РёР· РєРёРЅРѕС„РёР»СЊРјРѕРІ </a><br>
+<img src="img/toch.gif"><a href="groups/raznie.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј Р Р°Р·РЅС‹Рµ РїРµСЃРЅРё" style="color: #ffffff; font-family: Times New Roman;"> Р Р°Р·РЅС‹Рµ РїРµСЃРЅРё </a><br>
+<img src="img/toch.gif"><a href="groups/sektorgaza.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј РіСЂСѓРїРїС‹ РЎРµРєС‚РѕСЂ Р“Р°Р·Р°" style="color: #ffffff; font-family: Times New Roman;"> РЎРµРєС‚РѕСЂ Р“Р°Р·Р° </a><br>
+<img src="img/toch.gif"><a href="groups/trofim.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј РўСЂРѕС„РёРјР°" style="color: #ffffff; font-family: Times New Roman;"> РўСЂРѕС„РёРј </a><br>
+<img src="img/toch.gif"><a href="groups/faktor2.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј РіСЂСѓРїРїС‹ Р¤Р°РєС‚РѕСЂ 2" style="color: #ffffff; font-family: Times New Roman;"> Р¤Р°РєС‚РѕСЂ 2 </a><br>
+<img src="img/toch.gif"><a href="groups/edward_surovi.htm" title="РђРєРєРѕСЂРґС‹ Рє РїРµСЃРЅСЏРј Р­РґСѓР°СЂРґР° РЎСѓСЂРѕРІРѕРіРѕ" style="color: #ffffff; font-family: Times New Roman;"> Р­РґСѓР°СЂРґ РЎСѓСЂРѕРІС‹Р№ </a><br>
 </td>
 <td>
-<h2 class="h2">Базовые возможности поиска</h2><br>
+<h2 class="h2">Р‘Р°Р·РѕРІС‹Рµ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё РїРѕРёСЃРєР°</h2><br>
 <p class="glav-vstyp">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong class="ak-gitar">Морфология учитывается</strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Независимо от того, в какой форме вы употребили слово в запросе, поиск учитывает все его формы по правилам русского языка. Это называется учет морфологии слов.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong class="ak-gitar">РњРѕСЂС„РѕР»РѕРіРёСЏ СѓС‡РёС‚С‹РІР°РµС‚СЃСЏ</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;РќРµР·Р°РІРёСЃРёРјРѕ РѕС‚ С‚РѕРіРѕ, РІ РєР°РєРѕР№ С„РѕСЂРјРµ РІС‹ СѓРїРѕС‚СЂРµР±РёР»Рё СЃР»РѕРІРѕ РІ Р·Р°РїСЂРѕСЃРµ, РїРѕРёСЃРє СѓС‡РёС‚С‹РІР°РµС‚ РІСЃРµ РµРіРѕ С„РѕСЂРјС‹ РїРѕ РїСЂР°РІРёР»Р°Рј СЂСѓСЃСЃРєРѕРіРѕ СЏР·С‹РєР°. Р­С‚Рѕ РЅР°Р·С‹РІР°РµС‚СЃСЏ СѓС‡РµС‚ РјРѕСЂС„РѕР»РѕРіРёРё СЃР»РѕРІ.<br><br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong class="ak-gitar">Использование заглавных букв</strong><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Поиск в Akkord-gitar выполняется <strong>БЕЗ УЧЕТА РЕГИСТРА</strong>. Все буквы, независимо от того, как они введены, будут рассматриваться как строчные. Например, Вы получите одинаковые результаты по запросам виктор цой, Виктор Цой и ВиКтОр ЦоЙ. При необходимости вы всегда можете включить регистр.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong class="ak-gitar">РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ Р·Р°РіР»Р°РІРЅС‹С… Р±СѓРєРІ</strong><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; РџРѕРёСЃРє РІ Akkord-gitar РІС‹РїРѕР»РЅСЏРµС‚СЃСЏ <strong>Р‘Р•Р— РЈР§Р•РўРђ Р Р•Р“РРЎРўР Рђ</strong>. Р’СЃРµ Р±СѓРєРІС‹, РЅРµР·Р°РІРёСЃРёРјРѕ РѕС‚ С‚РѕРіРѕ, РєР°Рє РѕРЅРё РІРІРµРґРµРЅС‹, Р±СѓРґСѓС‚ СЂР°СЃСЃРјР°С‚СЂРёРІР°С‚СЊСЃСЏ РєР°Рє СЃС‚СЂРѕС‡РЅС‹Рµ. РќР°РїСЂРёРјРµСЂ, Р’С‹ РїРѕР»СѓС‡РёС‚Рµ РѕРґРёРЅР°РєРѕРІС‹Рµ СЂРµР·СѓР»СЊС‚Р°С‚С‹ РїРѕ Р·Р°РїСЂРѕСЃР°Рј РІРёРєС‚РѕСЂ С†РѕР№, Р’РёРєС‚РѕСЂ Р¦РѕР№ Рё Р’РёРљС‚РћСЂ Р¦РѕР™. РџСЂРё РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё РІС‹ РІСЃРµРіРґР° РјРѕР¶РµС‚Рµ РІРєР»СЋС‡РёС‚СЊ СЂРµРіРёСЃС‚СЂ.
 </p>
 </td>
 </tr></table>
@@ -110,7 +110,7 @@ chdir($adrself);
  
  
  
- <!-- <p class="glav-vstyp"> Подпишитесь на рассылку обновлений на e-mail
+ <!-- <p class="glav-vstyp"> РџРѕРґРїРёС€РёС‚РµСЃСЊ РЅР° СЂР°СЃСЃС‹Р»РєСѓ РѕР±РЅРѕРІР»РµРЅРёР№ РЅР° e-mail
  <noindex>
  <php
 $strpath="nscript/form.php";
@@ -129,19 +129,19 @@ chdir($adrself);
 
  -->
 </td >
-	<!-- Конец информации -->
-	<!-- Начало меню -->
+	<!-- РљРѕРЅРµС† РёРЅС„РѕСЂРјР°С†РёРё -->
+	<!-- РќР°С‡Р°Р»Рѕ РјРµРЅСЋ -->
 
 </td></tr></table>
-	<!-- Конец меню -->
+	<!-- РљРѕРЅРµС† РјРµРЅСЋ -->
 	</tr>
-<!-- начало нижней шапки -->
+<!-- РЅР°С‡Р°Р»Рѕ РЅРёР¶РЅРµР№ С€Р°РїРєРё -->
 	<tr>
 		<td>
 				
 <p class="prava" align="center">
 <noindex>
-<!--статистика маинспу вставить -->
+<!--СЃС‚Р°С‚РёСЃС‚РёРєР° РјР°РёРЅСЃРїСѓ РІСЃС‚Р°РІРёС‚СЊ -->
 <!--LiveInternet counter--><script type="text/javascript"><!--
 document.write("<a href='http://www.liveinternet.ru/click' "+
 "target=_blank><img src='http://counter.yadro.ru/hit?t21.6;r"+
@@ -149,8 +149,8 @@ escape(document.referrer)+((typeof(screen)=="undefined")?"":
 ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
 screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 ";h"+escape(document.title.substring(0,80))+";"+Math.random()+
-"' alt='' title='LiveInternet: показано число просмотров за 24"+
-" часа, посетителей за 24 часа и за сегодня' "+
+"' alt='' title='LiveInternet: РїРѕРєР°Р·Р°РЅРѕ С‡РёСЃР»Рѕ РїСЂРѕСЃРјРѕС‚СЂРѕРІ Р·Р° 24"+
+" С‡Р°СЃР°, РїРѕСЃРµС‚РёС‚РµР»РµР№ Р·Р° 24 С‡Р°СЃР° Рё Р·Р° СЃРµРіРѕРґРЅСЏ' "+
 "border='0' width='88' height='31'><\/a>")
 //--></script><!--/LiveInternet-->
 <br>
@@ -166,11 +166,11 @@ a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth);js=12;//--></script>
 js=13;//--></script><script language="javascript" type="text/javascript"><!--
 d.write('<a href="http://top.mail.ru/jump?from=1775947" target="_top">'+
 '<img src="http://d9.c1.bb.a1.top.mail.ru/counter?id=1775947;t=104;js='+js+
-a+';rand='+Math.random()+'" alt="Рейтинг@Mail.ru" border="0" '+
+a+';rand='+Math.random()+'" alt="Р РµР№С‚РёРЅРі@Mail.ru" border="0" '+
 'height="18" width="88"><\/a>');if(11<js)d.write('<'+'!-- ');//--></script>
 <noscript><a target="_top" href="http://top.mail.ru/jump?from=1775947">
 <img src="http://d9.c1.bb.a1.top.mail.ru/counter?js=na;id=1775947;t=104" 
-height="18" width="88" border="0" alt="Рейтинг@Mail.ru"></a></noscript>
+height="18" width="88" border="0" alt="Р РµР№С‚РёРЅРі@Mail.ru"></a></noscript>
 <script language="javascript" type="text/javascript"><!--
 if(11<js)d.write('--'+'>');//--></script>
 <!--// Rating@Mail.ru counter-->
@@ -183,7 +183,7 @@ Copyright by XXBESTXX &copy; 2010
 		</td>
 	
 	</tr>
-<!-- Конец нижней шапки -->
+<!-- РљРѕРЅРµС† РЅРёР¶РЅРµР№ С€Р°РїРєРё -->
 </table>
 </body>
 </html>

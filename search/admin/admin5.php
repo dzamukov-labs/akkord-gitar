@@ -3,7 +3,7 @@
  $info="";
  if(isset($_POST['go']))
   {
-  	//Меняем пароль и логин----------------------------------
+  	//РњРµРЅСЏРµРј РїР°СЂРѕР»СЊ Рё Р»РѕРіРёРЅ----------------------------------
   if(@$_POST['login']!="" &&  @$_POST['pasw']!="")
    {
     @$_POST['login']=trim(@$_POST['login']);
@@ -14,28 +14,28 @@
     fwrite($f,md5($_POST['pasw'])."\r\n");
     fwrite($f,session_id());
     fclose($f);
-    $info="Данные изменены.";
+    $info="Р”Р°РЅРЅС‹Рµ РёР·РјРµРЅРµРЅС‹.";
    }
    else
-   $info="Для заполнения обязательны логин и пароль.";
+   $info="Р”Р»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ РѕР±СЏР·Р°С‚РµР»СЊРЅС‹ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ.";
   }
 
 ?>
 <TABLE align=center bgcolor=#EBEBEB width=80% CELLPADDING=20 CELLSPACING=0 border=0>
 
 <tr >
-   <td ><FONT COLOR="#408080" size=+1>Изменить логин и пароль</FONT> </td>
+   <td ><FONT COLOR="#408080" size=+1>РР·РјРµРЅРёС‚СЊ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ</FONT> </td>
 </tr>
 
 <FORM ACTION="admin5.php?sel5=selected" METHOD="POST" name="form">
 
 <tr bgcolor=#F0F0F0><td width=25%>
 <?echo $info?><br><br>
-Логин<br>
+Р›РѕРіРёРЅ<br>
 <INPUT TYPE="text" NAME="login" SIZE="10" MAXLENGTH="10" VALUE=""><br>
-Пароль<br>
+РџР°СЂРѕР»СЊ<br>
  <INPUT TYPE="text" NAME="pasw" SIZE="10" MAXLENGTH="10" VALUE=""><br><br>
-<input type="submit" value="Изменить" name=go>
+<input type="submit" value="РР·РјРµРЅРёС‚СЊ" name=go>
 
 </td></tr>
 </table>

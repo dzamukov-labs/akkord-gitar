@@ -4,88 +4,88 @@
  if(isset($_POST['go']))
    {
      $f=fopen("conf/mes1.txt","w+");
-     fwrite($f,"0 цвет страницы*".$_POST['color_page']."\r\n");
-     fwrite($f,"1 фон страницы*".$_POST['background_page']."\r\n");
+     fwrite($f,"0 С†РІРµС‚ СЃС‚СЂР°РЅРёС†С‹*".$_POST['color_page']."\r\n");
+     fwrite($f,"1 С„РѕРЅ СЃС‚СЂР°РЅРёС†С‹*".$_POST['background_page']."\r\n");
 
      if(!is_numeric($_POST['count_search']) ||  $_POST['count_search']=="")
-         fwrite($f,"2 сколько результатов*10\r\n");
+         fwrite($f,"2 СЃРєРѕР»СЊРєРѕ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ*10\r\n");
      else
-         fwrite($f,"2 сколько результатов*".$_POST['count_search']."\r\n");
+         fwrite($f,"2 СЃРєРѕР»СЊРєРѕ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ*".$_POST['count_search']."\r\n");
 
-     fwrite($f,"3 цвет главного блока*".$_POST['color_block']."\r\n");
+     fwrite($f,"3 С†РІРµС‚ РіР»Р°РІРЅРѕРіРѕ Р±Р»РѕРєР°*".$_POST['color_block']."\r\n");
 
      if(!is_numeric($_POST['width_block']) || $_POST['width_block']=="")
-        fwrite($f,"4 ширина главного блока*70\r\n");
+        fwrite($f,"4 С€РёСЂРёРЅР° РіР»Р°РІРЅРѕРіРѕ Р±Р»РѕРєР°*70\r\n");
      else
-     fwrite($f,"4 ширина главного блока*".$_POST['width_block']."\r\n");
+     fwrite($f,"4 С€РёСЂРёРЅР° РіР»Р°РІРЅРѕРіРѕ Р±Р»РѕРєР°*".$_POST['width_block']."\r\n");
 
-     fwrite($f,"5 цвет рамки главного блока*".$_POST['border_color_block']."\r\n");
-     fwrite($f,"6 ширина рамки главного блока*".$_POST['border_size_block']."\r\n");
-     fwrite($f,"7 тип рамки главного блока*".$_POST['border_type_block']."\r\n");
+     fwrite($f,"5 С†РІРµС‚ СЂР°РјРєРё РіР»Р°РІРЅРѕРіРѕ Р±Р»РѕРєР°*".$_POST['border_color_block']."\r\n");
+     fwrite($f,"6 С€РёСЂРёРЅР° СЂР°РјРєРё РіР»Р°РІРЅРѕРіРѕ Р±Р»РѕРєР°*".$_POST['border_size_block']."\r\n");
+     fwrite($f,"7 С‚РёРї СЂР°РјРєРё РіР»Р°РІРЅРѕРіРѕ Р±Р»РѕРєР°*".$_POST['border_type_block']."\r\n");
 
-     fwrite($f,"8 цвет шрифта информации*".$_POST['color_font_info']."\r\n");
-     fwrite($f,"9 размер шрифта информации*".$_POST['size_font_info']."\r\n");
-     fwrite($f,"10 ничертание шрифта информации*".$_POST['type_font_info']."\r\n");
-     fwrite($f,"11 жирность шрифта информации *".$_POST['width_font_info']."\r\n");
+     fwrite($f,"8 С†РІРµС‚ С€СЂРёС„С‚Р° РёРЅС„РѕСЂРјР°С†РёРё*".$_POST['color_font_info']."\r\n");
+     fwrite($f,"9 СЂР°Р·РјРµСЂ С€СЂРёС„С‚Р° РёРЅС„РѕСЂРјР°С†РёРё*".$_POST['size_font_info']."\r\n");
+     fwrite($f,"10 РЅРёС‡РµСЂС‚Р°РЅРёРµ С€СЂРёС„С‚Р° РёРЅС„РѕСЂРјР°С†РёРё*".$_POST['type_font_info']."\r\n");
+     fwrite($f,"11 Р¶РёСЂРЅРѕСЃС‚СЊ С€СЂРёС„С‚Р° РёРЅС„РѕСЂРјР°С†РёРё *".$_POST['width_font_info']."\r\n");
 
-     fwrite($f,"12 цвет блока с одним поиском*".$_POST['color_search']."\r\n");
+     fwrite($f,"12 С†РІРµС‚ Р±Р»РѕРєР° СЃ РѕРґРЅРёРј РїРѕРёСЃРєРѕРј*".$_POST['color_search']."\r\n");
 
      if(!is_numeric($_POST['width_search']) || $_POST['width_search']=="")
-         fwrite($f,"13 ширина блока с одним поиском*100\r\n");
+         fwrite($f,"13 С€РёСЂРёРЅР° Р±Р»РѕРєР° СЃ РѕРґРЅРёРј РїРѕРёСЃРєРѕРј*100\r\n");
      else
-         fwrite($f,"13 ширина блока с одним поиском*".$_POST['width_search']."\r\n");
+         fwrite($f,"13 С€РёСЂРёРЅР° Р±Р»РѕРєР° СЃ РѕРґРЅРёРј РїРѕРёСЃРєРѕРј*".$_POST['width_search']."\r\n");
 
 
-     fwrite($f,"14 цвет рамки блока с одним поиском*".$_POST['border_color_search']."\r\n");
-     fwrite($f,"15 ширина верхней рамки блока с одним поиском*".$_POST['border_size_top_search']."\r\n");
-     fwrite($f,"16 ширина нижней рамки блока с одним поиском*".$_POST['border_size_bottom_search']."\r\n");
-     fwrite($f,"17 ширина правой рамки блока с одним поиском*".$_POST['border_size_right_search']."\r\n");
-     fwrite($f,"18 ширина левой рамки блока с одним поиском*".$_POST['border_size_left_search']."\r\n");
-     fwrite($f,"19 тип рамки блока с одним поиском*".$_POST['border_type_search']."\r\n");
+     fwrite($f,"14 С†РІРµС‚ СЂР°РјРєРё Р±Р»РѕРєР° СЃ РѕРґРЅРёРј РїРѕРёСЃРєРѕРј*".$_POST['border_color_search']."\r\n");
+     fwrite($f,"15 С€РёСЂРёРЅР° РІРµСЂС…РЅРµР№ СЂР°РјРєРё Р±Р»РѕРєР° СЃ РѕРґРЅРёРј РїРѕРёСЃРєРѕРј*".$_POST['border_size_top_search']."\r\n");
+     fwrite($f,"16 С€РёСЂРёРЅР° РЅРёР¶РЅРµР№ СЂР°РјРєРё Р±Р»РѕРєР° СЃ РѕРґРЅРёРј РїРѕРёСЃРєРѕРј*".$_POST['border_size_bottom_search']."\r\n");
+     fwrite($f,"17 С€РёСЂРёРЅР° РїСЂР°РІРѕР№ СЂР°РјРєРё Р±Р»РѕРєР° СЃ РѕРґРЅРёРј РїРѕРёСЃРєРѕРј*".$_POST['border_size_right_search']."\r\n");
+     fwrite($f,"18 С€РёСЂРёРЅР° Р»РµРІРѕР№ СЂР°РјРєРё Р±Р»РѕРєР° СЃ РѕРґРЅРёРј РїРѕРёСЃРєРѕРј*".$_POST['border_size_left_search']."\r\n");
+     fwrite($f,"19 С‚РёРї СЂР°РјРєРё Р±Р»РѕРєР° СЃ РѕРґРЅРёРј РїРѕРёСЃРєРѕРј*".$_POST['border_type_search']."\r\n");
 
-     fwrite($f,"20 цвет шрифта титле*".$_POST['color_font_title']."\r\n");
-     fwrite($f,"21 размер шрифта титле*".$_POST['size_font_title']."\r\n");
-     fwrite($f,"22 начертание шрифта титле*".$_POST['type_font_title']."\r\n");
-     fwrite($f,"23 жирность шрифта титле*".$_POST['width_font_title']."\r\n");
+     fwrite($f,"20 С†РІРµС‚ С€СЂРёС„С‚Р° С‚РёС‚Р»Рµ*".$_POST['color_font_title']."\r\n");
+     fwrite($f,"21 СЂР°Р·РјРµСЂ С€СЂРёС„С‚Р° С‚РёС‚Р»Рµ*".$_POST['size_font_title']."\r\n");
+     fwrite($f,"22 РЅР°С‡РµСЂС‚Р°РЅРёРµ С€СЂРёС„С‚Р° С‚РёС‚Р»Рµ*".$_POST['type_font_title']."\r\n");
+     fwrite($f,"23 Р¶РёСЂРЅРѕСЃС‚СЊ С€СЂРёС„С‚Р° С‚РёС‚Р»Рµ*".$_POST['width_font_title']."\r\n");
 
-     fwrite($f,"24 цвет шрифта предложения*".$_POST['color_font_content']."\r\n");
-     fwrite($f,"25 размер шрифта предложения*".$_POST['size_font_content']."\r\n");
-     fwrite($f,"26 начертание шрифта предложения*".$_POST['type_font_content']."\r\n");
-     fwrite($f,"27 жирность шрифта предложения*".$_POST['width_font_content']."\r\n");
+     fwrite($f,"24 С†РІРµС‚ С€СЂРёС„С‚Р° РїСЂРµРґР»РѕР¶РµРЅРёСЏ*".$_POST['color_font_content']."\r\n");
+     fwrite($f,"25 СЂР°Р·РјРµСЂ С€СЂРёС„С‚Р° РїСЂРµРґР»РѕР¶РµРЅРёСЏ*".$_POST['size_font_content']."\r\n");
+     fwrite($f,"26 РЅР°С‡РµСЂС‚Р°РЅРёРµ С€СЂРёС„С‚Р° РїСЂРµРґР»РѕР¶РµРЅРёСЏ*".$_POST['type_font_content']."\r\n");
+     fwrite($f,"27 Р¶РёСЂРЅРѕСЃС‚СЊ С€СЂРёС„С‚Р° РїСЂРµРґР»РѕР¶РµРЅРёСЏ*".$_POST['width_font_content']."\r\n");
 
-     fwrite($f,"28 цвет шрифта совпадений*".$_POST['color_font_count']."\r\n");
-     fwrite($f,"29 размер шрифта совпадений*".$_POST['size_font_count']."\r\n");
-     fwrite($f,"30 начертание шрифта совпадений*".$_POST['type_font_count']."\r\n");
-     fwrite($f,"31 жирность шрифта совпадений*".$_POST['width_font_count']."\r\n");
+     fwrite($f,"28 С†РІРµС‚ С€СЂРёС„С‚Р° СЃРѕРІРїР°РґРµРЅРёР№*".$_POST['color_font_count']."\r\n");
+     fwrite($f,"29 СЂР°Р·РјРµСЂ С€СЂРёС„С‚Р° СЃРѕРІРїР°РґРµРЅРёР№*".$_POST['size_font_count']."\r\n");
+     fwrite($f,"30 РЅР°С‡РµСЂС‚Р°РЅРёРµ С€СЂРёС„С‚Р° СЃРѕРІРїР°РґРµРЅРёР№*".$_POST['type_font_count']."\r\n");
+     fwrite($f,"31 Р¶РёСЂРЅРѕСЃС‚СЊ С€СЂРёС„С‚Р° СЃРѕРІРїР°РґРµРЅРёР№*".$_POST['width_font_count']."\r\n");
 
-     fwrite($f,"32 цвет шрифта текстовой ссылки*".$_POST['color_font_text_link']."\r\n");
-     fwrite($f,"33 размер шрифта текстовой ссылки*".$_POST['size_font_text_link']."\r\n");
-     fwrite($f,"34 начертание шрифта текстовой ссылки*".$_POST['type_font_text_link']."\r\n");
-     fwrite($f,"35 жирность шрифта текстовой ссылки*".$_POST['width_font_text_link']."\r\n");
+     fwrite($f,"32 С†РІРµС‚ С€СЂРёС„С‚Р° С‚РµРєСЃС‚РѕРІРѕР№ СЃСЃС‹Р»РєРё*".$_POST['color_font_text_link']."\r\n");
+     fwrite($f,"33 СЂР°Р·РјРµСЂ С€СЂРёС„С‚Р° С‚РµРєСЃС‚РѕРІРѕР№ СЃСЃС‹Р»РєРё*".$_POST['size_font_text_link']."\r\n");
+     fwrite($f,"34 РЅР°С‡РµСЂС‚Р°РЅРёРµ С€СЂРёС„С‚Р° С‚РµРєСЃС‚РѕРІРѕР№ СЃСЃС‹Р»РєРё*".$_POST['type_font_text_link']."\r\n");
+     fwrite($f,"35 Р¶РёСЂРЅРѕСЃС‚СЊ С€СЂРёС„С‚Р° С‚РµРєСЃС‚РѕРІРѕР№ СЃСЃС‹Р»РєРё*".$_POST['width_font_text_link']."\r\n");
 
-     if(isset($_POST['title_view'])) fwrite($f,"36 показывать название документа*1\r\n");
-     else fwrite($f,"36 показывать название документа*0\r\n");
+     if(isset($_POST['title_view'])) fwrite($f,"36 РїРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р·РІР°РЅРёРµ РґРѕРєСѓРјРµРЅС‚Р°*1\r\n");
+     else fwrite($f,"36 РїРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р·РІР°РЅРёРµ РґРѕРєСѓРјРµРЅС‚Р°*0\r\n");
 
-     if(isset($_POST['pred_view'])) fwrite($f,"37 показывать предложение с поисковой строкой*1\r\n");
-     else fwrite($f,"37 показывать предложение с поисковой строкой*0\r\n");
+     if(isset($_POST['pred_view'])) fwrite($f,"37 РїРѕРєР°Р·С‹РІР°С‚СЊ РїСЂРµРґР»РѕР¶РµРЅРёРµ СЃ РїРѕРёСЃРєРѕРІРѕР№ СЃС‚СЂРѕРєРѕР№*1\r\n");
+     else fwrite($f,"37 РїРѕРєР°Р·С‹РІР°С‚СЊ РїСЂРµРґР»РѕР¶РµРЅРёРµ СЃ РїРѕРёСЃРєРѕРІРѕР№ СЃС‚СЂРѕРєРѕР№*0\r\n");
 
-     if(isset($_POST['count_view'])) fwrite($f,"38 показывать количество совпадений*1\r\n");
-     else fwrite($f,"38 показывать количество совпадений*0\r\n");
+     if(isset($_POST['count_view'])) fwrite($f,"38 РїРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРѕРІРїР°РґРµРЅРёР№*1\r\n");
+     else fwrite($f,"38 РїРѕРєР°Р·С‹РІР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРѕРІРїР°РґРµРЅРёР№*0\r\n");
 
-     if(isset($_POST['text_view'])) fwrite($f,"39 показывать ссылку на текстовую копию*1\r\n");
-     else fwrite($f,"39 показывать ссылку на текстовую копию*0\r\n");
+     if(isset($_POST['text_view'])) fwrite($f,"39 РїРѕРєР°Р·С‹РІР°С‚СЊ СЃСЃС‹Р»РєСѓ РЅР° С‚РµРєСЃС‚РѕРІСѓСЋ РєРѕРїРёСЋ*1\r\n");
+     else fwrite($f,"39 РїРѕРєР°Р·С‹РІР°С‚СЊ СЃСЃС‹Р»РєСѓ РЅР° С‚РµРєСЃС‚РѕРІСѓСЋ РєРѕРїРёСЋ*0\r\n");
 
-     fwrite($f,"40 align главного блока*".$_POST['block_align']);
+     fwrite($f,"40 align РіР»Р°РІРЅРѕРіРѕ Р±Р»РѕРєР°*".$_POST['block_align']);
 
      fclose($f);
    }
 
 
 
-  //====================Проверка данных-------------
+  //====================РџСЂРѕРІРµСЂРєР° РґР°РЅРЅС‹С…-------------
  $config=file("conf/mes1.txt");
  $n=0;
- //Очищаем
+ //РћС‡РёС‰Р°РµРј
  foreach($config as $line)
   {
  	$expl=explode("*", $line);
@@ -93,7 +93,7 @@
  	$n++;
   }
 
-//Что показывать
+//Р§С‚Рѕ РїРѕРєР°Р·С‹РІР°С‚СЊ
 if($conf[36]==1)$check_title_view="checked";
 else $check_title_view ="";
 
@@ -108,9 +108,9 @@ else $check_text_view ="";
 
 
 
- //Рамка главного блока
+ //Р Р°РјРєР° РіР»Р°РІРЅРѕРіРѕ Р±Р»РѕРєР°
 
-//Тип рамки
+//РўРёРї СЂР°РјРєРё
 if($conf[7]=="none")$sel_border_type_block[0]="selected";
 if($conf[7]=="dotted")$sel_border_type_block[1]="selected";
 if($conf[7]=="dashed")$sel_border_type_block[2]="selected";
@@ -118,20 +118,20 @@ if($conf[7]=="solid")$sel_border_type_block[3]="selected";
 if($conf[7]=="double")$sel_border_type_block[4]="selected";
 
 
-//Ширина рамки
+//РЁРёСЂРёРЅР° СЂР°РјРєРё
 for($i=0; $i<6; $i++)
  {
    if($conf[6]==$i) $sel_border_size_block[$i]="selected";
    else $sel_border_size_block[$i]="";
  }
-//Ориентация блока
+//РћСЂРёРµРЅС‚Р°С†РёСЏ Р±Р»РѕРєР°
 if($conf[40]=='left') $check_align_block[0]="checked";
 if($conf[40]=='center') $check_align_block[1]="checked";
 if($conf[40]=='right') $check_align_block[2]="checked";
 
-//Шрифт информационной строки
+//РЁСЂРёС„С‚ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅРѕР№ СЃС‚СЂРѕРєРё
 
-//Размер
+//Р Р°Р·РјРµСЂ
 for($i=10,$n=0; $i<22; $i+=2,$n++)
  {
    if($conf[9]==$i) $sel_size_font_info[$n]="selected";
@@ -139,11 +139,11 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
  }
 
- //Тип
+ //РўРёРї
  if($conf[10]=="normal") $sel_type_font_info[0]="selected";
  if($conf[10]=="italic") $sel_type_font_info[1]="selected";
 
- //Жирность
+ //Р–РёСЂРЅРѕСЃС‚СЊ
  for($i=100,$n=0; $i<800; $i+=100,$n++)
  {
    if($conf[11]==$i) $sel_width_font_info[$n]="selected";
@@ -151,8 +151,8 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
  }
 
-//Блок с одним результатом поиска
-//Тип рамки
+//Р‘Р»РѕРє СЃ РѕРґРЅРёРј СЂРµР·СѓР»СЊС‚Р°С‚РѕРј РїРѕРёСЃРєР°
+//РўРёРї СЂР°РјРєРё
 if($conf[19]=="none")$sel_border_type_search[0]="selected";
 if($conf[19]=="dotted")$sel_border_type_search[1]="selected";
 if($conf[19]=="dashed")$sel_border_type_search[2]="selected";
@@ -160,28 +160,28 @@ if($conf[19]=="solid")$sel_border_type_search[3]="selected";
 if($conf[19]=="double")$sel_border_type_search[4]="selected";
 
 
-//Ширина верхней рамки
+//РЁРёСЂРёРЅР° РІРµСЂС…РЅРµР№ СЂР°РјРєРё
 for($i=0; $i<6; $i++)
  {
    if($conf[15]==$i) $sel_border_size_top_search[$i]="selected";
    else $sel_border_size_top_search[$i]="";
  }
 
- //Ширина нижней рамки
+ //РЁРёСЂРёРЅР° РЅРёР¶РЅРµР№ СЂР°РјРєРё
 for($i=0; $i<6; $i++)
  {
    if($conf[16]==$i) $sel_border_size_bottom_search[$i]="selected";
    else $sel_border_size_bottom_search[$i]="";
  }
 
- //Ширина правой рамки
+ //РЁРёСЂРёРЅР° РїСЂР°РІРѕР№ СЂР°РјРєРё
 for($i=0; $i<6; $i++)
  {
    if($conf[17]==$i) $sel_border_size_right_search[$i]="selected";
    else $sel_border_size_right_search[$i]="";
  }
 
- //Ширина левой рамки
+ //РЁРёСЂРёРЅР° Р»РµРІРѕР№ СЂР°РјРєРё
 for($i=0; $i<6; $i++)
  {
    if($conf[18]==$i) $sel_border_size_left_search[$i]="selected";
@@ -189,9 +189,9 @@ for($i=0; $i<6; $i++)
  }
 
 
-//Шрифт title
+//РЁСЂРёС„С‚ title
 
-//Размер
+//Р Р°Р·РјРµСЂ
 for($i=10,$n=0; $i<22; $i+=2,$n++)
  {
    if($conf[21]==$i) $sel_size_font_title[$n]="selected";
@@ -199,11 +199,11 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
  }
 
- //Тип
+ //РўРёРї
  if($conf[22]=="normal") $sel_type_font_title[0]="selected";
  if($conf[22]=="italic") $sel_type_font_title[1]="selected";
 
- //Жирность
+ //Р–РёСЂРЅРѕСЃС‚СЊ
  for($i=100,$n=0; $i<800; $i+=100,$n++)
  {
    if($conf[23]==$i) $sel_width_font_title[$n]="selected";
@@ -213,9 +213,9 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
 
 
-//Шрифт предложения
+//РЁСЂРёС„С‚ РїСЂРµРґР»РѕР¶РµРЅРёСЏ
 
-//Размер
+//Р Р°Р·РјРµСЂ
 for($i=10,$n=0; $i<22; $i+=2,$n++)
  {
    if($conf[25]==$i) $sel_size_font_content[$n]="selected";
@@ -223,11 +223,11 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
  }
 
- //Тип
+ //РўРёРї
  if($conf[26]=="normal") $sel_type_font_content[0]="selected";
  if($conf[26]=="italic") $sel_type_font_content[1]="selected";
 
- //Жирность
+ //Р–РёСЂРЅРѕСЃС‚СЊ
  for($i=100,$n=0; $i<800; $i+=100,$n++)
  {
    if($conf[27]==$i) $sel_width_font_content[$n]="selected";
@@ -235,9 +235,9 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
  }
 
- //Шрифт совпадений
+ //РЁСЂРёС„С‚ СЃРѕРІРїР°РґРµРЅРёР№
 
- //Размер
+ //Р Р°Р·РјРµСЂ
 for($i=10,$n=0; $i<22; $i+=2,$n++)
  {
    if($conf[29]==$i) $sel_size_font_count[$n]="selected";
@@ -245,11 +245,11 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
  }
 
- //Тип
+ //РўРёРї
  if($conf[30]=="normal") $sel_type_font_count[0]="selected";
  if($conf[30]=="italic") $sel_type_font_count[1]="selected";
 
- //Жирность
+ //Р–РёСЂРЅРѕСЃС‚СЊ
  for($i=100,$n=0; $i<800; $i+=100,$n++)
  {
    if($conf[31]==$i) $sel_width_font_count[$n]="selected";
@@ -257,9 +257,9 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
  }
 
-//Шрифт текстовой ссылки
+//РЁСЂРёС„С‚ С‚РµРєСЃС‚РѕРІРѕР№ СЃСЃС‹Р»РєРё
 
- //Размер
+ //Р Р°Р·РјРµСЂ
 for($i=10,$n=0; $i<22; $i+=2,$n++)
  {
    if($conf[33]==$i) $sel_size_font_text_link[$n]="selected";
@@ -267,11 +267,11 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
  }
 
- //Тип
+ //РўРёРї
  if($conf[34]=="normal") $sel_type_font_text_linkt[0]="selected";
  if($conf[34]=="italic") $sel_type_font_text_link[1]="selected";
 
- //Жирность
+ //Р–РёСЂРЅРѕСЃС‚СЊ
  for($i=100,$n=0; $i<800; $i+=100,$n++)
  {
    if($conf[35]==$i) $sel_width_font_text_link[$n]="selected";
@@ -304,33 +304,33 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
  <TABLE align=center bgcolor=#EBEBEB width=80% CELLPADDING=10 CELLSPACING=0 border=0>
  <FORM ACTION="admin2.php?sel2=selected" METHOD="POST" name="form">
 <tr >
-   <td colspan=2><FONT COLOR="#408080" size=+1>Внешний вид страницы с результатами поиска</FONT><br>
+   <td colspan=2><FONT COLOR="#408080" size=+1>Р’РЅРµС€РЅРёР№ РІРёРґ СЃС‚СЂР°РЅРёС†С‹ СЃ СЂРµР·СѓР»СЊС‚Р°С‚Р°РјРё РїРѕРёСЃРєР°</FONT><br>
 
    </td>
  </tr>
-<tr ><td colspan=2>  <a href=# onclick=win()>Таблица цветовых кодов</a></td></tr>
+<tr ><td colspan=2>  <a href=# onclick=win()>РўР°Р±Р»РёС†Р° С†РІРµС‚РѕРІС‹С… РєРѕРґРѕРІ</a></td></tr>
 
 <tr >
-   <td colspan=2><b>Страница</b><br>
+   <td colspan=2><b>РЎС‚СЂР°РЅРёС†Р°</b><br>
 
    </td>
  </tr>
 
 <tr >
    <td width=35% valign=top>
-      Цвет
+      Р¦РІРµС‚
    </td>
    <td >
        <input name="color_page" type="text"  size=10 value="<? echo @$conf[0] ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[0]; ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[0]; ?> > С‚РµСЃС‚
 		</font></big></b>
    </td>
  </tr>
 
  <tr >
    <td width=35% valign=top >
-      Графический фон<br>
-      Адрес рисунка вставляйте полностью, т.е. http://ваш_сайт/путь
+      Р“СЂР°С„РёС‡РµСЃРєРёР№ С„РѕРЅ<br>
+      РђРґСЂРµСЃ СЂРёСЃСѓРЅРєР° РІСЃС‚Р°РІР»СЏР№С‚Рµ РїРѕР»РЅРѕСЃС‚СЊСЋ, С‚.Рµ. http://РІР°С€_СЃР°Р№С‚/РїСѓС‚СЊ
    </td>
    <td valign=top >
        <input name="background_page" type="text"  size=50 value="<? echo @$conf[1] ?>">
@@ -340,20 +340,20 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
  <tr >
    <td width=35% valign=top >
-      Что показывать
+      Р§С‚Рѕ РїРѕРєР°Р·С‹РІР°С‚СЊ
    </td>
    <td valign=top >
-       <input name="title_view" type="checkbox" value="ON" <? echo @$check_title_view ?> > &nbsp;Название документа<br />
-        <input name="pred_view" type="checkbox" value="ON" <? echo @$check_pred_view ?>> &nbsp;Предложение с поисковой строкой<br />
-         <input name="count_view" type="checkbox" value="ON" <? echo @$check_count_view ?>> &nbsp;Количество совпадений<br />
-          <input name="text_view" type="checkbox" value="ON" <? echo @$check_text_view ?>> &nbsp;Ссылка на текстовую копию<br />
+       <input name="title_view" type="checkbox" value="ON" <? echo @$check_title_view ?> > &nbsp;РќР°Р·РІР°РЅРёРµ РґРѕРєСѓРјРµРЅС‚Р°<br />
+        <input name="pred_view" type="checkbox" value="ON" <? echo @$check_pred_view ?>> &nbsp;РџСЂРµРґР»РѕР¶РµРЅРёРµ СЃ РїРѕРёСЃРєРѕРІРѕР№ СЃС‚СЂРѕРєРѕР№<br />
+         <input name="count_view" type="checkbox" value="ON" <? echo @$check_count_view ?>> &nbsp;РљРѕР»РёС‡РµСЃС‚РІРѕ СЃРѕРІРїР°РґРµРЅРёР№<br />
+          <input name="text_view" type="checkbox" value="ON" <? echo @$check_text_view ?>> &nbsp;РЎСЃС‹Р»РєР° РЅР° С‚РµРєСЃС‚РѕРІСѓСЋ РєРѕРїРёСЋ<br />
 
    </td>
  </tr>
 
 <tr >
    <td width=35% valign=top style=" border-bottom:1px solid #d0c9ad;">
-      Сколько результатов поиска на страницу
+      РЎРєРѕР»СЊРєРѕ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РїРѕРёСЃРєР° РЅР° СЃС‚СЂР°РЅРёС†Сѓ
    </td>
    <td valign=top style=" border-bottom:1px solid #d0c9ad;">
        <input name="count_search" type="text"  size=10 value="<? echo @$conf[2] ?>">
@@ -362,28 +362,28 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
  </tr>
 
  <tr >
-   <td colspan=2><b>Главный блок со всеми результатами поиска</b><br>
+   <td colspan=2><b>Р“Р»Р°РІРЅС‹Р№ Р±Р»РѕРє СЃРѕ РІСЃРµРјРё СЂРµР·СѓР»СЊС‚Р°С‚Р°РјРё РїРѕРёСЃРєР°</b><br>
    </td>
  </tr>
 
   <tr >
    <td width=35% valign=top >
-    Цвет
+    Р¦РІРµС‚
    </td>
    <td valign=top >
       <input name="color_block" type="text"  size=10 value="<? echo @$conf[3] ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[3]; ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[3]; ?> > С‚РµСЃС‚
 		</font></big></b>
    </td>
  </tr>
 
 <tr >
    <td width=35% valign=top >
-      Ширина отностительно центральной части страницы.<br>
-      Внимание! Если у вас в настройках <b>Управления кодом</b> определён код для
-      правой и(или) левой части страницы, то этот процент будет расчитываться от центральной части.<br>
-      <b>Более</b> 90% ставить не рекомендуется в связи с неоднозначностью отображения страницы
-      разными браузерами!
+      РЁРёСЂРёРЅР° РѕС‚РЅРѕСЃС‚РёС‚РµР»СЊРЅРѕ С†РµРЅС‚СЂР°Р»СЊРЅРѕР№ С‡Р°СЃС‚Рё СЃС‚СЂР°РЅРёС†С‹.<br>
+      Р’РЅРёРјР°РЅРёРµ! Р•СЃР»Рё Сѓ РІР°СЃ РІ РЅР°СЃС‚СЂРѕР№РєР°С… <b>РЈРїСЂР°РІР»РµРЅРёСЏ РєРѕРґРѕРј</b> РѕРїСЂРµРґРµР»С‘РЅ РєРѕРґ РґР»СЏ
+      РїСЂР°РІРѕР№ Рё(РёР»Рё) Р»РµРІРѕР№ С‡Р°СЃС‚Рё СЃС‚СЂР°РЅРёС†С‹, С‚Рѕ СЌС‚РѕС‚ РїСЂРѕС†РµРЅС‚ Р±СѓРґРµС‚ СЂР°СЃС‡РёС‚С‹РІР°С‚СЊСЃСЏ РѕС‚ С†РµРЅС‚СЂР°Р»СЊРЅРѕР№ С‡Р°СЃС‚Рё.<br>
+      <b>Р‘РѕР»РµРµ</b> 90% СЃС‚Р°РІРёС‚СЊ РЅРµ СЂРµРєРѕРјРµРЅРґСѓРµС‚СЃСЏ РІ СЃРІСЏР·Рё СЃ РЅРµРѕРґРЅРѕР·РЅР°С‡РЅРѕСЃС‚СЊСЋ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ СЃС‚СЂР°РЅРёС†С‹
+      СЂР°Р·РЅС‹РјРё Р±СЂР°СѓР·РµСЂР°РјРё!
    </td>
    <td valign=top >
        <input name="width_block" type="text"  size=10 value="<? echo @$conf[4] ?>">&nbsp;%
@@ -392,10 +392,10 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
  </tr>
 
  <tr>
-   <td >Цвет, ширина и тип рамки</td>
+   <td >Р¦РІРµС‚, С€РёСЂРёРЅР° Рё С‚РёРї СЂР°РјРєРё</td>
    <td >
          <INPUT TYPE="text" NAME="border_color_block" SIZE="10"  VALUE="<? echo @$conf[5] ?>">
-         &nbsp;<font color="<? echo @$conf[5]; ?>">&nbsp;&nbsp;<b>тест</b></font>&nbsp;&nbsp;&nbsp;
+         &nbsp;<font color="<? echo @$conf[5]; ?>">&nbsp;&nbsp;<b>С‚РµСЃС‚</b></font>&nbsp;&nbsp;&nbsp;
 
          &nbsp;&nbsp;&nbsp;<select  name="border_size_block">
            <option value="0" <? echo @$sel_border_size_block[0] ?> >0</option>
@@ -406,33 +406,33 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
            <option value="5" <? echo @$sel_border_size_block[5] ?> >5</option>
         </select>&nbsp;px&nbsp;&nbsp;&nbsp;
         <SELECT NAME="border_type_block">
-<OPTION value="none" <?  echo @$sel_border_type_block[0]; ?>>Нет</option>
-<OPTION value="dotted" <?  echo @$sel_border_type_block[1]; ?>>Точки</option>
-<OPTION value="dashed" <? echo @$sel_border_type_block[2]; ?>>Пунктир</option>
-<OPTION value="solid" <? echo @$sel_border_type_block[3]; ?>>Сплошная</option>
-<OPTION value="double" <? echo @$sel_border_type_block[4]; ?>>Двойная</option>
+<OPTION value="none" <?  echo @$sel_border_type_block[0]; ?>>РќРµС‚</option>
+<OPTION value="dotted" <?  echo @$sel_border_type_block[1]; ?>>РўРѕС‡РєРё</option>
+<OPTION value="dashed" <? echo @$sel_border_type_block[2]; ?>>РџСѓРЅРєС‚РёСЂ</option>
+<OPTION value="solid" <? echo @$sel_border_type_block[3]; ?>>РЎРїР»РѕС€РЅР°СЏ</option>
+<OPTION value="double" <? echo @$sel_border_type_block[4]; ?>>Р”РІРѕР№РЅР°СЏ</option>
 </SELECT>
 
         </td>
 </tr>
 <tr>
-   <td  width=35% valign=top  style=" border-bottom:1px solid #d0c9ad;">Расположение на странице</td>
+   <td  width=35% valign=top  style=" border-bottom:1px solid #d0c9ad;">Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ РЅР° СЃС‚СЂР°РЅРёС†Рµ</td>
     <td  style=" border-bottom:1px solid #d0c9ad;">
-         <input name="block_align" type="radio" value="left" <? echo @$check_align_block[0]; ?>>&nbsp;Слева&nbsp;
-         <input name="block_align" type="radio" value="center" <? echo @$check_align_block[1]; ?>>&nbsp;По центру&nbsp;
-         <input name="block_align" type="radio" value="right" <? echo @$check_align_block[2]; ?>>&nbsp;Справа
+         <input name="block_align" type="radio" value="left" <? echo @$check_align_block[0]; ?>>&nbsp;РЎР»РµРІР°&nbsp;
+         <input name="block_align" type="radio" value="center" <? echo @$check_align_block[1]; ?>>&nbsp;РџРѕ С†РµРЅС‚СЂСѓ&nbsp;
+         <input name="block_align" type="radio" value="right" <? echo @$check_align_block[2]; ?>>&nbsp;РЎРїСЂР°РІР°
     </td>
 </tr>
 <tr >
-   <td colspan=2><b>Информационная строка с результатами поиска (вверху страницы)</b><br>
+   <td colspan=2><b>РРЅС„РѕСЂРјР°С†РёРѕРЅРЅР°СЏ СЃС‚СЂРѕРєР° СЃ СЂРµР·СѓР»СЊС‚Р°С‚Р°РјРё РїРѕРёСЃРєР° (РІРІРµСЂС…Сѓ СЃС‚СЂР°РЅРёС†С‹)</b><br>
    </td>
  </tr>
 
 
 <tr>
-   <td  width=35% valign=top style=" border-bottom:1px solid #d0c9ad;">Шрифт. Цвет, размер, начертание, жирность.</td>
+   <td  width=35% valign=top style=" border-bottom:1px solid #d0c9ad;">РЁСЂРёС„С‚. Р¦РІРµС‚, СЂР°Р·РјРµСЂ, РЅР°С‡РµСЂС‚Р°РЅРёРµ, Р¶РёСЂРЅРѕСЃС‚СЊ.</td>
     <td style=" border-bottom:1px solid #d0c9ad;"> <input name="color_font_info" type="text"  size=10 value="<? echo @$conf[8]; ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[8]; ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[8]; ?> > С‚РµСЃС‚
 		</font></big></b>&nbsp;
 		<SELECT NAME="size_font_info">
 <OPTION value="10" <?  echo @$sel_size_font_info[0]; ?>>10</option>
@@ -444,8 +444,8 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 </SELECT>&nbsp;&nbsp;pt&nbsp;
 
 <SELECT NAME="type_font_info">
-<OPTION value="normal" <?  echo @$sel_type_font_info[0]; ?> >Нормальный</option>
-<OPTION value="italic" <?  echo @$sel_type_font_info[1]; ?> >Наклонный</option>
+<OPTION value="normal" <?  echo @$sel_type_font_info[0]; ?> >РќРѕСЂРјР°Р»СЊРЅС‹Р№</option>
+<OPTION value="italic" <?  echo @$sel_type_font_info[1]; ?> >РќР°РєР»РѕРЅРЅС‹Р№</option>
 </SELECT>
 
 <SELECT NAME="width_font_info">
@@ -462,24 +462,24 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 </tr>
 
 <tr >
-   <td colspan=2><b>Блок с одним результатом поиска</b><br>
+   <td colspan=2><b>Р‘Р»РѕРє СЃ РѕРґРЅРёРј СЂРµР·СѓР»СЊС‚Р°С‚РѕРј РїРѕРёСЃРєР°</b><br>
    </td>
  </tr>
 
  <tr >
    <td width=35% valign=top >
-    Цвет
+    Р¦РІРµС‚
    </td>
    <td valign=top >
       <input name="color_search" type="text"  size=10 value="<? echo @$conf[12] ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[12]; ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[12]; ?> > С‚РµСЃС‚
 		</font></big></b>
    </td>
  </tr>
 
 <tr >
    <td width=35% valign=top >
-      Ширина отностительно главного блока
+      РЁРёСЂРёРЅР° РѕС‚РЅРѕСЃС‚РёС‚РµР»СЊРЅРѕ РіР»Р°РІРЅРѕРіРѕ Р±Р»РѕРєР°
    </td>
    <td valign=top >
        <input name="width_search" type="text"  size=10 value="<? echo @$conf[13] ?>">&nbsp;%
@@ -488,11 +488,11 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
  </tr>
 
  <tr>
-   <td style=" border-bottom:1px solid #d0c9ad;">Цвет, ширина рамки в px с четырёх сторон-
-   верх-низ-право-лево, тип рамки</td>
+   <td style=" border-bottom:1px solid #d0c9ad;">Р¦РІРµС‚, С€РёСЂРёРЅР° СЂР°РјРєРё РІ px СЃ С‡РµС‚С‹СЂС‘С… СЃС‚РѕСЂРѕРЅ-
+   РІРµСЂС…-РЅРёР·-РїСЂР°РІРѕ-Р»РµРІРѕ, С‚РёРї СЂР°РјРєРё</td>
    <td style=" border-bottom:1px solid #d0c9ad;">
          <INPUT TYPE="text" NAME="border_color_search" SIZE="10"  VALUE="<? echo @$conf[14] ?>">
-         &nbsp;<font color="<? echo @$conf[14]; ?>">&nbsp;&nbsp;<b>тест</b></font><br><br>
+         &nbsp;<font color="<? echo @$conf[14]; ?>">&nbsp;&nbsp;<b>С‚РµСЃС‚</b></font><br><br>
 
 	         <select  name="border_size_top_search">
            <option value="0" <? echo @$sel_border_size_top_search[0] ?> >0</option>
@@ -533,28 +533,28 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
            <option value="5" <? echo @$sel_border_size_left_search[5] ?> >5</option>
         </select>&nbsp;&nbsp;
 
-        Тип рамки&nbsp;
+        РўРёРї СЂР°РјРєРё&nbsp;
         <SELECT NAME="border_type_search">
-<OPTION value="none" <?  echo @$sel_border_type_search[0]; ?>>Нет</option>
-<OPTION value="dotted" <?  echo @$sel_border_type_search[1]; ?>>Точки</option>
-<OPTION value="dashed" <? echo @$sel_border_type_search[2]; ?>>Пунктир</option>
-<OPTION value="solid" <? echo @$sel_border_type_search[3]; ?>>Сплошная</option>
-<OPTION value="double" <? echo @$sel_border_type_search[4]; ?>>Двойная</option>
+<OPTION value="none" <?  echo @$sel_border_type_search[0]; ?>>РќРµС‚</option>
+<OPTION value="dotted" <?  echo @$sel_border_type_search[1]; ?>>РўРѕС‡РєРё</option>
+<OPTION value="dashed" <? echo @$sel_border_type_search[2]; ?>>РџСѓРЅРєС‚РёСЂ</option>
+<OPTION value="solid" <? echo @$sel_border_type_search[3]; ?>>РЎРїР»РѕС€РЅР°СЏ</option>
+<OPTION value="double" <? echo @$sel_border_type_search[4]; ?>>Р”РІРѕР№РЅР°СЏ</option>
 </SELECT>
         </td>
 </tr>
 
 <tr >
-   <td colspan=2><b>Название документа (страницы)</b><br>
+   <td colspan=2><b>РќР°Р·РІР°РЅРёРµ РґРѕРєСѓРјРµРЅС‚Р° (СЃС‚СЂР°РЅРёС†С‹)</b><br>
    </td>
  </tr>
 
 <tr>
    <td  width=35% valign=top style=" border-bottom:1px solid #d0c9ad;">
-   Шрифт. Цвет, размер, начертание, жирность.</td>
+   РЁСЂРёС„С‚. Р¦РІРµС‚, СЂР°Р·РјРµСЂ, РЅР°С‡РµСЂС‚Р°РЅРёРµ, Р¶РёСЂРЅРѕСЃС‚СЊ.</td>
     <td style=" border-bottom:1px solid #d0c9ad;">
      <input name="color_font_title" type="text"  size=10 value="<? echo @$conf[20]; ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[20]; ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[20]; ?> > С‚РµСЃС‚
 		</font></big></b>&nbsp;
 		<SELECT NAME="size_font_title">
 <OPTION value="10" <?  echo @$sel_size_font_title[0]; ?>>10</option>
@@ -566,8 +566,8 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 </SELECT>&nbsp;&nbsp;pt&nbsp;
 
 <SELECT NAME="type_font_title">
-<OPTION value="normal" <?  echo @$sel_type_font_title[0]; ?> >Нормальный</option>
-<OPTION value="italic" <?  echo @$sel_type_font_title[1]; ?> >Наклонный</option>
+<OPTION value="normal" <?  echo @$sel_type_font_title[0]; ?> >РќРѕСЂРјР°Р»СЊРЅС‹Р№</option>
+<OPTION value="italic" <?  echo @$sel_type_font_title[1]; ?> >РќР°РєР»РѕРЅРЅС‹Р№</option>
 </SELECT>
 
 <SELECT NAME="width_font_title">
@@ -584,17 +584,17 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 </tr>
 
 <tr >
-   <td colspan=2><b>Предложение из документа, где может встречаться искомая строка
-    (выводится под названием документа)</b><br>
+   <td colspan=2><b>РџСЂРµРґР»РѕР¶РµРЅРёРµ РёР· РґРѕРєСѓРјРµРЅС‚Р°, РіРґРµ РјРѕР¶РµС‚ РІСЃС‚СЂРµС‡Р°С‚СЊСЃСЏ РёСЃРєРѕРјР°СЏ СЃС‚СЂРѕРєР°
+    (РІС‹РІРѕРґРёС‚СЃСЏ РїРѕРґ РЅР°Р·РІР°РЅРёРµРј РґРѕРєСѓРјРµРЅС‚Р°)</b><br>
    </td>
  </tr>
 
 <tr>
    <td  width=35% valign=top style=" border-bottom:1px solid #d0c9ad;">
-   Шрифт. Цвет, размер, начертание, жирность.</td>
+   РЁСЂРёС„С‚. Р¦РІРµС‚, СЂР°Р·РјРµСЂ, РЅР°С‡РµСЂС‚Р°РЅРёРµ, Р¶РёСЂРЅРѕСЃС‚СЊ.</td>
     <td style=" border-bottom:1px solid #d0c9ad;">
      <input name="color_font_content" type="text"  size=10 value="<? echo @$conf[24]; ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[24]; ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[24]; ?> > С‚РµСЃС‚
 		</font></big></b>&nbsp;
 		<SELECT NAME="size_font_content">
 <OPTION value="10" <?  echo @$sel_size_font_content[0]; ?>>10</option>
@@ -606,8 +606,8 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 </SELECT>&nbsp;&nbsp;pt&nbsp;
 
 <SELECT NAME="type_font_content">
-<OPTION value="normal" <?  echo @$sel_type_font_content[0]; ?> >Нормальный</option>
-<OPTION value="italic" <?  echo @$sel_type_font_content[1]; ?> >Наклонный</option>
+<OPTION value="normal" <?  echo @$sel_type_font_content[0]; ?> >РќРѕСЂРјР°Р»СЊРЅС‹Р№</option>
+<OPTION value="italic" <?  echo @$sel_type_font_content[1]; ?> >РќР°РєР»РѕРЅРЅС‹Р№</option>
 </SELECT>
 
 <SELECT NAME="width_font_content">
@@ -624,16 +624,16 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 </tr>
 
 <tr >
-   <td colspan=2><b>Строка с количеством совпадений</b><br>
+   <td colspan=2><b>РЎС‚СЂРѕРєР° СЃ РєРѕР»РёС‡РµСЃС‚РІРѕРј СЃРѕРІРїР°РґРµРЅРёР№</b><br>
    </td>
  </tr>
 
 <tr>
    <td  width=35% valign=top style=" border-bottom:1px solid #d0c9ad;">
-   Шрифт. Цвет, размер, начертание, жирность.</td>
+   РЁСЂРёС„С‚. Р¦РІРµС‚, СЂР°Р·РјРµСЂ, РЅР°С‡РµСЂС‚Р°РЅРёРµ, Р¶РёСЂРЅРѕСЃС‚СЊ.</td>
     <td style=" border-bottom:1px solid #d0c9ad;">
      <input name="color_font_count" type="text"  size=10 value="<? echo @$conf[28]; ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[28]; ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[28]; ?> > С‚РµСЃС‚
 		</font></big></b>&nbsp;
 		<SELECT NAME="size_font_count">
 <OPTION value="10" <?  echo @$sel_size_font_count[0]; ?>>10</option>
@@ -645,8 +645,8 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 </SELECT>&nbsp;&nbsp;pt&nbsp;
 
 <SELECT NAME="type_font_count">
-<OPTION value="normal" <?  echo @$sel_type_font_count[0]; ?> >Нормальный</option>
-<OPTION value="italic" <?  echo @$sel_type_font_count[1]; ?> >Наклонный</option>
+<OPTION value="normal" <?  echo @$sel_type_font_count[0]; ?> >РќРѕСЂРјР°Р»СЊРЅС‹Р№</option>
+<OPTION value="italic" <?  echo @$sel_type_font_count[1]; ?> >РќР°РєР»РѕРЅРЅС‹Р№</option>
 </SELECT>
 
 <SELECT NAME="width_font_count">
@@ -663,16 +663,16 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 </tr>
 
 <tr >
-   <td colspan=2><b>Ссылка на текстовую копию</b><br>
+   <td colspan=2><b>РЎСЃС‹Р»РєР° РЅР° С‚РµРєСЃС‚РѕРІСѓСЋ РєРѕРїРёСЋ</b><br>
    </td>
  </tr>
 
 <tr>
    <td  width=35% valign=top style=" border-bottom:1px solid #d0c9ad;">
-   Шрифт. Цвет, размер, начертание, жирность.</td>
+   РЁСЂРёС„С‚. Р¦РІРµС‚, СЂР°Р·РјРµСЂ, РЅР°С‡РµСЂС‚Р°РЅРёРµ, Р¶РёСЂРЅРѕСЃС‚СЊ.</td>
     <td style=" border-bottom:1px solid #d0c9ad;">
      <input name="color_font_text_link" type="text"  size=10 value="<? echo @$conf[32]; ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[32]; ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[32]; ?> > С‚РµСЃС‚
 		</font></big></b>&nbsp;
 		<SELECT NAME="size_font_text_link">
 <OPTION value="10" <?  echo @$sel_size_font_text_link[0]; ?>>10</option>
@@ -684,8 +684,8 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 </SELECT>&nbsp;&nbsp;pt&nbsp;
 
 <SELECT NAME="type_font_text_link">
-<OPTION value="normal" <?  echo @$sel_type_font_text_link[0]; ?> >Нормальный</option>
-<OPTION value="italic" <?  echo @$sel_type_font_text_link[1]; ?> >Наклонный</option>
+<OPTION value="normal" <?  echo @$sel_type_font_text_link[0]; ?> >РќРѕСЂРјР°Р»СЊРЅС‹Р№</option>
+<OPTION value="italic" <?  echo @$sel_type_font_text_link[1]; ?> >РќР°РєР»РѕРЅРЅС‹Р№</option>
 </SELECT>
 
 <SELECT NAME="width_font_text_link">
@@ -702,7 +702,7 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 </tr>
 
 <tr >
-   <td colspan=2><input type="submit" value="Сохранить" name="go"></td>
+   <td colspan=2><input type="submit" value="РЎРѕС…СЂР°РЅРёС‚СЊ" name="go"></td>
  </tr>
  </form>
  </table>

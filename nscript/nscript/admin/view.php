@@ -1,10 +1,10 @@
 <html><body><head>
 <?php
-if (empty($_GET['obj']))exit("Ничего интересного здесь нет!!");
+if (empty($_GET['obj']))exit("РќРёС‡РµРіРѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ Р·РґРµСЃСЊ РЅРµС‚!!");
 
 $f=fopen("mes/".$_GET['obj'],"r");
 $mesdat=getdate($_GET['obj']);
-echo "<title>Отослано ".
+echo "<title>РћС‚РѕСЃР»Р°РЅРѕ ".
       $mesdat['mday']." ". $mesdat['mon']." ". $mesdat['year']." ". $mesdat['hours'].":". $mesdat['minutes']."
 
 </title></head>";
@@ -17,7 +17,7 @@ echo "<b>$arrmes[2]</b><br>";
 echo "$arrmes[3]<br><br>";
 echo "<b>$arrmes[4]</b><br>";
 echo "$arrmes[5]<br><br>";
-echo"<b>Сообщение</b><br>";
+echo"<b>РЎРѕРѕР±С‰РµРЅРёРµ</b><br>";
 echo "$arrmes[6]<br><br>";
 echo "$arrmes[7]<br>";
 fclose($f);

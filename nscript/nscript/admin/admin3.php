@@ -24,7 +24,7 @@ if(@$_POST['GO'])
     foreach($adr1 as $line)
      {
 
-        //Если удаление
+        //Р•СЃР»Рё СѓРґР°Р»РµРЅРёРµ
         if(@$_POST['del'][$i])
           {           $i++;
            continue;
@@ -70,7 +70,7 @@ if(@$_POST['search'])
 
          if(!$searchY)
           {
-         	fwrite($f,"Адрес не найден!");
+         	fwrite($f,"РђРґСЂРµСЃ РЅРµ РЅР°Р№РґРµРЅ!");
 
           }
 
@@ -79,7 +79,7 @@ if(@$_POST['search'])
 
   }
 
-//Проверка данных---------------------------------------
+//РџСЂРѕРІРµСЂРєР° РґР°РЅРЅС‹С…---------------------------------------
 
 
 //-------------------------------------------------------------
@@ -88,19 +88,19 @@ if(@$_POST['search'])
 
 <div align="center"><TABLE bgcolor=#EBEBEB width=800 CELLPADDING=7 CELLSPACING=0 border=0>
 	<TR>
-		<TD colspan=2><FONT COLOR="#408080" size=+1>Адреса</FONT></td></tr>
+		<TD colspan=2><FONT COLOR="#408080" size=+1>РђРґСЂРµСЃР°</FONT></td></tr>
 <tr>
 <td >
-Здесь можно искать и удалять адреса, менять группы для пользователей
+Р—РґРµСЃСЊ РјРѕР¶РЅРѕ РёСЃРєР°С‚СЊ Рё СѓРґР°Р»СЏС‚СЊ Р°РґСЂРµСЃР°, РјРµРЅСЏС‚СЊ РіСЂСѓРїРїС‹ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
 
  </td>
  <td  align=right >
- Сейчас в базе
+ РЎРµР№С‡Р°СЃ РІ Р±Р°Р·Рµ
  <?php
  chdir("..");
  $adr1=file("db/db.txt");
  chdir("admin");
- echo count($adr1)." адресов";
+ echo count($adr1)." Р°РґСЂРµСЃРѕРІ";
    ?>
 
  </td>
@@ -108,10 +108,10 @@ if(@$_POST['search'])
  <tr><td colspan=2>
 <FORM ACTION="admin3.php?sel4=selected&count=9&start=0" METHOD="POST"
  name='search'>
-Вы можете не вводить адрес полностью, а, например, ввести одну букву. Будут выведены все адреса на эту букву.<br><br>
-Введите адрес<br>
+Р’С‹ РјРѕР¶РµС‚Рµ РЅРµ РІРІРѕРґРёС‚СЊ Р°РґСЂРµСЃ РїРѕР»РЅРѕСЃС‚СЊСЋ, Р°, РЅР°РїСЂРёРјРµСЂ, РІРІРµСЃС‚Рё РѕРґРЅСѓ Р±СѓРєРІСѓ. Р‘СѓРґСѓС‚ РІС‹РІРµРґРµРЅС‹ РІСЃРµ Р°РґСЂРµСЃР° РЅР° СЌС‚Сѓ Р±СѓРєРІСѓ.<br><br>
+Р’РІРµРґРёС‚Рµ Р°РґСЂРµСЃ<br>
 <input name="search_adr" type="text" size=50><br>
-<input type="submit" value="Поиск" name=search>
+<input type="submit" value="РџРѕРёСЃРє" name=search>
 </form>
 </td></tr>
 <tr>
@@ -121,8 +121,8 @@ if(@$_POST['search'])
 <TABLE width=800px border=0 cellpadding=2  CELLSPACING=1>
 	<TR bgcolor=#E6E6E6>
 
- 	<td><b>Адрес</b></td> <td><b>Группа</b> </td> <td><b>Имя</b></td>
- 	<td><b>Удалить</b></td>
+ 	<td><b>РђРґСЂРµСЃ</b></td> <td><b>Р“СЂСѓРїРїР°</b> </td> <td><b>РРјСЏ</b></td>
+ 	<td><b>РЈРґР°Р»РёС‚СЊ</b></td>
 
  	</tr>
 <form name="body" action="admin3.php?sel4=selected&count=<?php echo $count ?>&start=<?php echo $start ?>" method="post">
@@ -136,12 +136,12 @@ if(file_exists("prom"))
   {  	$f=fopen("prom","r");
    	$ser=fread($f,1000);
    	fclose($f);
-   	if($ser!="Адрес не найден!")
+   	if($ser!="РђРґСЂРµСЃ РЅРµ РЅР°Р№РґРµРЅ!")
    	  {   	  	$adr=file("prom");
    	  }
    	 else
    	  {
-   	    echo "<font color=red>Адрес не найден!</font>";   	  	chdir("..");
+   	    echo "<font color=red>РђРґСЂРµСЃ РЅРµ РЅР°Р№РґРµРЅ!</font>";   	  	chdir("..");
         $adr=file("db/db.txt");
         chdir("admin");
    	  }
@@ -156,7 +156,7 @@ if(file_exists("prom"))
   }
 if(file_exists("prom"))
 {	unlink("prom");
-	if($ser!="Адрес не найден!")@$sear=true;
+	if($ser!="РђРґСЂРµСЃ РЅРµ РЅР°Р№РґРµРЅ!")@$sear=true;
 
 
 }
@@ -184,7 +184,7 @@ foreach($adr as $k=>$line)
    {
 
     $line1=trim($line1);
-    //Принадлежность к группе
+    //РџСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚СЊ Рє РіСЂСѓРїРїРµ
     if ($expl[1]==$line1)$gr='selected';
     else $gr="";
  	echo"<option value='$line1' $gr>$line1</option>";
@@ -214,7 +214,7 @@ foreach($adr as $k=>$line)
 </TD>
 	</TR>
 
-	<tr><td align=botton><INPUT TYPE="submit" VALUE="Сохранить" name="GO"></td></tr>
+	<tr><td align=botton><INPUT TYPE="submit" VALUE="РЎРѕС…СЂР°РЅРёС‚СЊ" name="GO"></td></tr>
 </FORM>
 <tr><td>
 
@@ -231,7 +231,7 @@ for($i=1;$i<100000;$i++)
 }
 ?>
 
- </td><td align=right >Вывести <a href="admin3.php?sel4=selected&count=9&start=0">10</a>&nbsp;
+ </td><td align=right >Р’С‹РІРµСЃС‚Рё <a href="admin3.php?sel4=selected&count=9&start=0">10</a>&nbsp;
 <a href="admin3.php?sel4=selected&count=24&start=0">25</a>&nbsp;
 <a href="admin3.php?sel4=selected&count=49&start=0">50</a>&nbsp;
 <a href="admin3.php?sel4=selected&count=99&start=0">100</a>&nbsp;</td></tr>

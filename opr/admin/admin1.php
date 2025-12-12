@@ -7,13 +7,13 @@
  if(isset($_POST['go']))
    {      $val=$_POST['name'];
       $col=$_POST['col'];
-      if($_POST['name']=="")$info="Введите название<br>";
+      if($_POST['name']=="")$info="Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ<br>";
       if($_POST['col']=="" || $_POST['col']==0 ||
-         $_POST['col']==1 ||!is_numeric($_POST['col']))$info.="Введите количество вопросов<br>";
+         $_POST['col']==1 ||!is_numeric($_POST['col']))$info.="Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІРѕРїСЂРѕСЃРѕРІ<br>";
 
       if($info=="")
        {
-         //Сохраняем данные
+         //РЎРѕС…СЂР°РЅСЏРµРј РґР°РЅРЅС‹Рµ
          $_POST['name']=str_replace("*","",$_POST['name']);
          $f=fopen("db/temp.txt","w+");
          fwrite($f,$_POST['name']."\r\n".$_POST['col']);
@@ -51,13 +51,13 @@ if(file_exists("db/temp.txt"))
 <tr >
    <td valign=top style=" border:1px solid #d0c9ad; padding:10px;">
 
-   <FONT COLOR="#408080" size=+1>Мастер создания опроса</font><br><br>
-   Создайте опрос за два шага.<br><br>
+   <FONT COLOR="#408080" size=+1>РњР°СЃС‚РµСЂ СЃРѕР·РґР°РЅРёСЏ РѕРїСЂРѕСЃР°</font><br><br>
+   РЎРѕР·РґР°Р№С‚Рµ РѕРїСЂРѕСЃ Р·Р° РґРІР° С€Р°РіР°.<br><br>
    <?php echo "<font color=red>$info</font><br>" ?>
-   Название<br><input name="name" type="text" value="<? echo $val ?>" size=60><br><br>
-   Количество вопросов<br><input name="col" type="text" value="<? echo $col ?>" size=5><br><br>
+   РќР°Р·РІР°РЅРёРµ<br><input name="name" type="text" value="<? echo $val ?>" size=60><br><br>
+   РљРѕР»РёС‡РµСЃС‚РІРѕ РІРѕРїСЂРѕСЃРѕРІ<br><input name="col" type="text" value="<? echo $col ?>" size=5><br><br>
 
-   <input type="submit" value="Далее >>" name=go id=button>
+   <input type="submit" value="Р”Р°Р»РµРµ >>" name=go id=button>
 
 
 

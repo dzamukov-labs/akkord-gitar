@@ -1,12 +1,12 @@
 <?php
 session_start();
-//Ïîëó÷àåì ñåññèþ
+//ÐŸÐ¾Ð»ÑƒÑ‡Ð°ÐµÐ¼ ÑÐµÑÑÐ¸ÑŽ
 $strpath="conf/conf.txt";
 @$f=fopen($strpath, "r");
 @$content=file($strpath);
 fclose($f);
 $n=0;
-//Îáðàáîòêà
+//ÐžÐ±Ñ€Ð°Ð±Ð¾Ñ‚ÐºÐ°
 foreach($content as $line):
   if ($n==2) $sess=$line;
   $n++;
@@ -15,7 +15,7 @@ endforeach;
 
 if (session_id()!=$sess)
  {
-  $url=urlencode("Ïðîéäèòå àâòîðèçàöèþ!");
+  $url=urlencode("ÐŸÑ€Ð¾Ð¹Ð´Ð¸Ñ‚Ðµ Ð°Ð²Ñ‚Ð¾Ñ€Ð¸Ð·Ð°Ñ†Ð¸ÑŽ!");
   echo "<meta http-equiv=refresh content='0; url=index.php?acc=$url'>";
   exit();
  }

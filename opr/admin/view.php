@@ -8,7 +8,7 @@
 
   $config=file("conf/sett_view.txt");
 
-   //Активные опросы
+   //РђРєС‚РёРІРЅС‹Рµ РѕРїСЂРѕСЃС‹
       $c=0;
    	   foreach($file as $line)
       {
@@ -25,7 +25,7 @@
       }
 
  $n=0;
- //Очищаем
+ //РћС‡РёС‰Р°РµРј
  foreach($config as $line)
   {
  	$expl=explode("*", $line);
@@ -35,7 +35,7 @@
 
  $config=file("conf/res_view.txt");
  $n=0;
- //Очищаем
+ //РћС‡РёС‰Р°РµРј
  foreach($config as $line)
   {
  	$expl=explode("*", $line);
@@ -89,7 +89,7 @@ if ($conf[42]==1) $css_but="";
              $res_index=file("db/$index.txt");
              $res_oll=$res_index[count($res_index)-1];
              echo"<table id=res_opr CELLPADDING=5 CELLSPACING=0 border=0>";
-             //Если текстовый
+             //Р•СЃР»Рё С‚РµРєСЃС‚РѕРІС‹Р№
              if($conf1[12]==2)
                 {
                   for($i=0; $i< count($res_index)-1; $i++)
@@ -114,7 +114,7 @@ if ($conf[42]==1) $css_but="";
                 }
               else
                 {
-                  //Набираем цвета
+                  //РќР°Р±РёСЂР°РµРј С†РІРµС‚Р°
                   $color_oll=file("conf/color.txt");
                   $color=array();
                   foreach($color_oll as $line_color)
@@ -147,7 +147,7 @@ if ($conf[42]==1) $css_but="";
                         echo "<td>($proc&nbsp;%)</td></tr>";
                         if($col==count($color)-1)$col=-1;
                      }
-                  echo"<tr><td colspace=3>Всего&nbsp;$res_oll</td></tr></table>";
+                  echo"<tr><td colspace=3>Р’СЃРµРіРѕ&nbsp;$res_oll</td></tr></table>";
 
                    for($i=0,$col=0; $i< count($res_index)-1; $i++,$col++)
                       {
@@ -167,5 +167,5 @@ if ($conf[42]==1) $css_but="";
 
 ?>
 <table><tr><td><form name="" action="" method="post">
-    <input type="button" value="Закрыть" onclick="window.close()" <? echo $css_but ?>>
+    <input type="button" value="Р—Р°РєСЂС‹С‚СЊ" onclick="window.close()" <? echo $css_but ?>>
 </form></td></tr></table>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-<title>Редактирование темы</title>
+<title>Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ С‚РµРјС‹</title>
 <style>
    #blank {
        border-style:solid;
@@ -31,26 +31,26 @@ session_start();
 </style>
 <?
 $info="";
-//Получаем сессию
+//РџРѕР»СѓС‡Р°РµРј СЃРµСЃСЃРёСЋ
 $strpath="conf/conf.txt";
 $content=file($strpath);
 
 
 if (session_id()!=$content[2])
  {
-  $url=urlencode("Пройдите авторизацию!");
+  $url=urlencode("РџСЂРѕР№РґРёС‚Рµ Р°РІС‚РѕСЂРёР·Р°С†РёСЋ!");
   echo "<meta http-equiv=refresh content='0; url=index.php?acc=$url'>";
   exit();
  }
 
- //Переменные
+ //РџРµСЂРµРјРµРЅРЅС‹Рµ
  if(!isset($_GET['id']))
     {
       echo "<meta http-equiv='refresh' content='0; url=admin3.php?sel3=selected'>";
       exit();
     }
 
- //Есть ли такой опрос
+ //Р•СЃС‚СЊ Р»Рё С‚Р°РєРѕР№ РѕРїСЂРѕСЃ
 
  if(!file_exists("db/$_GET[id].txt"))
    {
@@ -59,8 +59,8 @@ if (session_id()!=$content[2])
    }
 
 $info="";
-//Обработка кнопок---------------------------------
-//Если выход
+//РћР±СЂР°Р±РѕС‚РєР° РєРЅРѕРїРѕРє---------------------------------
+//Р•СЃР»Рё РІС‹С…РѕРґ
 if(isset($_POST['exit']))
   {  	  echo "<meta http-equiv='refresh' content='0; url=admin3.php?sel3=selected'>";
       exit();
@@ -68,20 +68,20 @@ if(isset($_POST['exit']))
 
 if(isset($_POST['save']))
   {
-      //Проверка
-      if($_POST['name']=="")$info="Введите данные!";
+      //РџСЂРѕРІРµСЂРєР°
+      if($_POST['name']=="")$info="Р’РІРµРґРёС‚Рµ РґР°РЅРЅС‹Рµ!";
 
       for($i=0; $i < count($_POST['ask']); $i++)
         {
         	if ($_POST['ask'][$i]=="")
         	   {
-        	   	  $info="Введите данные!";
+        	   	  $info="Р’РІРµРґРёС‚Рµ РґР°РЅРЅС‹Рµ!";
         	   	  break;
         	   }
         }
     if($info=="")
       {
-        //В общем файле
+        //Р’ РѕР±С‰РµРј С„Р°Р№Р»Рµ
         $list=file("db/sett.txt");
         $f=fopen("db/sett.txt","w+");
         $act=0;
@@ -97,7 +97,7 @@ if(isset($_POST['save']))
           }
 
          fclose($f);
-        //В файле опроса
+        //Р’ С„Р°Р№Р»Рµ РѕРїСЂРѕСЃР°
         $list=file("db/$_GET[id].txt");
         $f=fopen("db/$_GET[id].txt","w+");
 
@@ -117,7 +117,7 @@ if(isset($_POST['save']))
   }
 
 if(isset($_POST['del']))
-  {      //В общем файле
+  {      //Р’ РѕР±С‰РµРј С„Р°Р№Р»Рµ
         $list=file("db/sett.txt");
         $f=fopen("db/sett.txt","w+");
 
@@ -145,8 +145,8 @@ if(isset($_POST['del']))
 
     echo "<table align=center><tr><td id=blank valign=top>
 
-     <font size=5>Редактировать опрос</font> <br><br>
-     Если вы хотите отображать этот опрос, поставьте галочку <b>Активировать</b>
+     <font size=5>Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ РѕРїСЂРѕСЃ</font> <br><br>
+     Р•СЃР»Рё РІС‹ С…РѕС‚РёС‚Рµ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊ СЌС‚РѕС‚ РѕРїСЂРѕСЃ, РїРѕСЃС‚Р°РІСЊС‚Рµ РіР°Р»РѕС‡РєСѓ <b>РђРєС‚РёРІРёСЂРѕРІР°С‚СЊ</b>
      <form method=post action=red.php?id=$_GET[id]>
      <font color=red>$info</font><br>
      <form action=ped.php?id=$_GET[id] method=post>
@@ -161,10 +161,10 @@ if(isset($_POST['del']))
      $check="";
      if($list_opr[3]==1)$check="checked";
      echo"<br><br>
-     <input name=activ type=checkbox value=ON $check>&nbsp; Активировать<br><br>
-     <input type=submit value=Сохранить id=button name=save>&nbsp;
-     <input type=submit value=Удалить id=button name=del>&nbsp;
-     <input type=submit value=Выход id=button name=exit>";
+     <input name=activ type=checkbox value=ON $check>&nbsp; РђРєС‚РёРІРёСЂРѕРІР°С‚СЊ<br><br>
+     <input type=submit value=РЎРѕС…СЂР°РЅРёС‚СЊ id=button name=save>&nbsp;
+     <input type=submit value=РЈРґР°Р»РёС‚СЊ id=button name=del>&nbsp;
+     <input type=submit value=Р’С‹С…РѕРґ id=button name=exit>";
 
      echo"</table></form>";
 

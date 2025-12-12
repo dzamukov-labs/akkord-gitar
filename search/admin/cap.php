@@ -1,12 +1,12 @@
 <?PHP
 session_start();
-//Получаем сессию
+//РџРѕР»СѓС‡Р°РµРј СЃРµСЃСЃРёСЋ
 $strpath="conf/conf.txt";
 @$f=fopen($strpath, "r");
 @$content=file($strpath);
 fclose($f);
 $n=0;
-//Обработка
+//РћР±СЂР°Р±РѕС‚РєР°
 foreach($content as $line):
   if ($n==2) $sess=$line;
   $n++;
@@ -14,7 +14,7 @@ foreach($content as $line):
 endforeach;
 
 if (session_id()!=$sess):
-  $url=urlencode("Пройдите авторизацию!");
+  $url=urlencode("РџСЂРѕР№РґРёС‚Рµ Р°РІС‚РѕСЂРёР·Р°С†РёСЋ!");
   echo "<meta http-equiv=refresh content='0; url=index.php?acc=$url'>";
   exit();
 endif;
@@ -65,33 +65,33 @@ table {
         }
 </style>
 
-<TITLE>Администрирование</TITLE>
+<TITLE>РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ</TITLE>
 </head>
 <BODY BGCOLOR='#E6E6E6'>
-<font color=#808000>Поиск по сайту 1.1</font>
+<font color=#808000>РџРѕРёСЃРє РїРѕ СЃР°Р№С‚Сѓ 1.1</font>
 <CENTER><table border=0 CELLPADDING=0 CELLSPACING=0  width=70%><tr><td >
 
 <IMG SRC='img/log.png' ALIGN='center' >&nbsp&nbsp&nbsp&nbsp
-<font size=+3 color=#408080 ><b><tt>Администрирование</tt></b></font></td>
+<font size=+3 color=#408080 ><b><tt>РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ</tt></b></font></td>
 <td align=right>
 
 <form  action='cap.php' method='post' name='cap'>
 <SELECT NAME="list" onchange="cap.submit();">
-<OPTION value="1" <? echo @$sel1; ?> >Внешний вид формы</option>
-<OPTION value="2" <? echo @$sel2; ?>   >Внешний вид результатов поиска</option>
-<OPTION value="3" <? echo @$sel3; ?>  >Оптимизация поиска</option>
-<OPTION value="4" <? echo @$sel4; ?>  >Управление кодом</option>
-<OPTION value="5" <? echo @$sel5; ?>  >Логин и пароль</option>
-<OPTION value="6" <? echo @$sel6; ?>  >Журнал запросов</option>
+<OPTION value="1" <? echo @$sel1; ?> >Р’РЅРµС€РЅРёР№ РІРёРґ С„РѕСЂРјС‹</option>
+<OPTION value="2" <? echo @$sel2; ?>   >Р’РЅРµС€РЅРёР№ РІРёРґ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РїРѕРёСЃРєР°</option>
+<OPTION value="3" <? echo @$sel3; ?>  >РћРїС‚РёРјРёР·Р°С†РёСЏ РїРѕРёСЃРєР°</option>
+<OPTION value="4" <? echo @$sel4; ?>  >РЈРїСЂР°РІР»РµРЅРёРµ РєРѕРґРѕРј</option>
+<OPTION value="5" <? echo @$sel5; ?>  >Р›РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ</option>
+<OPTION value="6" <? echo @$sel6; ?>  >Р–СѓСЂРЅР°Р» Р·Р°РїСЂРѕСЃРѕРІ</option>
 </SELECT>
 
 
 </form>
 
 <?php
-//Ссылка для возврата
+//РЎСЃС‹Р»РєР° РґР»СЏ РІРѕР·РІСЂР°С‚Р°
 
-echo "<a href=http://".$_SERVER['SERVER_NAME'].">Выход</a>";
+echo "<a href=http://".$_SERVER['SERVER_NAME'].">Р’С‹С…РѕРґ</a>";
 
 ?>
 </td></tr>

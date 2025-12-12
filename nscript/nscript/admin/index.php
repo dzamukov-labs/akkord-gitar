@@ -6,17 +6,17 @@ echo  "<html>
 
 <table CELLPADDING=10 CELLSPACING=10 width=25% align=center><tr><td >
 <font color=#C0C0C0
- size=5>Рассылка</font>
+ size=5>Р Р°СЃСЃС‹Р»РєР°</font>
 </td></tr>
 <td>&nbsp</td></tr><tr><td></td></tr>
-<tr><td bgcolor=#FFFFE8 ><h3><font color=#408080> Авторизация</font></h3>
+<tr><td bgcolor=#FFFFE8 ><h3><font color=#408080> РђРІС‚РѕСЂРёР·Р°С†РёСЏ</font></h3>
 <FORM ACTION='admin.php' METHOD='POST'>
-<tt><font color=#408080> Имя</font></tt><br>
+<tt><font color=#408080> РРјСЏ</font></tt><br>
 <INPUT TYPE='text' NAME='login' SIZE='30'  ><p>
-<tt><font color=#408080> Пароль</font></tt><br>
+<tt><font color=#408080> РџР°СЂРѕР»СЊ</font></tt><br>
 <INPUT TYPE='password' NAME='pasw' SIZE='30'  ><p>
 <INPUT TYPE='hidden' NAME='id' value=". session_id(). "   >
-<INPUT TYPE='submit' VALUE='Вход'>
+<INPUT TYPE='submit' VALUE='Р’С…РѕРґ'>
 </form><tr><td >";
 
 echo  " </td></tr>

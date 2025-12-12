@@ -50,7 +50,7 @@ if(@$_POST['GO'])
 
    $strpath="config/code/align.txt";
    @$f=fopen($strpath,w);
-   //Если PHP
+   //Р•СЃР»Рё PHP
    if (@$_POST['top_php'])fwrite($f,"1"."\r\n");
    else fwrite($f,"0"."\r\n");
 
@@ -78,7 +78,7 @@ if(@$_POST['GO'])
  }
 
 
-//Проверка данных---------------------------------------
+//РџСЂРѕРІРµСЂРєР° РґР°РЅРЅС‹С…---------------------------------------
 
 $TopCode="";
 $strpath="config/code/topcode.txt";
@@ -140,7 +140,7 @@ if($size)
      if ($content[2]==1)  $left_phpCheck='checked';
      if ($content[3]==1)  $right_phpCheck='checked';
 
- //Размер шрифта
+ //Р Р°Р·РјРµСЂ С€СЂРёС„С‚Р°
 for($i=8; $n<11; $i++, $n++)
  {
      if (@$content[5]==$i)  $chsize[$n]='selected';
@@ -152,21 +152,21 @@ for($i=8; $n<11; $i++, $n++)
 
 <CENTER><TABLE bgcolor=#EBEBEB width=80% CELLPADDING=7 CELLSPACING=0 border=0>
 	<TR>
-		<TD ><FONT COLOR="#408080" size=+1>Управление кодом</FONT></td></tr>
+		<TD ><FONT COLOR="#408080" size=+1>РЈРїСЂР°РІР»РµРЅРёРµ РєРѕРґРѕРј</FONT></td></tr>
 <tr><td colspan=2 bgcolor=#F0F0F0>
-Вы можете оформить страничку, где выводятся сообщения о ходе подписки.
-Выберите размер и цвет шрифта, цвет и графический фон главной страницы, вставьте участки своего кода.
+Р’С‹ РјРѕР¶РµС‚Рµ РѕС„РѕСЂРјРёС‚СЊ СЃС‚СЂР°РЅРёС‡РєСѓ, РіРґРµ РІС‹РІРѕРґСЏС‚СЃСЏ СЃРѕРѕР±С‰РµРЅРёСЏ Рѕ С…РѕРґРµ РїРѕРґРїРёСЃРєРё.
+Р’С‹Р±РµСЂРёС‚Рµ СЂР°Р·РјРµСЂ Рё С†РІРµС‚ С€СЂРёС„С‚Р°, С†РІРµС‚ Рё РіСЂР°С„РёС‡РµСЃРєРёР№ С„РѕРЅ РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†С‹, РІСЃС‚Р°РІСЊС‚Рµ СѓС‡Р°СЃС‚РєРё СЃРІРѕРµРіРѕ РєРѕРґР°.
 <br>
-Вставляйте без тегов <font color=green>&lt;html&gt;&lt;body&gt;</font>.
-<br>Если вы внедряете код php, поставьте галочку и не вписывайте скобок <font color=#0080FF>&lt;?php &nbsp;&nbsp; ?&gt; </font>
+Р’СЃС‚Р°РІР»СЏР№С‚Рµ Р±РµР· С‚РµРіРѕРІ <font color=green>&lt;html&gt;&lt;body&gt;</font>.
+<br>Р•СЃР»Рё РІС‹ РІРЅРµРґСЂСЏРµС‚Рµ РєРѕРґ php, РїРѕСЃС‚Р°РІСЊС‚Рµ РіР°Р»РѕС‡РєСѓ Рё РЅРµ РІРїРёСЃС‹РІР°Р№С‚Рµ СЃРєРѕР±РѕРє <font color=#0080FF>&lt;?php &nbsp;&nbsp; ?&gt; </font>
 
  </td></tr>
 <FORM ACTION="admin1.php?sel2=selected" METHOD="POST">
 
-<tr bgcolor=#F0F0F0><td><b>Шрифт, которым выводятся сообщения о ходе подписки</b><br><br>
-Цвет&nbsp;<INPUT TYPE="text" NAME="color" SIZE="10"
-  VALUE="<? echo @$content[4]; ?>" > <font color=<? echo @$content[4]; ?>>&nbsp;<b>тест</b></font>&nbsp;&nbsp;
- Размер&nbsp; <SELECT NAME="size">
+<tr bgcolor=#F0F0F0><td><b>РЁСЂРёС„С‚, РєРѕС‚РѕСЂС‹Рј РІС‹РІРѕРґСЏС‚СЃСЏ СЃРѕРѕР±С‰РµРЅРёСЏ Рѕ С…РѕРґРµ РїРѕРґРїРёСЃРєРё</b><br><br>
+Р¦РІРµС‚&nbsp;<INPUT TYPE="text" NAME="color" SIZE="10"
+  VALUE="<? echo @$content[4]; ?>" > <font color=<? echo @$content[4]; ?>>&nbsp;<b>С‚РµСЃС‚</b></font>&nbsp;&nbsp;
+ Р Р°Р·РјРµСЂ&nbsp; <SELECT NAME="size">
 <OPTION value="8" <?  echo @$chsize[0]; ?>>8</option>
 <OPTION value="9" <? echo @$chsize[1]; ?>>9</option>
 <OPTION value="10" <? echo @$chsize[2]; ?>>10</option>
@@ -183,42 +183,42 @@ for($i=8; $n<11; $i++, $n++)
 </SELECT>
 </td></tr>
 
-<tr bgcolor=#F0F0F0><td><b>Вид странички</b><br><br>
-Цвет&nbsp;<INPUT TYPE="text" NAME="colorpage" SIZE="10"
-  VALUE="<? echo @$content[6]; ?>" > <font color=<? echo @$content[6]; ?>>&nbsp;<b>тест</b></font>
+<tr bgcolor=#F0F0F0><td><b>Р’РёРґ СЃС‚СЂР°РЅРёС‡РєРё</b><br><br>
+Р¦РІРµС‚&nbsp;<INPUT TYPE="text" NAME="colorpage" SIZE="10"
+  VALUE="<? echo @$content[6]; ?>" > <font color=<? echo @$content[6]; ?>>&nbsp;<b>С‚РµСЃС‚</b></font>
 </td></tr>
 
-<tr bgcolor=#F0F0F0><td>Графический фон&nbsp; (ссылка на картинку)<br>
+<tr bgcolor=#F0F0F0><td>Р“СЂР°С„РёС‡РµСЃРєРёР№ С„РѕРЅ&nbsp; (СЃСЃС‹Р»РєР° РЅР° РєР°СЂС‚РёРЅРєСѓ)<br>
 <input name="fon" type="text" size=50 value="<? echo @$content[7]; ?>">
 </td></tr>
 
 
 
 
-<tr bgcolor=#F0F0F0><td><b>Верх страницы</b>&nbsp;&nbsp;
-Код PHP &nbsp;<input name="top_php" type="checkbox" value="ON" <? echo @$top_phpCheck ?>> <p></p>
+<tr bgcolor=#F0F0F0><td><b>Р’РµСЂС… СЃС‚СЂР°РЅРёС†С‹</b>&nbsp;&nbsp;
+РљРѕРґ PHP &nbsp;<input name="top_php" type="checkbox" value="ON" <? echo @$top_phpCheck ?>> <p></p>
  <TEXTAREA NAME="top" ROWS="15" COLS="85"><? echo trim(@$TopCode); ?>
 </TEXTAREA></td></tr>
 
-<tr bgcolor=#F0F0F0><td><b>Низ страницы</b>&nbsp;&nbsp;
-Код PHP &nbsp;<input name="bot_php" type="checkbox" value="ON" <? echo @$bot_phpCheck ?>>
+<tr bgcolor=#F0F0F0><td><b>РќРёР· СЃС‚СЂР°РЅРёС†С‹</b>&nbsp;&nbsp;
+РљРѕРґ PHP &nbsp;<input name="bot_php" type="checkbox" value="ON" <? echo @$bot_phpCheck ?>>
 <p></p>
  <TEXTAREA NAME="bot" ROWS="15" COLS="85"><? echo trim(@$BotCode); ?>
 </TEXTAREA></td></tr>
 
-<tr bgcolor=#F0F0F0><td><b>Левый край</b>. &nbsp;&nbsp;
-Код PHP &nbsp;<input name="left_php" type="checkbox" value="ON" <? echo @$left_phpCheck ?>>
+<tr bgcolor=#F0F0F0><td><b>Р›РµРІС‹Р№ РєСЂР°Р№</b>. &nbsp;&nbsp;
+РљРѕРґ PHP &nbsp;<input name="left_php" type="checkbox" value="ON" <? echo @$left_phpCheck ?>>
 <p></p>
  <TEXTAREA NAME="left" ROWS="15" COLS="85"><? echo trim(@$LeftCode); ?>
 </TEXTAREA></td></tr>
 
-<tr bgcolor=#F0F0F0><td><b>Правый край</b>.&nbsp;&nbsp;
-Код PHP &nbsp;<input name="right_php" type="checkbox" value="ON" <? echo @$right_phpCheck ?>>
+<tr bgcolor=#F0F0F0><td><b>РџСЂР°РІС‹Р№ РєСЂР°Р№</b>.&nbsp;&nbsp;
+РљРѕРґ PHP &nbsp;<input name="right_php" type="checkbox" value="ON" <? echo @$right_phpCheck ?>>
 <p></p>
  <TEXTAREA NAME="rig" ROWS="15" COLS="85"><? echo trim(@$RigCode); ?>
 </TEXTAREA></td></tr>
 
-<tr><td align=botton><INPUT TYPE="submit" VALUE="Сохранить" name="GO">
+<tr><td align=botton><INPUT TYPE="submit" VALUE="РЎРѕС…СЂР°РЅРёС‚СЊ" name="GO">
 </FORM>
 
 

@@ -10,7 +10,7 @@ if(isset($_POST['go']))
 
 $file=file("conf/jurnal.txt");
 $file=array_reverse($file);
-//Постраничная навигация
+//РџРѕСЃС‚СЂР°РЅРёС‡РЅР°СЏ РЅР°РІРёРіР°С†РёСЏ
       $count_dir_mes=count($file);
       $mes_count_page=30;
       if(empty($_GET['page']) || !is_numeric($_GET['page']) || $_GET['page']<1)$page=1;
@@ -37,9 +37,9 @@ $file=array_reverse($file);
 <TABLE  width=80% CELLPADDING=10 CELLSPACING=0 border=0 align=center>
 
 <tr >
-   <td><FONT COLOR="#408080" size=+1  >Журнал запросов</FONT><br><br>
+   <td><FONT COLOR="#408080" size=+1  >Р–СѓСЂРЅР°Р» Р·Р°РїСЂРѕСЃРѕРІ</FONT><br><br>
     <form action="admin6.php?sel6=selected" method="post">
-    <input type="submit" value="Очистить журнал" name=go>
+    <input type="submit" value="РћС‡РёСЃС‚РёС‚СЊ Р¶СѓСЂРЅР°Р»" name=go>
 </form>
     </td>
 </tr>
@@ -48,8 +48,8 @@ $file=array_reverse($file);
 
 
         <TABLE width=80% align=center border=0 cellpadding=2  CELLSPACING=1>
-         <tr id=cap><td >Дата</td> <td >Запрос</td> <td >Совпадение</td> <td>Регистр</td>
-          <td >Фраза</td> <td>Количество документов</td></tr>
+         <tr id=cap><td >Р”Р°С‚Р°</td> <td >Р—Р°РїСЂРѕСЃ</td> <td >РЎРѕРІРїР°РґРµРЅРёРµ</td> <td>Р РµРіРёСЃС‚СЂ</td>
+          <td >Р¤СЂР°Р·Р°</td> <td>РљРѕР»РёС‡РµСЃС‚РІРѕ РґРѕРєСѓРјРµРЅС‚РѕРІ</td></tr>
         <?php
            for($x=$start,$y=0; $x<$count_dir_mes; $x++,$y++)
            {

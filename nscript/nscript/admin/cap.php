@@ -39,9 +39,9 @@ if (session_id()!=@$_POST['id'])
   exit();
  }
 
-//Сохраняем сессию в настройках
+//РЎРѕС…СЂР°РЅСЏРµРј СЃРµСЃСЃРёСЋ РІ РЅР°СЃС‚СЂРѕР№РєР°С…
 
-//Запись
+//Р—Р°РїРёСЃСЊ
 @$f=fopen($strpath, "w");
 
 fwrite($f,$content[0]."\r\n");
@@ -75,33 +75,33 @@ table {
       }
 </style>
 
-<TITLE>Администрирование</TITLE>
+<TITLE>РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ</TITLE>
 </head>
 <BODY BGCOLOR='#E6E6E6'>
 <CENTER><table border=0 CELLPADDING=0 CELLSPACING=0  width=70%><tr><td >
 
 <IMG SRC='img/log.png' ALIGN='center' >&nbsp&nbsp&nbsp&nbsp
-<font size=+3 color=#408080 ><b><tt>Администрирование</tt></b></font></td>
+<font size=+3 color=#408080 ><b><tt>РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ</tt></b></font></td>
 <td align=right><form  action='cap.php' method=post>
 <SELECT NAME="list" >
-<OPTION value="1" <? echo @$_GET['sel1']; ?> >Форма- внешний вид </option>
-<OPTION value="2" <? echo @$_GET['sel2']; ?>   >Страница- внешний вид</option>
-<OPTION value="3" <? echo @$_GET['sel3']; ?>  >Добавить группу и адрес</option>
-<OPTION value="4" <? echo @$_GET['sel4']; ?> >Список адресов</option>
-<OPTION value="5" <? echo @$_GET['sel5']; ?> >Рассылка</option>
-<OPTION value="6" <? echo @$_GET['sel6']; ?> >Отправленные письма</option>
+<OPTION value="1" <? echo @$_GET['sel1']; ?> >Р¤РѕСЂРјР°- РІРЅРµС€РЅРёР№ РІРёРґ </option>
+<OPTION value="2" <? echo @$_GET['sel2']; ?>   >РЎС‚СЂР°РЅРёС†Р°- РІРЅРµС€РЅРёР№ РІРёРґ</option>
+<OPTION value="3" <? echo @$_GET['sel3']; ?>  >Р”РѕР±Р°РІРёС‚СЊ РіСЂСѓРїРїСѓ Рё Р°РґСЂРµСЃ</option>
+<OPTION value="4" <? echo @$_GET['sel4']; ?> >РЎРїРёСЃРѕРє Р°РґСЂРµСЃРѕРІ</option>
+<OPTION value="5" <? echo @$_GET['sel5']; ?> >Р Р°СЃСЃС‹Р»РєР°</option>
+<OPTION value="6" <? echo @$_GET['sel6']; ?> >РћС‚РїСЂР°РІР»РµРЅРЅС‹Рµ РїРёСЃСЊРјР°</option>
 
 </SELECT>&nbsp;&nbsp;
 
-<INPUT TYPE='submit' NAME='send' VALUE='Перейти' >
+<INPUT TYPE='submit' NAME='send' VALUE='РџРµСЂРµР№С‚Рё' >
 </form>
 
 <?php
-//Ссылка для возврата
+//РЎСЃС‹Р»РєР° РґР»СЏ РІРѕР·РІСЂР°С‚Р°
 $link="http://".$_SERVER['SERVER_NAME'];
 
-echo "<a href=$link>Выход</a>";
-//Дежурная очистка идентификаторов на подписку
+echo "<a href=$link>Р’С‹С…РѕРґ</a>";
+//Р”РµР¶СѓСЂРЅР°СЏ РѕС‡РёСЃС‚РєР° РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ РЅР° РїРѕРґРїРёСЃРєСѓ
 
 $strpath="db/email.txt";
 chdir("..");
@@ -111,8 +111,8 @@ chdir("..");
     	foreach($arr as $line)
     	 {
     	 	$expl=explode("*",$line);
-    	 	//Проверяем, не более ли суток записи
-    	 	//Если меньше, переписываем в другой массив
+    	 	//РџСЂРѕРІРµСЂСЏРµРј, РЅРµ Р±РѕР»РµРµ Р»Рё СЃСѓС‚РѕРє Р·Р°РїРёСЃРё
+    	 	//Р•СЃР»Рё РјРµРЅСЊС€Рµ, РїРµСЂРµРїРёСЃС‹РІР°РµРј РІ РґСЂСѓРіРѕР№ РјР°СЃСЃРёРІ
     	 	  if((time()-$expl[0])< (3600 * 24)) $arr2[]=$line;
     	 }
         if(count($arr2))
@@ -132,7 +132,7 @@ chdir("admin");
 
 if(!file_exists("config/group.txt"))
   {  	$f=fopen("config/group.txt","w+");
-  	fwrite($f,"Подписчик\r\n");
+  	fwrite($f,"РџРѕРґРїРёСЃС‡РёРє\r\n");
   	fclose($f);
 
   }

@@ -1,16 +1,16 @@
 <?php
 
-//Настройки
+//РќР°СЃС‚СЂРѕР№РєРё
  $config=file("admin/conf/mes1.txt");
  $n=0;
- //Очищаем
+ //РћС‡РёС‰Р°РµРј
  foreach($config as $line)
   {
  	$expl=explode("*", $line);
  	$conf[$n]=trim($expl[1]);
  	$n++;
   }
- //Данные встроенного кода
+ //Р”Р°РЅРЅС‹Рµ РІСЃС‚СЂРѕРµРЅРЅРѕРіРѕ РєРѕРґР°
 $conf1=file("admin/conf/code/align.txt");
 foreach($conf1 as $line) $conf2[]=rtrim($line);
 
@@ -52,7 +52,7 @@ if($size)
  }
 else $conf2[5]=0;
 
-//Расчёт для центра
+//Р Р°СЃС‡С‘С‚ РґР»СЏ С†РµРЅС‚СЂР°
 $size_center=100-($conf2[4]+$conf2[5]);
 
 ?>
@@ -190,7 +190,7 @@ if(file_exists("quit"))
   	$quit=$quit_expl[0];
   }
 
-echo "<title>Поиск по запросу :: $quit</title>
+echo "<title>РџРѕРёСЃРє РїРѕ Р·Р°РїСЂРѕСЃСѓ :: $quit</title>
 </head>
 <body bgcolor= $conf[0] background=$conf[1]>
 
@@ -244,19 +244,19 @@ if(file_exists("res.txt") && ($_SERVER['REMOTE_ADDR']==$quit_expl[1]))
 {
  $titl=file("res.txt");
  echo "<div id=search_content>";
- //Выводим результат
+ //Р’С‹РІРѕРґРёРј СЂРµР·СѓР»СЊС‚Р°С‚
   if (!count($titl))echo "<div id=search_info>
-  По вашему запросу <b>$quit</b> ничего не найдено. Попробуйте подробный поиск.<br><br>
+  РџРѕ РІР°С€РµРјСѓ Р·Р°РїСЂРѕСЃСѓ <b>$quit</b> РЅРёС‡РµРіРѕ РЅРµ РЅР°Р№РґРµРЅРѕ. РџРѕРїСЂРѕР±СѓР№С‚Рµ РїРѕРґСЂРѕР±РЅС‹Р№ РїРѕРёСЃРє.<br><br>
   <form action='search.php' method=post>
   <input name='quit' type='text' value='$quit'  size=40><br><br>
   <input name='toch' type='checkbox' value='ON'>
-  точное совпадение&nbsp;&nbsp;
+  С‚РѕС‡РЅРѕРµ СЃРѕРІРїР°РґРµРЅРёРµ&nbsp;&nbsp;
   <input name='registr' type='checkbox' value='ON'>&nbsp;
-  учитывать регистр<br>
+  СѓС‡РёС‚С‹РІР°С‚СЊ СЂРµРіРёСЃС‚СЂ<br>
   <input name=log type=radio value='1' >&nbsp;
-  любое слово<br>
-  <input name=log type=radio value='2' checked>&nbsp фраза целиком<br><br>
-  <input type='submit' value=Поиск id=search_button >
+  Р»СЋР±РѕРµ СЃР»РѕРІРѕ<br>
+  <input name=log type=radio value='2' checked>&nbsp С„СЂР°Р·Р° С†РµР»РёРєРѕРј<br><br>
+  <input type='submit' value=РџРѕРёСЃРє id=search_button >
   </form>
 
 
@@ -264,13 +264,13 @@ if(file_exists("res.txt") && ($_SERVER['REMOTE_ADDR']==$quit_expl[1]))
   else
      {
          $res=count($titl);
-     	 echo "<div id=search_info>По вашему запросу <b>$quit</b> найдено $res документов.</div><br>";
+     	 echo "<div id=search_info>РџРѕ РІР°С€РµРјСѓ Р·Р°РїСЂРѕСЃСѓ <b>$quit</b> РЅР°Р№РґРµРЅРѕ $res РґРѕРєСѓРјРµРЅС‚РѕРІ.</div><br>";
 
      }
 
  if(count($titl))
  {
-     //Постраничная навигация
+     //РџРѕСЃС‚СЂР°РЅРёС‡РЅР°СЏ РЅР°РІРёРіР°С†РёСЏ
       $count_dir_mes=count($titl);
       $mes_count_page=$conf[2];
       if(empty($_GET['page']) || !is_numeric($_GET['page'])|| $_GET['page']<1)$page=1;
@@ -313,8 +313,8 @@ if(file_exists("res.txt") && ($_SERVER['REMOTE_ADDR']==$quit_expl[1]))
     echo "<div id=search_block>";
     if($conf[36]==1)echo "<div id=search_tit>$expl[0]</div>";
     if($conf[37]==1)echo "<div id=con>$expl[1]</div>";
-    if($conf[38]==1)echo "<div id=search_count>Совпадений $expl[2]</div>";
-    if($conf[39]==1)echo "<div id=search_text_link align=right><a href=bak/".$c.".html target=_blank>текстовая копия</a></div>";
+    if($conf[38]==1)echo "<div id=search_count>РЎРѕРІРїР°РґРµРЅРёР№ $expl[2]</div>";
+    if($conf[39]==1)echo "<div id=search_text_link align=right><a href=bak/".$c.".html target=_blank>С‚РµРєСЃС‚РѕРІР°СЏ РєРѕРїРёСЏ</a></div>";
      echo "</div>";
 
    	 $c++;
@@ -346,11 +346,11 @@ if(file_exists("res.txt") && ($_SERVER['REMOTE_ADDR']==$quit_expl[1]))
 echo "</div>";
 }
 else
-{	echo"<div id=search_info>Повторите запрос</div>";
+{	echo"<div id=search_info>РџРѕРІС‚РѕСЂРёС‚Рµ Р·Р°РїСЂРѕСЃ</div>";
 }
 
 }
-else echo"<div id=search_info>Задайте поисковую строку</div>";
+else echo"<div id=search_info>Р—Р°РґР°Р№С‚Рµ РїРѕРёСЃРєРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ</div>";
 ?>
 
 </td>

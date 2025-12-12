@@ -17,12 +17,12 @@ for($i=0; $i<2; $i++)$content[$i]=trim( $content[$i]);
 
 if((@$content[0]!=md5(@$_POST['login'])) || (@$content[1]!=md5(@$_POST['pasw'])))
   {
-   $url=urlencode("Неправильный логин или пароль");
+   $url=urlencode("РќРµРїСЂР°РІРёР»СЊРЅС‹Р№ Р»РѕРіРёРЅ РёР»Рё РїР°СЂРѕР»СЊ");
     echo "<meta http-equiv=refresh content='0; url=index.php?acc= $url'>";
     exit();
   }
 
-//Сохраняем сессию в настройках
+//РЎРѕС…СЂР°РЅСЏРµРј СЃРµСЃСЃРёСЋ РІ РЅР°СЃС‚СЂРѕР№РєР°С…
   $f=fopen($strpath,"w");
   fwrite($f,$content[0]."\r\n");
   fwrite($f,$content[1]."\r\n");

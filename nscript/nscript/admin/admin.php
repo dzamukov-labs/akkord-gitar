@@ -6,7 +6,7 @@ include('cap.php');
 
 
  if(@$_POST['go'])
-   { //Тексты
+   { //РўРµРєСЃС‚С‹
    	 if(@$_POST['text_head']) $conf[0]=@$_POST['text_head'];
      else $conf[0]="";
 
@@ -17,7 +17,7 @@ include('cap.php');
    	 else $conf[2]="";
 
 
-     //Цвета надписей
+     //Р¦РІРµС‚Р° РЅР°РґРїРёСЃРµР№
      if(@$_POST['color_head'])$conf[3]=@$_POST['color_head'];
      else $conf[3]="#000000";
 
@@ -25,26 +25,26 @@ include('cap.php');
      else $conf[4]="#000000";
 
 
-     //Размер шрифтов
+     //Р Р°Р·РјРµСЂ С€СЂРёС„С‚РѕРІ
      $conf[5]= @$_POST['size_head'];
      $conf[6]=@$_POST['size_oll'];
 
-     //Начертание
+     //РќР°С‡РµСЂС‚Р°РЅРёРµ
      $conf[7]=@$_POST['font_head'];
      $conf[8]=@$_POST['font_oll'];
 
 
-      //Цвет фона
+      //Р¦РІРµС‚ С„РѕРЅР°
      if(@$_POST['color_fon'])$conf[9]= @$_POST['color_fon'];
      else @$conf[9]="#ffffff";
 
-     //Вид рамки
+     //Р’РёРґ СЂР°РјРєРё
      $conf[10]= @$_POST['border'];
 
-     //ширина рамки
+     //С€РёСЂРёРЅР° СЂР°РјРєРё
      $conf[11]= @$_POST['border_width'];
 
-     //Цвет рамки
+     //Р¦РІРµС‚ СЂР°РјРєРё
      if (@$_POST['border_left_color'])@$conf[12]= @$_POST['border_left_color'];
      else @$conf[12]="#000000";
 
@@ -57,19 +57,19 @@ include('cap.php');
      if(@$_POST['border_bottom_color'])@$conf[15]= @$_POST['border_bottom_color'];
      else @$conf[15]="#000000";
 
-     //Картинки
+     //РљР°СЂС‚РёРЅРєРё
 
-     //Для заголовка
+     //Р”Р»СЏ Р·Р°РіРѕР»РѕРІРєР°
      if( @$_POST['img_head_on']) @$conf[16]=1;
      else @$conf[16]=0;
      @$conf[17]=@$_POST['usH'];
 
 
-     //Положение картинок
+     //РџРѕР»РѕР¶РµРЅРёРµ РєР°СЂС‚РёРЅРѕРє
 
      $conf[18]=@$_POST['img_align_head'] ;
 
-      //Ширина и высота области формы
+      //РЁРёСЂРёРЅР° Рё РІС‹СЃРѕС‚Р° РѕР±Р»Р°СЃС‚Рё С„РѕСЂРјС‹
 
        if( @$_POST['width']<=400) @$conf[19]=@$_POST['width'];
       else @$conf[19]=100;
@@ -87,7 +87,7 @@ include('cap.php');
         fclose($f);
 
 
-        //Меняем пароль и логин----------------------------------
+        //РњРµРЅСЏРµРј РїР°СЂРѕР»СЊ Рё Р»РѕРіРёРЅ----------------------------------
        if(@$_POST['login']!="" &&  @$_POST['pasw']!="")
         {
           @$_POST['login']=trim(@$_POST['login']);
@@ -106,7 +106,7 @@ include('cap.php');
 
 
 
-   //Проверка данных---------------------------------------
+   //РџСЂРѕРІРµСЂРєР° РґР°РЅРЅС‹С…---------------------------------------
 
 
 $strpath="config/conf.txt";
@@ -138,7 +138,7 @@ for($i=8,$n=0; $n<5; $i++, $n++)
 
 
 
- //Начертание заголовка
+ //РќР°С‡РµСЂС‚Р°РЅРёРµ Р·Р°РіРѕР»РѕРІРєР°
  if (@$conf[17]=="normal") @$check_font_head[0]="selected";
 
  if (@$conf[7]=="italic") @$check_font_head[1]="selected";
@@ -146,7 +146,7 @@ for($i=8,$n=0; $n<5; $i++, $n++)
  if (@$conf[7]=="bold") @$check_font_head[2]="selected";
 
 
- //Начертание подзаголовка
+ //РќР°С‡РµСЂС‚Р°РЅРёРµ РїРѕРґР·Р°РіРѕР»РѕРІРєР°
  if (@$conf[8]=="normal") @$check_font_oll[0]="selected";
  else @$check_font_oll[0]="";
 
@@ -158,7 +158,7 @@ for($i=8,$n=0; $n<5; $i++, $n++)
 
 
 
- //Рамка
+ //Р Р°РјРєР°
 
  if(@$conf[10]=="none") @$check_border[0]="selected";
  if(@$conf[10]=="dotted") @$check_border[1]="selected";
@@ -180,7 +180,7 @@ for($i=1; $i<13; $i++)
     else  @$check_usH[$i]="";
  }
 
-//Положение картинки
+//РџРѕР»РѕР¶РµРЅРёРµ РєР°СЂС‚РёРЅРєРё
 
 if (@$conf[18]=="right")@$check_img_align_head_right='checked';
 if (@$conf[18]=="left")@$check_img_align_head_left='checked';
@@ -243,23 +243,23 @@ h3   {
 
 </style>
 
- <TITLE>Администрирование</TITLE>
+ <TITLE>РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ</TITLE>
 </head>
 <BODY BGCOLOR='#E6E6E6'>
 
 <TABLE width=80% CELLPADDING=7 CELLSPACING=0 border=0 align=center>
 
-	<TR><td colspan=2 ><h2>Внешний вид</h2></td></tr>
+	<TR><td colspan=2 ><h2>Р’РЅРµС€РЅРёР№ РІРёРґ</h2></td></tr>
     <tr><td  colspan=2 valign=top>
 
     <?
-     //Картинка
+     //РљР°СЂС‚РёРЅРєР°
      if($conf[16]==1)
        {
         if($conf[18]=='left') @$imgpos='left';
         if($conf[18]=='right') @$imgpos='right';
        }
-    //Если заголовок над формой
+    //Р•СЃР»Рё Р·Р°РіРѕР»РѕРІРѕРє РЅР°Рґ С„РѕСЂРјРѕР№
      if($conf[1]==0)
       {
 
@@ -271,7 +271,7 @@ h3   {
 
       }
      echo "<div id='userPar'>";
-     //Если заголовок внутри формы
+     //Р•СЃР»Рё Р·Р°РіРѕР»РѕРІРѕРє РІРЅСѓС‚СЂРё С„РѕСЂРјС‹
       if($conf[1]==1)
       {
          echo "<div id='headPar' >";
@@ -281,9 +281,9 @@ h3   {
         echo "</div>";
       }
 
-     //Подзаголовок
+     //РџРѕРґР·Р°РіРѕР»РѕРІРѕРє
      echo "<div id='ollPar' >$conf[2]</div>";
-     //Форма
+     //Р¤РѕСЂРјР°
      echo "<input type='text' size=$conf[22] value=>&nbsp;
      <input type='button' value=$conf[21]>";
      echo "</div>";
@@ -292,22 +292,22 @@ h3   {
 	</tr>
        <form name="" action="admin.php?sel1=selected" method="post">
          <tr bgcolor=#F0F0F0 valign=top>
-		<TD width=30%><h3>Заголовок</h3>
-		 Например <i>Новости сайта</i><br>
-		 Если не хотите заголовок, оставьте пустым окно.  <br>
-		 Если вы хотите установить заголовок внутри формы подписки, поставьте галочку.
+		<TD width=30%><h3>Р—Р°РіРѕР»РѕРІРѕРє</h3>
+		 РќР°РїСЂРёРјРµСЂ <i>РќРѕРІРѕСЃС‚Рё СЃР°Р№С‚Р°</i><br>
+		 Р•СЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ Р·Р°РіРѕР»РѕРІРѕРє, РѕСЃС‚Р°РІСЊС‚Рµ РїСѓСЃС‚С‹Рј РѕРєРЅРѕ.  <br>
+		 Р•СЃР»Рё РІС‹ С…РѕС‚РёС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ Р·Р°РіРѕР»РѕРІРѕРє РІРЅСѓС‚СЂРё С„РѕСЂРјС‹ РїРѕРґРїРёСЃРєРё, РїРѕСЃС‚Р°РІСЊС‚Рµ РіР°Р»РѕС‡РєСѓ.
 		</td>
 		<td><input name="text_head" type="text"  size=60 value="<? echo @$conf[0] ?>"><br>
 		<input name="head_int" type="checkbox"<? echo $check_head_int; ?> value="1" >&nbsp;&nbsp;
-		Расположить внутри формы.
+		Р Р°СЃРїРѕР»РѕР¶РёС‚СЊ РІРЅСѓС‚СЂРё С„РѕСЂРјС‹.
 </td>
 </tr>
 
 		<tr  valign=top>
-		<TD width=30%><h3>Подзаголовок</h3>
-		Более мелким текстом объясняем посетителю, что конкретно надо делать, например:
-		<i>Введите свой e-mail</i><br>
-		Оставьте пустым окошко, если не хотите, чтобы это значение отображалось.
+		<TD width=30%><h3>РџРѕРґР·Р°РіРѕР»РѕРІРѕРє</h3>
+		Р‘РѕР»РµРµ РјРµР»РєРёРј С‚РµРєСЃС‚РѕРј РѕР±СЉСЏСЃРЅСЏРµРј РїРѕСЃРµС‚РёС‚РµР»СЋ, С‡С‚Рѕ РєРѕРЅРєСЂРµС‚РЅРѕ РЅР°РґРѕ РґРµР»Р°С‚СЊ, РЅР°РїСЂРёРјРµСЂ:
+		<i>Р’РІРµРґРёС‚Рµ СЃРІРѕР№ e-mail</i><br>
+		РћСЃС‚Р°РІСЊС‚Рµ РїСѓСЃС‚С‹Рј РѕРєРѕС€РєРѕ, РµСЃР»Рё РЅРµ С…РѕС‚РёС‚Рµ, С‡С‚РѕР±С‹ СЌС‚Рѕ Р·РЅР°С‡РµРЅРёРµ РѕС‚РѕР±СЂР°Р¶Р°Р»РѕСЃСЊ.
 		</td>
 		<td>
 		<input name="text_oll" type="text"  size=60 value="<? echo @$conf[2]; ?>">
@@ -316,33 +316,33 @@ h3   {
 		</tr>
 
 		<tr  bgcolor=#F0F0F0 valign=top>
-		<TD width=30%><h3>Форма</h3>
+		<TD width=30%><h3>Р¤РѕСЂРјР°</h3>
 
 		</td>
 		<td>
-		Надпись на кнопке<br>
+		РќР°РґРїРёСЃСЊ РЅР° РєРЅРѕРїРєРµ<br>
 		<input name="text_button" type="text"  size=60 value="<? echo @$conf[21]; ?>"><br>
-		Размер текстового поля<br>
+		Р Р°Р·РјРµСЂ С‚РµРєСЃС‚РѕРІРѕРіРѕ РїРѕР»СЏ<br>
 		<input name="area" type="text" size=10 value="<? echo @$conf[22]; ?>">
 
 		</td>
 		</tr>
 
 		 <tr  valign=top >
-		<TD width=30%><h3>Цвета</h3>
-		Можете проставить буквенное значение, напр. blue, red,
-		или в кодах
+		<TD width=30%><h3>Р¦РІРµС‚Р°</h3>
+		РњРѕР¶РµС‚Рµ РїСЂРѕСЃС‚Р°РІРёС‚СЊ Р±СѓРєРІРµРЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ, РЅР°РїСЂ. blue, red,
+		РёР»Рё РІ РєРѕРґР°С…
 		</td>
 		<td>
 		<table>
 		<tr>
-		<td>Заголовок</td>
-		<td><input name="color_head" type="text" size=10  value="<? echo @$conf[3]; ?>" ></td><td><b><big><font color= <? echo @$conf[3]; ?> > тест
+		<td>Р—Р°РіРѕР»РѕРІРѕРє</td>
+		<td><input name="color_head" type="text" size=10  value="<? echo @$conf[3]; ?>" ></td><td><b><big><font color= <? echo @$conf[3]; ?> > С‚РµСЃС‚
 		</font></big></b></td>
 		</tr>
 		<tr>
-		<td>Подзаголовок</td>
-		<td><input name="color_oll" type="text"  size=10 value="<? echo @$conf[4]; ?>"></td><td><b><big><font color= <? echo @$conf[4]; ?> > тест
+		<td>РџРѕРґР·Р°РіРѕР»РѕРІРѕРє</td>
+		<td><input name="color_oll" type="text"  size=10 value="<? echo @$conf[4]; ?>"></td><td><b><big><font color= <? echo @$conf[4]; ?> > С‚РµСЃС‚
 		</font></big></b></td>
 		</tr>
 
@@ -350,13 +350,13 @@ h3   {
 		</tr>
 
 		 <tr  valign=top bgcolor=#F0F0F0>
-		<TD width=30%><h3>Размер шрифта</h3>
-        Определён в пунктах. В пунктах измеряется размер шрифтов в Word
+		<TD width=30%><h3>Р Р°Р·РјРµСЂ С€СЂРёС„С‚Р°</h3>
+        РћРїСЂРµРґРµР»С‘РЅ РІ РїСѓРЅРєС‚Р°С…. Р’ РїСѓРЅРєС‚Р°С… РёР·РјРµСЂСЏРµС‚СЃСЏ СЂР°Р·РјРµСЂ С€СЂРёС„С‚РѕРІ РІ Word
 		</td>
 		<td>
 		<table>
 		<tr>
-		<td>Заголовок</td>
+		<td>Р—Р°РіРѕР»РѕРІРѕРє</td>
 		<td> <SELECT NAME="size_head">
 <OPTION value="10" <?  echo @$check_size_head[0]; ?>>10</option>
 <OPTION value="12" <?  echo @$check_size_head[1]; ?>>12</option>
@@ -367,7 +367,7 @@ h3   {
 </SELECT>&nbsp;&nbsp;pt</td>
 		</tr>
 		<tr>
-		<td>Подзаголовок</td>
+		<td>РџРѕРґР·Р°РіРѕР»РѕРІРѕРє</td>
 		<td> <SELECT NAME="size_oll">
 <OPTION value="8" <?  echo @$check_size_oll[0]; ?>>8</option>
 <OPTION value="9" <? echo  @$check_size_oll[1]; ?>>9</option>
@@ -381,25 +381,25 @@ h3   {
 		</tr>
      <tr  valign=top >
       <td>
-        <h3>Начертание шрифта</h3>
+        <h3>РќР°С‡РµСЂС‚Р°РЅРёРµ С€СЂРёС„С‚Р°</h3>
      </td>
      <td>
 
      <table>
 		<tr>
-		<td>Заголовок</td>
+		<td>Р—Р°РіРѕР»РѕРІРѕРє</td>
 		<td><SELECT NAME="font_head">
-<OPTION value="normal" <?  echo @$check_font_head[0]; ?> >Нормальный</option>
-<OPTION value="italic" <?  echo @$check_font_head[1]; ?> >Наклонный</option>
-<OPTION value="bold" <? echo @$check_font_head[2]; ?> >Жирный</option>
+<OPTION value="normal" <?  echo @$check_font_head[0]; ?> >РќРѕСЂРјР°Р»СЊРЅС‹Р№</option>
+<OPTION value="italic" <?  echo @$check_font_head[1]; ?> >РќР°РєР»РѕРЅРЅС‹Р№</option>
+<OPTION value="bold" <? echo @$check_font_head[2]; ?> >Р–РёСЂРЅС‹Р№</option>
 </SELECT></td>
 		</tr>
 		<tr>
-		<td>Подзаголовок</td>
+		<td>РџРѕРґР·Р°РіРѕР»РѕРІРѕРє</td>
 		<td><SELECT NAME="font_oll">
-<OPTION value="normal" <?  echo @$check_font_oll[0]; ?>>Нормальный</option>
-<OPTION value="italic" <?  echo @$check_font_oll[1]; ?>>Наклонный</option>
-<OPTION value="bold"<? echo @$check_font_oll[2]; ?>>Жирный</option>
+<OPTION value="normal" <?  echo @$check_font_oll[0]; ?>>РќРѕСЂРјР°Р»СЊРЅС‹Р№</option>
+<OPTION value="italic" <?  echo @$check_font_oll[1]; ?>>РќР°РєР»РѕРЅРЅС‹Р№</option>
+<OPTION value="bold"<? echo @$check_font_oll[2]; ?>>Р–РёСЂРЅС‹Р№</option>
 </SELECT></td>
 		</tr>
 
@@ -409,33 +409,33 @@ h3   {
 
      </tr>
 	 <tr  valign=top bgcolor=#F0F0F0>
-		<TD width=30%><h3>Цвет фона</h3>
-		Это цвет прямоугольной области с формой.<br>
-		Можете проставить буквенное значение, напр. blue, red,
-		или в кодах
+		<TD width=30%><h3>Р¦РІРµС‚ С„РѕРЅР°</h3>
+		Р­С‚Рѕ С†РІРµС‚ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРѕР№ РѕР±Р»Р°СЃС‚Рё СЃ С„РѕСЂРјРѕР№.<br>
+		РњРѕР¶РµС‚Рµ РїСЂРѕСЃС‚Р°РІРёС‚СЊ Р±СѓРєРІРµРЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ, РЅР°РїСЂ. blue, red,
+		РёР»Рё РІ РєРѕРґР°С…
 		</td>
-		<td><input name="color_fon" type="text"  size=10 value="<? echo @$conf[9]; ?>" >&nbsp;&nbsp;<b><big><font color= <? echo @$conf[9]; ?> > тест
+		<td><input name="color_fon" type="text"  size=10 value="<? echo @$conf[9]; ?>" >&nbsp;&nbsp;<b><big><font color= <? echo @$conf[9]; ?> > С‚РµСЃС‚
 		</font></big></b></td>
 		</tr>
 
 	 <tr  valign=top>
-		<TD width=30%><h3>Рамка</h3>
-        Рамка вокуг прямоугольной области с формой.<br>
-        Определите внешний вид и цвет с четырёх сторон.<br>
-        <b>Внимание!</b> При выборе значения 'Двойная', ширину нужно выставить
-        не менее 3
+		<TD width=30%><h3>Р Р°РјРєР°</h3>
+        Р Р°РјРєР° РІРѕРєСѓРі РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРѕР№ РѕР±Р»Р°СЃС‚Рё СЃ С„РѕСЂРјРѕР№.<br>
+        РћРїСЂРµРґРµР»РёС‚Рµ РІРЅРµС€РЅРёР№ РІРёРґ Рё С†РІРµС‚ СЃ С‡РµС‚С‹СЂС‘С… СЃС‚РѕСЂРѕРЅ.<br>
+        <b>Р’РЅРёРјР°РЅРёРµ!</b> РџСЂРё РІС‹Р±РѕСЂРµ Р·РЅР°С‡РµРЅРёСЏ 'Р”РІРѕР№РЅР°СЏ', С€РёСЂРёРЅСѓ РЅСѓР¶РЅРѕ РІС‹СЃС‚Р°РІРёС‚СЊ
+        РЅРµ РјРµРЅРµРµ 3
 		</td>
 		<td>
-		Вид&nbsp;&nbsp;
+		Р’РёРґ&nbsp;&nbsp;
 		<SELECT NAME="border">
-<OPTION value="none" <?  echo @$check_border[0]; ?>>Нет</option>
-<OPTION value="dotted" <?  echo @$check_border[1]; ?>>Точки</option>
-<OPTION value="dashed" <? echo @$check_border[2]; ?>>Пунктир</option>
-<OPTION value="solid" <? echo @$check_border[3]; ?>>Сплошная</option>
-<OPTION value="double" <? echo @$check_border[4]; ?>>Двойная</option>
+<OPTION value="none" <?  echo @$check_border[0]; ?>>РќРµС‚</option>
+<OPTION value="dotted" <?  echo @$check_border[1]; ?>>РўРѕС‡РєРё</option>
+<OPTION value="dashed" <? echo @$check_border[2]; ?>>РџСѓРЅРєС‚РёСЂ</option>
+<OPTION value="solid" <? echo @$check_border[3]; ?>>РЎРїР»РѕС€РЅР°СЏ</option>
+<OPTION value="double" <? echo @$check_border[4]; ?>>Р”РІРѕР№РЅР°СЏ</option>
 </SELECT>&nbsp;&nbsp;
 
-Ширина в пикселах&nbsp;&nbsp;
+РЁРёСЂРёРЅР° РІ РїРёРєСЃРµР»Р°С…&nbsp;&nbsp;
 		<SELECT NAME="border_width">
 <OPTION value="1" <?  echo @$check_border_width[0]; ?>>1</option>
 <OPTION value="2" <?  echo @$check_border_width[1]; ?>>2</option>
@@ -444,23 +444,23 @@ h3   {
 <OPTION value="5" <?  echo @$check_border_width[4]; ?>>5</option>
 </SELECT>&nbsp;&nbsp;px<br><br>
 
-<b>Цвет</b><br>
-Слева&nbsp;&nbsp;&nbsp;&nbsp;<input name="border_left_color" type="text"  size=10 value="<? echo @$conf[12]; ?>">&nbsp;&nbsp;<b><big><font color= <? echo @$conf[12]; ?> > тест
+<b>Р¦РІРµС‚</b><br>
+РЎР»РµРІР°&nbsp;&nbsp;&nbsp;&nbsp;<input name="border_left_color" type="text"  size=10 value="<? echo @$conf[12]; ?>">&nbsp;&nbsp;<b><big><font color= <? echo @$conf[12]; ?> > С‚РµСЃС‚
 		</font></big></b>&nbsp;&nbsp;
-Справа&nbsp;&nbsp;<input name="border_right_color" type="text" value="<? echo @$conf[13]; ?>" size=10>&nbsp;&nbsp;<b><big><font color= <? echo @$conf[13]; ?> > тест
+РЎРїСЂР°РІР°&nbsp;&nbsp;<input name="border_right_color" type="text" value="<? echo @$conf[13]; ?>" size=10>&nbsp;&nbsp;<b><big><font color= <? echo @$conf[13]; ?> > С‚РµСЃС‚
 		</font></big></b><br>
-Сверху&nbsp;&nbsp;<input name="border_top_color" type="text" value="<? echo @$conf[14]; ?>" size=10>&nbsp;&nbsp;<b><big><font color= <? echo @$conf[14]; ?> > тест
+РЎРІРµСЂС…Сѓ&nbsp;&nbsp;<input name="border_top_color" type="text" value="<? echo @$conf[14]; ?>" size=10>&nbsp;&nbsp;<b><big><font color= <? echo @$conf[14]; ?> > С‚РµСЃС‚
 		</font></big></b>&nbsp;&nbsp;
-Снизу&nbsp;&nbsp;&nbsp;&nbsp;<input name="border_bottom_color" type="text" value="<? echo @$conf[15]; ?>" size=10>&nbsp;&nbsp;<b><big><font color= <? echo @$conf[15]; ?> > тест
+РЎРЅРёР·Сѓ&nbsp;&nbsp;&nbsp;&nbsp;<input name="border_bottom_color" type="text" value="<? echo @$conf[15]; ?>" size=10>&nbsp;&nbsp;<b><big><font color= <? echo @$conf[15]; ?> > С‚РµСЃС‚
 		</font></big></b>&nbsp;&nbsp;
 
 </td>
 </tr>
 
 <tr  valign=top bgcolor=#F0F0F0>
-		<TD width=30%><h3>Картинки</h3>
-		Поставьте галочку, если хотите, чтобы картинка изображалась около
-		заголовка.
+		<TD width=30%><h3>РљР°СЂС‚РёРЅРєРё</h3>
+		РџРѕСЃС‚Р°РІСЊС‚Рµ РіР°Р»РѕС‡РєСѓ, РµСЃР»Рё С…РѕС‚РёС‚Рµ, С‡С‚РѕР±С‹ РєР°СЂС‚РёРЅРєР° РёР·РѕР±СЂР°Р¶Р°Р»Р°СЃСЊ РѕРєРѕР»Рѕ
+		Р·Р°РіРѕР»РѕРІРєР°.
 		</td>
 		<td>
 
@@ -509,25 +509,25 @@ h3   {
 		</tr>
 
         <tr  valign=top >
-		<TD><h3>Положение картинки</h3>
-		Определите положение картинки рядом с заголовком.
+		<TD><h3>РџРѕР»РѕР¶РµРЅРёРµ РєР°СЂС‚РёРЅРєРё</h3>
+		РћРїСЂРµРґРµР»РёС‚Рµ РїРѕР»РѕР¶РµРЅРёРµ РєР°СЂС‚РёРЅРєРё СЂСЏРґРѕРј СЃ Р·Р°РіРѕР»РѕРІРєРѕРј.
 		</td>
 		<td>
-		Справа&nbsp;&nbsp;
+		РЎРїСЂР°РІР°&nbsp;&nbsp;
 		<input name="img_align_head" type="radio" value="right" <?echo @$check_img_align_head_right; ?> >&nbsp;&nbsp;
-		Слева&nbsp;&nbsp;
+		РЎР»РµРІР°&nbsp;&nbsp;
 		<input name="img_align_head" type="radio" value="left" <?echo @$check_img_align_head_left; ?>>
 		</tr>
 
 
          <tr valign=top  bgcolor=#F0F0F0>
-		<TD width=30%><h3>Размер</h3>
-		 Определите ширину и высоту формы подписки
+		<TD width=30%><h3>Р Р°Р·РјРµСЂ</h3>
+		 РћРїСЂРµРґРµР»РёС‚Рµ С€РёСЂРёРЅСѓ Рё РІС‹СЃРѕС‚Сѓ С„РѕСЂРјС‹ РїРѕРґРїРёСЃРєРё
 		</td>
 		<td>
-          Ширина&nbsp;&nbsp;
+          РЁРёСЂРёРЅР°&nbsp;&nbsp;
           <input name="width" type="text"  size=10 value="<?echo @$conf[19] ?>">&nbsp;px&nbsp;&nbsp;
-           Высота&nbsp;&nbsp;
+           Р’С‹СЃРѕС‚Р°&nbsp;&nbsp;
           <input name="height" type="text"  size=10 value="<?echo @$conf[20] ?>">&nbsp;px
         </td>
         </tr>
@@ -535,18 +535,18 @@ h3   {
 
 
  <tr valign=top >
-		<TD width=30%><h3>Логин, пароль</h3>
-		 Изменить логин и пароль для входа в панель управления
+		<TD width=30%><h3>Р›РѕРіРёРЅ, РїР°СЂРѕР»СЊ</h3>
+		 РР·РјРµРЅРёС‚СЊ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ РґР»СЏ РІС…РѕРґР° РІ РїР°РЅРµР»СЊ СѓРїСЂР°РІР»РµРЅРёСЏ
 		</td>
 		<td>
-          Логин&nbsp;&nbsp;
+          Р›РѕРіРёРЅ&nbsp;&nbsp;
           <input name="login" type="text"  size=10>
-           Пароль&nbsp;&nbsp;
+           РџР°СЂРѕР»СЊ&nbsp;&nbsp;
           <input name="pasw" type="text"  size=10 >
         </td>
         </tr>
 
- <TR ><td colspan=2><input type="submit" value="Сохранить" name=go></td></tr>
+ <TR ><td colspan=2><input type="submit" value="РЎРѕС…СЂР°РЅРёС‚СЊ" name=go></td></tr>
  </form>
  </table>
 </body>

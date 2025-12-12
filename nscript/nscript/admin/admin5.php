@@ -6,7 +6,7 @@ if(@$_POST['GO'])
 
    $d=opendir("mes");
    $i=0;
-   //Название файлов в массив
+   //РќР°Р·РІР°РЅРёРµ С„Р°Р№Р»РѕРІ РІ РјР°СЃСЃРёРІ
    while(($e=readdir($d))!=false)
     {
      if($e =="." || $e ==".." || $e==".htaccess" || $e=="unsub.txt") continue;
@@ -51,13 +51,13 @@ if(@$_POST['GO'])
 
 <CENTER><TABLE bgcolor=#EBEBEB width=80% CELLPADDING=7 CELLSPACING=0 border=0>
 	<TR>
-		<TD colspan=6><FONT COLOR="#408080" size=+1>Отправленные письма</FONT>
+		<TD colspan=6><FONT COLOR="#408080" size=+1>РћС‚РїСЂР°РІР»РµРЅРЅС‹Рµ РїРёСЃСЊРјР°</FONT>
 
-		<tr><td colspan=6>Если после даты письма в скобках указана цифра, значит, подчиняясь выбранному лимиту по
-		количеству адресов, письмо отправлено дробно.<br><br>
-		При очистке архива останутся последние три послания</td></tr>
+		<tr><td colspan=6>Р•СЃР»Рё РїРѕСЃР»Рµ РґР°С‚С‹ РїРёСЃСЊРјР° РІ СЃРєРѕР±РєР°С… СѓРєР°Р·Р°РЅР° С†РёС„СЂР°, Р·РЅР°С‡РёС‚, РїРѕРґС‡РёРЅСЏСЏСЃСЊ РІС‹Р±СЂР°РЅРЅРѕРјСѓ Р»РёРјРёС‚Сѓ РїРѕ
+		РєРѕР»РёС‡РµСЃС‚РІСѓ Р°РґСЂРµСЃРѕРІ, РїРёСЃСЊРјРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ РґСЂРѕР±РЅРѕ.<br><br>
+		РџСЂРё РѕС‡РёСЃС‚РєРµ Р°СЂС…РёРІР° РѕСЃС‚Р°РЅСѓС‚СЃСЏ РїРѕСЃР»РµРґРЅРёРµ С‚СЂРё РїРѕСЃР»Р°РЅРёСЏ</td></tr>
 <FORM ACTION="admin5.php?sel6=selected" METHOD="POST"></td></tr>
-<tr><td colspan=6><INPUT TYPE="submit" VALUE="Очистить архив" name="GO">
+<tr><td colspan=6><INPUT TYPE="submit" VALUE="РћС‡РёСЃС‚РёС‚СЊ Р°СЂС…РёРІ" name="GO">
 
 
 
@@ -65,7 +65,7 @@ if(@$_POST['GO'])
 unset($arr);
 $d=opendir("mes");
 $i=0;
-//Название файлов в массив
+//РќР°Р·РІР°РЅРёРµ С„Р°Р№Р»РѕРІ РІ РјР°СЃСЃРёРІ
 while(($e=readdir($d))!=false)
  {
   if($e =="." || $e ==".." || $e==".htaccess" || $e=="unsub.txt") continue;
@@ -86,7 +86,7 @@ if (count(@$arr))
       $mesdat=getdate($line);
       echo "<a href=# onclick=\"win($arr[$n])\">". $mesdat['mday'].".".$mesdat['mon'].".
       ".$mesdat['year']." ".$mesdat['hours'].":".$mesdat['minutes'];
-      //Проверка индекса
+      //РџСЂРѕРІРµСЂРєР° РёРЅРґРµРєСЃР°
       $f=fopen("mes/$line","r");
       $content=fread($f,filesize("mes/$line"));
       fclose($f);

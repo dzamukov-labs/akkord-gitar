@@ -1,7 +1,7 @@
 <?php
 $config=file("search/admin/conf/mes.txt");
 $n=0;
-//Очищаем
+//РћС‡РёС‰Р°РµРј
 foreach($config as $line)
   {
  	$expl=explode("*", $line);
@@ -58,21 +58,21 @@ echo "<script language='JavaScript1.1' type='text/javascript'>
       var p1=";  if ($conf[0]!="") echo "\"<div id=head_search>$conf[0]</div>\"+";
       echo  "\"<input name='quit' type='text' ID='quit' size=$conf[6]>&nbsp;&nbsp;\"+
         \" <input type='submit' value=$conf[15] id=search_button >&nbsp;&nbsp;\"+
-        \"<a href='javascript:ins(2)'><img src='/search/img/down.png' alt='Подробный поиск' border=0></a>\";
+        \"<a href='javascript:ins(2)'><img src='/search/img/down.png' alt='РџРѕРґСЂРѕР±РЅС‹Р№ РїРѕРёСЃРє' border=0></a>\";
 
 
       var p2=";if ($conf[0]!="") echo "\"<div id=head_search>$conf[0]</div>\"+";
        echo "\"<input name='quit' type='text' ID='quit' size=$conf[6]>&nbsp;&nbsp;\"+
         \" <input type='submit' value=$conf[15] id=search_button >&nbsp;&nbsp;\"+
-        \"<a href='javascript:ins(1)'><img src='/search/img/up.png' alt='Закрыть' border=0></a><br>\"+
+        \"<a href='javascript:ins(1)'><img src='/search/img/up.png' alt='Р—Р°РєСЂС‹С‚СЊ' border=0></a><br>\"+
         \"<input name='toch' type='checkbox' value='ON'>&nbsp;\"+
-        \"точное совпадение<br>\"+
+        \"С‚РѕС‡РЅРѕРµ СЃРѕРІРїР°РґРµРЅРёРµ<br>\"+
         \"<input name='registr' type='checkbox' value='ON'>&nbsp;\"+
-        \"учитывать регистр<br>\"+
+        \"СѓС‡РёС‚С‹РІР°С‚СЊ СЂРµРіРёСЃС‚СЂ<br>\"+
         \"<input name=log type=radio value='1' >&nbsp;\"+
-        \"любое слово<br>\"+
+        \"Р»СЋР±РѕРµ СЃР»РѕРІРѕ<br>\"+
          \"<input name=log type=radio value='2' checked>&nbsp;\"+
-        \"фраза целиком\";
+        \"С„СЂР°Р·Р° С†РµР»РёРєРѕРј\";
 
       var insp;
       switch (i)
@@ -99,7 +99,7 @@ echo"<div align=$conf[24]><form name='search' action='/search/search.php' method
         echo "<input name='quit' type='text'  ID='quit' size=$conf[6]>
         <input type='submit' value=$conf[15] id=search_button >";
         if($conf[25]==1) echo "&nbsp;
-        <a href=\"javascript:ins(2);\"><img src='/search/img/down.png' alt='Подробный поиск' border=0></a>";
+        <a href=\"javascript:ins(2);\"><img src='/search/img/down.png' alt='РџРѕРґСЂРѕР±РЅС‹Р№ РїРѕРёСЃРє' border=0></a>";
         echo"</div>
         </form></div>";
 

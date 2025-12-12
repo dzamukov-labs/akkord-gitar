@@ -1,8 +1,8 @@
  <?php
  $info_opr="";
- //Обработка
+ //РћР±СЂР°Р±РѕС‚РєР°
  if(isset($_POST['opr_go']))
-    {      //Активные опросы
+    {      //РђРєС‚РёРІРЅС‹Рµ РѕРїСЂРѕСЃС‹
       $file=file("opr/admin/db/sett.txt");
       $c=0;
    	   foreach($file as $line)
@@ -15,17 +15,17 @@
          }
       }
 
-      //Проверка на IP
+      //РџСЂРѕРІРµСЂРєР° РЅР° IP
       $ip=file("opr/admin/db/stat/$expl[0].txt");
       foreach($ip as $line)
        {         $line=trim($line);
          if($line==$_SERVER['REMOTE_ADDR'])
-            {            	$info_opr="Вы уже голосовали";
+            {            	$info_opr="Р’С‹ СѓР¶Рµ РіРѕР»РѕСЃРѕРІР°Р»Рё";
             	break;
             }
        }
 
-      //Если не голосовал
+      //Р•СЃР»Рё РЅРµ РіРѕР»РѕСЃРѕРІР°Р»
       if($info_opr=="")
          {           $f=fopen("opr/admin/db/stat/$expl[0].txt","a");
            fwrite($f,$_SERVER['REMOTE_ADDR']."\r\n");
@@ -46,7 +46,7 @@
 
              }
            fclose($f);
-           $info_opr="Спасибо, ваш голос принят.";
+           $info_opr="РЎРїР°СЃРёР±Рѕ, РІР°С€ РіРѕР»РѕСЃ РїСЂРёРЅСЏС‚.";
 
          }
 
@@ -56,7 +56,7 @@
 
  $config=file("opr/admin/conf/sett_view.txt");
  $n=0;
- //Очищаем
+ //РћС‡РёС‰Р°РµРј
  foreach($config as $line)
   {
  	$expl=explode("*", $line);
@@ -66,7 +66,7 @@
 
  $config=file("opr/admin/conf/res_view.txt");
  $n=0;
- //Очищаем
+ //РћС‡РёС‰Р°РµРј
  foreach($config as $line)
   {
  	$expl=explode("*", $line);
@@ -229,11 +229,11 @@ $activ=false;
     {
         $none=true;
       	echo "<table id=none><tr><td>
-      	     Опросов не создано!
+      	     РћРїСЂРѕСЃРѕРІ РЅРµ СЃРѕР·РґР°РЅРѕ!
       	</td></tr></table>";
 
     }
-  //Активные опросы
+  //РђРєС‚РёРІРЅС‹Рµ РѕРїСЂРѕСЃС‹
    	   foreach($file as $line)
       {
        $line=trim($line);
@@ -245,8 +245,8 @@ $activ=false;
     {
 
       	echo "<table id=none><tr><td>
-      	     Активных опросов не создано!
-      	     Активизируйте их в разделе Редактирование.
+      	     РђРєС‚РёРІРЅС‹С… РѕРїСЂРѕСЃРѕРІ РЅРµ СЃРѕР·РґР°РЅРѕ!
+      	     РђРєС‚РёРІРёР·РёСЂСѓР№С‚Рµ РёС… РІ СЂР°Р·РґРµР»Рµ Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ.
       	</td></tr></table>";
 
     }
@@ -270,7 +270,7 @@ $activ=false;
           {          	echo "<table id=info_opr><tr><td>
       	     $info_opr<br><br>
 
-      	     <input type=submit value=Назад name=back $css_but>
+      	     <input type=submit value=РќР°Р·Р°Рґ name=back $css_but>
       	     </td></tr></table>";
           }
            if(isset($_POST['res_go'][$n])&& !isset($_POST['back']))
@@ -280,7 +280,7 @@ $activ=false;
              $res_index=file("opr/admin/db/$expl[0].txt");
              $res_oll=$res_index[count($res_index)-1];
              echo"<table id=res_opr CELLPADDING=3 CELLSPACING=0 border=0>";
-             //Если текстовый
+             //Р•СЃР»Рё С‚РµРєСЃС‚РѕРІС‹Р№
              if($conf1[12]==2)
                 {
                   for($i=0; $i< count($res_index)-1; $i++)
@@ -298,11 +298,11 @@ $activ=false;
                            }
                          else $proc=0;
                         echo "<td>($proc&nbsp;%)</td></tr>";
-                     }                      echo"<tr><td colspace=3>Всего&nbsp;$res_oll</td></tr>";
+                     }                      echo"<tr><td colspace=3>Р’СЃРµРіРѕ&nbsp;$res_oll</td></tr>";
                 }
               else
                 {
-                  //Набираем цвета                  $color_oll=file("opr/admin/conf/color.txt");
+                  //РќР°Р±РёСЂР°РµРј С†РІРµС‚Р°                  $color_oll=file("opr/admin/conf/color.txt");
                   $color=array();
                   foreach($color_oll as $line_color)
                     {                      $line_color=trim($line_color);
@@ -332,7 +332,7 @@ $activ=false;
                         echo "<td>($proc&nbsp;%)</td></tr>";
                        if($col==count($color)-1)$col=-1;
                      }
-                  echo"<tr><td colspace=3>Всего&nbsp;$res_oll</td></tr></table>";
+                  echo"<tr><td colspace=3>Р’СЃРµРіРѕ&nbsp;$res_oll</td></tr></table>";
 
                    for($i=0,$col=0; $i< count($res_index)-1; $i++,$col++)
                       {
@@ -348,11 +348,11 @@ $activ=false;
                         if($col==count($color)-1)$col=-1;
                      }
                 }
-                echo "</table><table><tr><td colspace=3><input type=submit value=Назад name=back $css_but></td></tr>
+                echo "</table><table><tr><td colspace=3><input type=submit value=РќР°Р·Р°Рґ name=back $css_but></td></tr>
                              </table>";
            }
            else
-            {              //Выводим опрос
+            {              //Р’С‹РІРѕРґРёРј РѕРїСЂРѕСЃ
                $name=$expl[2];
                $file=file("opr/admin/db/$expl[0].txt");
                echo "<div id=opr>

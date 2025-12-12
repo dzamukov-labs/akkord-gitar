@@ -7,9 +7,9 @@
    	    	$f=fopen("conf/conf.txt","w");
    	    	fwrite($f,md5($_POST['login'])."\r\n".md5($_POST['pasw'])."\r\n".$file[2]);
    	    	fclose($f);
-            $info="Данные изменены!";
+            $info="Р”Р°РЅРЅС‹Рµ РёР·РјРµРЅРµРЅС‹!";
    	    }
-   	  else $info="Должны быть заполнены логин и пароль!";
+   	  else $info="Р”РѕР»Р¶РЅС‹ Р±С‹С‚СЊ Р·Р°РїРѕР»РЅРµРЅС‹ Р»РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ!";
    }
 ?>
 
@@ -17,26 +17,26 @@
 <TABLE align=center bgcolor=#EBEBEB width=80% CELLPADDING=10 CELLSPACING=0 border=0>
 
 <tr >
-   <td colspan=2><FONT COLOR="#408080" size=+1>Доступ в админпанель</FONT> </td>
+   <td colspan=2><FONT COLOR="#408080" size=+1>Р”РѕСЃС‚СѓРї РІ Р°РґРјРёРЅРїР°РЅРµР»СЊ</FONT> </td>
 </tr>
 <tr >
    <td colspan=2>
-     Здесь вы можете изменить логин и парль для доступа в админпанель. <br>
+     Р—РґРµСЃСЊ РІС‹ РјРѕР¶РµС‚Рµ РёР·РјРµРЅРёС‚СЊ Р»РѕРіРёРЅ Рё РїР°СЂР»СЊ РґР»СЏ РґРѕСЃС‚СѓРїР° РІ Р°РґРјРёРЅРїР°РЅРµР»СЊ. <br>
      <?PHP echo "<font color=red>$info</font>"?>
    </td>
 </tr>
   <form action="admin6.php?sel6=selected" method="post">
  <tr >
-   <td width=10%>Логин</td>
+   <td width=10%>Р›РѕРіРёРЅ</td>
    <td><input name="login" type="text"></td>
 </tr>
 <tr >
-   <td>Пароль</td>
+   <td>РџР°СЂРѕР»СЊ</td>
    <td><input name="pasw" type="text"></td>
 
    <tr >
 
-   <td colspan=2><input type="submit" value="Сохранить" name=go></td>
+   <td colspan=2><input type="submit" value="РЎРѕС…СЂР°РЅРёС‚СЊ" name=go></td>
 </tr>
 </tr>
  </form>

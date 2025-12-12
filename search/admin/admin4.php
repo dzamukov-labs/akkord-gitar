@@ -98,7 +98,7 @@ if(@$_POST['GO'])
  }
 
 
-//Проверка данных---------------------------------------
+//РџСЂРѕРІРµСЂРєР° РґР°РЅРЅС‹С…---------------------------------------
 
 $TopCode="";
 $strpath="conf/code/topcode.txt";
@@ -171,7 +171,7 @@ if (@$content[3]=="top") @$Rigcheck_T="checked";
 if (@$content[3]=="bottom") @$Rigcheck_B="checked";
 if (@$content[3]=="center") @$Rigcheck_C="checked";
 
-//Процент  L
+//РџСЂРѕС†РµРЅС‚  L
 $n=0;
 for($i=10; $n<4; $i+=5, $n++)
   {
@@ -204,21 +204,21 @@ for($i=10; $n<4; $i+=5, $n++)
 
 <CENTER><TABLE bgcolor=#EBEBEB width=80% CELLPADDING=7 CELLSPACING=0 border=0>
 	<TR>
-		<TD colspan='2' ><FONT COLOR="#408080" size=+1>Управление кодом</FONT></td></tr>
+		<TD colspan='2' ><FONT COLOR="#408080" size=+1>РЈРїСЂР°РІР»РµРЅРёРµ РєРѕРґРѕРј</FONT></td></tr>
 <tr><td colspan=2 bgcolor=#F0F0F0><FONT SIZE=-1>
-Для интеграции вашего интерфейса на страницу с поиском вы можете вставить участки своего кода
+Р”Р»СЏ РёРЅС‚РµРіСЂР°С†РёРё РІР°С€РµРіРѕ РёРЅС‚РµСЂС„РµР№СЃР° РЅР° СЃС‚СЂР°РЅРёС†Сѓ СЃ РїРѕРёСЃРєРѕРј РІС‹ РјРѕР¶РµС‚Рµ РІСЃС‚Р°РІРёС‚СЊ СѓС‡Р°СЃС‚РєРё СЃРІРѕРµРіРѕ РєРѕРґР°
 .<br>
-Вставляйте без тегов <font color=green>&lt;html&gt;&lt;body&gt;</font>.<br>Вы можете установить
-процентное соотношение правой и левой частей относительно всей страницы. Размеры правой и левой частей
-устанавливаются в %.
-Если код какой-либо части не определён, её процентная доля не учитывается.<br> Размер центральной части (т.е.
-самого блока с результатами поиска) устанавливается во внешнем виде страницы с поиском.
-<br>Если вы внедряете код php, поставьте галочку и не вписывайте скобок <font color=#0080FF>&lt;?php &nbsp;&nbsp; ?&gt; </font>
+Р’СЃС‚Р°РІР»СЏР№С‚Рµ Р±РµР· С‚РµРіРѕРІ <font color=green>&lt;html&gt;&lt;body&gt;</font>.<br>Р’С‹ РјРѕР¶РµС‚Рµ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ
+РїСЂРѕС†РµРЅС‚РЅРѕРµ СЃРѕРѕС‚РЅРѕС€РµРЅРёРµ РїСЂР°РІРѕР№ Рё Р»РµРІРѕР№ С‡Р°СЃС‚РµР№ РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕ РІСЃРµР№ СЃС‚СЂР°РЅРёС†С‹. Р Р°Р·РјРµСЂС‹ РїСЂР°РІРѕР№ Рё Р»РµРІРѕР№ С‡Р°СЃС‚РµР№
+СѓСЃС‚Р°РЅР°РІР»РёРІР°СЋС‚СЃСЏ РІ %.
+Р•СЃР»Рё РєРѕРґ РєР°РєРѕР№-Р»РёР±Рѕ С‡Р°СЃС‚Рё РЅРµ РѕРїСЂРµРґРµР»С‘РЅ, РµС‘ РїСЂРѕС†РµРЅС‚РЅР°СЏ РґРѕР»СЏ РЅРµ СѓС‡РёС‚С‹РІР°РµС‚СЃСЏ.<br> Р Р°Р·РјРµСЂ С†РµРЅС‚СЂР°Р»СЊРЅРѕР№ С‡Р°СЃС‚Рё (С‚.Рµ.
+СЃР°РјРѕРіРѕ Р±Р»РѕРєР° СЃ СЂРµР·СѓР»СЊС‚Р°С‚Р°РјРё РїРѕРёСЃРєР°) СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚СЃСЏ РІРѕ РІРЅРµС€РЅРµРј РІРёРґРµ СЃС‚СЂР°РЅРёС†С‹ СЃ РїРѕРёСЃРєРѕРј.
+<br>Р•СЃР»Рё РІС‹ РІРЅРµРґСЂСЏРµС‚Рµ РєРѕРґ php, РїРѕСЃС‚Р°РІСЊС‚Рµ РіР°Р»РѕС‡РєСѓ Рё РЅРµ РІРїРёСЃС‹РІР°Р№С‚Рµ СЃРєРѕР±РѕРє <font color=#0080FF>&lt;?php &nbsp;&nbsp; ?&gt; </font>
 
  </td></tr>
 <FORM ACTION="admin4.php?sel4=selected" METHOD="POST">
 <tr><td colspan=2 bgcolor=#F0F0F0><FONT SIZE=-1>
-<b>Соотношение</b>&nbsp;&nbsp;Левая часть&nbsp;
+<b>РЎРѕРѕС‚РЅРѕС€РµРЅРёРµ</b>&nbsp;&nbsp;Р›РµРІР°СЏ С‡Р°СЃС‚СЊ&nbsp;
 <SELECT NAME="procL" >
 <OPTION value="10" <? echo @$sel[0]; ?>>10</option>
 <OPTION value="15" <? echo @$sel[1]; ?>>15</option>
@@ -227,7 +227,7 @@ for($i=10; $n<4; $i+=5, $n++)
 
 </SELECT>&nbsp;%&nbsp;&nbsp;
 
-&nbsp;Правая часть&nbsp;<SELECT NAME="procR" >
+&nbsp;РџСЂР°РІР°СЏ С‡Р°СЃС‚СЊ&nbsp;<SELECT NAME="procR" >
 <OPTION value="10" <? echo @$sel1[0]; ?>>10</option>
 <OPTION value="15" <? echo @$sel1[1]; ?>>15</option>
 <OPTION value="20" <? echo @$sel1[2]; ?>>20</option>
@@ -236,46 +236,46 @@ for($i=10; $n<4; $i+=5, $n++)
 </SELECT>&nbsp;%
 </td></tr>
 
-<tr bgcolor=#F0F0F0><td><b>Верх страницы</b>. <br>
-Слева<input name="topA[pos]" type="radio" value=1 <?  echo @$Topcheck_L; ?> >
-&nbsp;По центру<input name="topA[pos]" type="radio" value=2 <? echo @$Topcheck_C; ?>>
-&nbsp;Справа<input name="topA[pos]" type="radio" value=3 <? echo @$Topcheck_R; ?>>
+<tr bgcolor=#F0F0F0><td><b>Р’РµСЂС… СЃС‚СЂР°РЅРёС†С‹</b>. <br>
+РЎР»РµРІР°<input name="topA[pos]" type="radio" value=1 <?  echo @$Topcheck_L; ?> >
+&nbsp;РџРѕ С†РµРЅС‚СЂСѓ<input name="topA[pos]" type="radio" value=2 <? echo @$Topcheck_C; ?>>
+&nbsp;РЎРїСЂР°РІР°<input name="topA[pos]" type="radio" value=3 <? echo @$Topcheck_R; ?>>
 
-&nbsp;&nbsp;Код PHP &nbsp;<input name="top_php" type="checkbox" value="ON" <? echo @$top_phpCheck ?>> <p></p>
+&nbsp;&nbsp;РљРѕРґ PHP &nbsp;<input name="top_php" type="checkbox" value="ON" <? echo @$top_phpCheck ?>> <p></p>
  <TEXTAREA NAME="top" ROWS="15" COLS="85"><? echo trim(@$TopCode); ?>
 </TEXTAREA></td></tr>
 
-<tr bgcolor=#F0F0F0><td><b>Низ страницы</b>. <br>
-Слева<input name="botA[pos]" type="radio" value=1 <?  echo @$Botcheck_L; ?> >
-&nbsp;По центру<input name="botA[pos]" type="radio" value=2 <? echo @$Botcheck_C; ?>>
-&nbsp;Справа<input name="botA[pos]" type="radio" value=3 <? echo @$Botcheck_R; ?>>
+<tr bgcolor=#F0F0F0><td><b>РќРёР· СЃС‚СЂР°РЅРёС†С‹</b>. <br>
+РЎР»РµРІР°<input name="botA[pos]" type="radio" value=1 <?  echo @$Botcheck_L; ?> >
+&nbsp;РџРѕ С†РµРЅС‚СЂСѓ<input name="botA[pos]" type="radio" value=2 <? echo @$Botcheck_C; ?>>
+&nbsp;РЎРїСЂР°РІР°<input name="botA[pos]" type="radio" value=3 <? echo @$Botcheck_R; ?>>
 
-&nbsp;&nbsp;Код PHP &nbsp;<input name="bot_php" type="checkbox" value="ON" <? echo @$bot_phpCheck ?>>
+&nbsp;&nbsp;РљРѕРґ PHP &nbsp;<input name="bot_php" type="checkbox" value="ON" <? echo @$bot_phpCheck ?>>
 <p></p>
  <TEXTAREA NAME="bot" ROWS="15" COLS="85"><? echo trim(@$BotCode); ?>
 </TEXTAREA></td></tr>
 
-<tr bgcolor=#F0F0F0><td><b>Левый край</b>. <br>
-Верх<input name="leftA[pos]" type="radio" value=1 <?  echo @$Leftcheck_T; ?> >
-&nbsp;Низ<input name="leftA[pos]" type="radio" value=2 <? echo @$Leftcheck_B; ?>>
-&nbsp;Центр<input name="leftA[pos]" type="radio" value=3 <? echo @$Leftcheck_C; ?>>
+<tr bgcolor=#F0F0F0><td><b>Р›РµРІС‹Р№ РєСЂР°Р№</b>. <br>
+Р’РµСЂС…<input name="leftA[pos]" type="radio" value=1 <?  echo @$Leftcheck_T; ?> >
+&nbsp;РќРёР·<input name="leftA[pos]" type="radio" value=2 <? echo @$Leftcheck_B; ?>>
+&nbsp;Р¦РµРЅС‚СЂ<input name="leftA[pos]" type="radio" value=3 <? echo @$Leftcheck_C; ?>>
 
-&nbsp;&nbsp;Код PHP &nbsp;<input name="left_php" type="checkbox" value="ON" <? echo @$left_phpCheck ?>>
+&nbsp;&nbsp;РљРѕРґ PHP &nbsp;<input name="left_php" type="checkbox" value="ON" <? echo @$left_phpCheck ?>>
 <p></p>
  <TEXTAREA NAME="left" ROWS="15" COLS="85"><? echo trim(@$LeftCode); ?>
 </TEXTAREA></td></tr>
 
-<tr bgcolor=#F0F0F0><td><b>Правый край</b>. <br>
-Верх<input name="rigA[pos]" type="radio" value=1 <?  echo @$Rigcheck_T; ?> >
-&nbsp;Низ<input name="rigA[pos]" type="radio" value=2 <? echo @$Rigcheck_B; ?>>
-&nbsp;Центр<input name="rigA[pos]" type="radio" value=3 <? echo @$Rigcheck_C; ?>>
+<tr bgcolor=#F0F0F0><td><b>РџСЂР°РІС‹Р№ РєСЂР°Р№</b>. <br>
+Р’РµСЂС…<input name="rigA[pos]" type="radio" value=1 <?  echo @$Rigcheck_T; ?> >
+&nbsp;РќРёР·<input name="rigA[pos]" type="radio" value=2 <? echo @$Rigcheck_B; ?>>
+&nbsp;Р¦РµРЅС‚СЂ<input name="rigA[pos]" type="radio" value=3 <? echo @$Rigcheck_C; ?>>
 
-&nbsp;&nbsp;Код PHP &nbsp;<input name="right_php" type="checkbox" value="ON" <? echo @$right_phpCheck ?>>
+&nbsp;&nbsp;РљРѕРґ PHP &nbsp;<input name="right_php" type="checkbox" value="ON" <? echo @$right_phpCheck ?>>
 <p></p>
  <TEXTAREA NAME="rig" ROWS="15" COLS="85"><? echo trim(@$RigCode); ?>
 </TEXTAREA></td></tr>
 
-<tr><td align=botton><INPUT TYPE="submit" VALUE="Сохранить" name="GO">
+<tr><td align=botton><INPUT TYPE="submit" VALUE="РЎРѕС…СЂР°РЅРёС‚СЊ" name="GO">
 </FORM>
 
 

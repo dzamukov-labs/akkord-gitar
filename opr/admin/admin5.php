@@ -5,36 +5,36 @@
    {
      $f=fopen("conf/res_view.txt","w");
 
-     if($_POST['war_fon']=="") fwrite($f,"0*Фон оповещения*#ffffff\r\n");
-     else fwrite($f,"0*Фон оповещения*".$_POST['war_fon']."\r\n");
+     if($_POST['war_fon']=="") fwrite($f,"0*Р¤РѕРЅ РѕРїРѕРІРµС‰РµРЅРёСЏ*#ffffff\r\n");
+     else fwrite($f,"0*Р¤РѕРЅ РѕРїРѕРІРµС‰РµРЅРёСЏ*".$_POST['war_fon']."\r\n");
 
-     if($_POST['war_font_color']=="") fwrite($f,"1*Цвет шрифта оповещения*#000000\r\n");
-     else fwrite($f,"1*Цвет шрифта оповещения*".$_POST['war_font_color']."\r\n");
+     if($_POST['war_font_color']=="") fwrite($f,"1*Р¦РІРµС‚ С€СЂРёС„С‚Р° РѕРїРѕРІРµС‰РµРЅРёСЏ*#000000\r\n");
+     else fwrite($f,"1*Р¦РІРµС‚ С€СЂРёС„С‚Р° РѕРїРѕРІРµС‰РµРЅРёСЏ*".$_POST['war_font_color']."\r\n");
 
-     fwrite($f,"2*Размер шрифта оповещения*".$_POST['war_font_size']."\r\n");
-     fwrite($f,"3*Начертание шрифта оповещения*".$_POST['war_font_type']."\r\n");
-     fwrite($f,"4*Жирность шрифта оповещения*".$_POST['war_font_width']."\r\n");
-     fwrite($f,"5*Название шрифта оповещения*".$_POST['war_font_name']."\r\n");
+     fwrite($f,"2*Р Р°Р·РјРµСЂ С€СЂРёС„С‚Р° РѕРїРѕРІРµС‰РµРЅРёСЏ*".$_POST['war_font_size']."\r\n");
+     fwrite($f,"3*РќР°С‡РµСЂС‚Р°РЅРёРµ С€СЂРёС„С‚Р° РѕРїРѕРІРµС‰РµРЅРёСЏ*".$_POST['war_font_type']."\r\n");
+     fwrite($f,"4*Р–РёСЂРЅРѕСЃС‚СЊ С€СЂРёС„С‚Р° РѕРїРѕРІРµС‰РµРЅРёСЏ*".$_POST['war_font_width']."\r\n");
+     fwrite($f,"5*РќР°Р·РІР°РЅРёРµ С€СЂРёС„С‚Р° РѕРїРѕРІРµС‰РµРЅРёСЏ*".$_POST['war_font_name']."\r\n");
 
-     if($_POST['res_fon']=="") fwrite($f,"6*Фон результатов*#ffffff\r\n");
-     else fwrite($f,"6*Фон результатов*".$_POST['res_fon']."\r\n");
+     if($_POST['res_fon']=="") fwrite($f,"6*Р¤РѕРЅ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ*#ffffff\r\n");
+     else fwrite($f,"6*Р¤РѕРЅ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ*".$_POST['res_fon']."\r\n");
 
-     if($_POST['res_font_color']=="") fwrite($f,"7*Цвет шрифта результатов*#000000\r\n");
-     else fwrite($f,"7*Цвет шрифта результатов*".$_POST['res_font_color']."\r\n");
+     if($_POST['res_font_color']=="") fwrite($f,"7*Р¦РІРµС‚ С€СЂРёС„С‚Р° СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ*#000000\r\n");
+     else fwrite($f,"7*Р¦РІРµС‚ С€СЂРёС„С‚Р° СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ*".$_POST['res_font_color']."\r\n");
 
-     fwrite($f,"8*Размер шрифта результатов*".$_POST['res_font_size']."\r\n");
-     fwrite($f,"9*Начертание шрифта результатов*".$_POST['res_font_type']."\r\n");
-     fwrite($f,"10*Жирность шрифта результатов*".$_POST['res_font_width']."\r\n");
-     fwrite($f,"11*Название шрифта результатов*".$_POST['res_font_name']."\r\n");
+     fwrite($f,"8*Р Р°Р·РјРµСЂ С€СЂРёС„С‚Р° СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ*".$_POST['res_font_size']."\r\n");
+     fwrite($f,"9*РќР°С‡РµСЂС‚Р°РЅРёРµ С€СЂРёС„С‚Р° СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ*".$_POST['res_font_type']."\r\n");
+     fwrite($f,"10*Р–РёСЂРЅРѕСЃС‚СЊ С€СЂРёС„С‚Р° СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ*".$_POST['res_font_width']."\r\n");
+     fwrite($f,"11*РќР°Р·РІР°РЅРёРµ С€СЂРёС„С‚Р° СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ*".$_POST['res_font_name']."\r\n");
 
-     fwrite($f,"12*вывод графический или текстовый*".$_POST['view']."\r\n");
-     fwrite($f,"13*вывод в отдельном окне*".$_POST['open']);
+     fwrite($f,"12*РІС‹РІРѕРґ РіСЂР°С„РёС‡РµСЃРєРёР№ РёР»Рё С‚РµРєСЃС‚РѕРІС‹Р№*".$_POST['view']."\r\n");
+     fwrite($f,"13*РІС‹РІРѕРґ РІ РѕС‚РґРµР»СЊРЅРѕРј РѕРєРЅРµ*".$_POST['open']);
      fclose($f);
    }
 
   $config=file("conf/res_view.txt");
  $n=0;
- //Очищаем
+ //РћС‡РёС‰Р°РµРј
  foreach($config as $line)
   {
  	$expl=explode("*", $line);
@@ -44,16 +44,16 @@
 
 $config=file("conf/sett_view.txt");
  $n=0;
- //Очищаем
+ //РћС‡РёС‰Р°РµРј
  foreach($config as $line)
   {
  	$expl=explode("*", $line);
  	$conf[$n]=trim($expl[2]);
  	$n++;
   }
-  //Шрифты-------------------------
-//Оповещение
-//Размер шрифта
+  //РЁСЂРёС„С‚С‹-------------------------
+//РћРїРѕРІРµС‰РµРЅРёРµ
+//Р Р°Р·РјРµСЂ С€СЂРёС„С‚Р°
 
 for($i=10,$n=0; $i<22; $i+=2,$n++)
  {
@@ -61,18 +61,18 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
    else $sel_war_font_size[$n]="";
 
  }
- //Тип
+ //РўРёРї
  if($conf1[3]=="normal") $sel_war_font_type[0]="selected";
  if($conf1[3]=="italic") $sel_war_font_type[1]="selected";
 
- //Жирность
+ //Р–РёСЂРЅРѕСЃС‚СЊ
  for($i=100,$n=0; $i<800; $i+=100,$n++)
  {
    if($conf1[4]==$i) $sel_war_font_width[$n]="selected";
    else $sel_war_font_width[$n]="";
  }
 
-//Название
+//РќР°Р·РІР°РЅРёРµ
 if($conf1[5]=="Times New Roman, serif")$sel_war_font_name[0]="selected";
 if($conf1[5]=="Arial, sans-serif")$sel_war_font_name[1]="selected";
 if($conf1[5]=="Tahoma, sans-serif")$sel_war_font_name[2]="selected";
@@ -81,26 +81,26 @@ if($conf1[5]=="Courier New, monospace")$sel_war_font_name[4]="selected";
 if($conf1[5]=="Calisto MT, cursive")$sel_war_font_name[5]="selected";
 if($conf1[5]=="Broadway, fantasy")$sel_war_font_name[6]="selected";
 
-//Результаты
-//Размер шрифта
+//Р РµР·СѓР»СЊС‚Р°С‚С‹
+//Р Р°Р·РјРµСЂ С€СЂРёС„С‚Р°
 for($i=10,$n=0; $i<22; $i+=2,$n++)
  {
    if($conf1[8]==$i) $sel_res_font_size[$n]="selected";
    else $sel_res_font_size[$n]="";
 
  }
- //Тип
+ //РўРёРї
  if($conf1[9]=="normal") $sel_res_font_type[0]="selected";
  if($conf1[9]=="italic") $sel_res_font_type[1]="selected";
 
- //Жирность
+ //Р–РёСЂРЅРѕСЃС‚СЊ
  for($i=100,$n=0; $i<800; $i+=100,$n++)
  {
    if($conf1[10]==$i) $sel_res_font_width[$n]="selected";
    else $sel_res_font_width[$n]="";
  }
 
-//Название
+//РќР°Р·РІР°РЅРёРµ
 if($conf1[11]=="Times New Roman, serif")$sel_res_font_name[0]="selected";
 if($conf1[11]=="Arial, sans-serif")$sel_res_font_name[1]="selected";
 if($conf1[11]=="Tahoma, sans-serif")$sel_res_font_name[2]="selected";
@@ -272,9 +272,9 @@ if($conf1[13]==2) $check_open[1]="checked";
 <TABLE align=center bgcolor=#EBEBEB width=90% CELLPADDING=10 CELLSPACING=0 border=0>
 
 <tr >
-   <td colspan=2><FONT COLOR="#408080" size=+1>Внешний вид результатов</FONT><br>
-   Оповещения выводяться, когда пользователь проголосовал. Если проголосовал впервые- выводится оповещение, что его голос
-   защитан, если уже голосовал, выводится, что он уже учавствовал в опросе.</td>
+   <td colspan=2><FONT COLOR="#408080" size=+1>Р’РЅРµС€РЅРёР№ РІРёРґ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ</FONT><br>
+   РћРїРѕРІРµС‰РµРЅРёСЏ РІС‹РІРѕРґСЏС‚СЊСЃСЏ, РєРѕРіРґР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РїСЂРѕРіРѕР»РѕСЃРѕРІР°Р». Р•СЃР»Рё РїСЂРѕРіРѕР»РѕСЃРѕРІР°Р» РІРїРµСЂРІС‹Рµ- РІС‹РІРѕРґРёС‚СЃСЏ РѕРїРѕРІРµС‰РµРЅРёРµ, С‡С‚Рѕ РµРіРѕ РіРѕР»РѕСЃ
+   Р·Р°С‰РёС‚Р°РЅ, РµСЃР»Рё СѓР¶Рµ РіРѕР»РѕСЃРѕРІР°Р», РІС‹РІРѕРґРёС‚СЃСЏ, С‡С‚Рѕ РѕРЅ СѓР¶Рµ СѓС‡Р°РІСЃС‚РІРѕРІР°Р» РІ РѕРїСЂРѕСЃРµ.</td>
 
 </tr>
 <tr >
@@ -284,7 +284,7 @@ if($conf1[13]==2) $check_open[1]="checked";
     if(count($file)==0)
       {
       	echo "<table id=none><tr><td>
-      	     Опросов не создано!
+      	     РћРїСЂРѕСЃРѕРІ РЅРµ СЃРѕР·РґР°РЅРѕ!
       	</td></tr></table>";
       }
      else
@@ -306,7 +306,7 @@ if($conf1[13]==2) $check_open[1]="checked";
              $res_index=file("db/$expl[0].txt");
              $res_oll=$res_index[count($res_index)-1];
              echo"<table id=res_opr CELLPADDING=3 CELLSPACING=0 border=0>";
-             //Если текстовый
+             //Р•СЃР»Рё С‚РµРєСЃС‚РѕРІС‹Р№
              if($conf1[12]==2)
                 {
                   for($i=0; $i< count($res_index)-1; $i++)
@@ -326,12 +326,12 @@ if($conf1[13]==2) $check_open[1]="checked";
                          else $proc=0;
                         echo "<td>($proc&nbsp;%)</td></tr>";
                      }
-                      echo"<tr><td colspace=3>Всего&nbsp;$res_oll</td></tr>";
+                      echo"<tr><td colspace=3>Р’СЃРµРіРѕ&nbsp;$res_oll</td></tr>";
 
                 }
               else
                 {
-                  //Набираем цвета
+                  //РќР°Р±РёСЂР°РµРј С†РІРµС‚Р°
                   $color_oll=file("conf/color.txt");
                   $color=array();
                   foreach($color_oll as $line_color)
@@ -363,7 +363,7 @@ if($conf1[13]==2) $check_open[1]="checked";
                         echo "<td>($proc&nbsp;%)</td></tr>";
                        if($col==count($color)-1)$col=-1;
                      }
-                  echo"<tr><td colspace=3>Всего&nbsp;$res_oll</td></tr></table>";
+                  echo"<tr><td colspace=3>Р’СЃРµРіРѕ&nbsp;$res_oll</td></tr></table>";
 
                    for($i=0,$col=0; $i< count($res_index)-1; $i++,$col++)
                       {
@@ -379,7 +379,7 @@ if($conf1[13]==2) $check_open[1]="checked";
                         if($col==count($color)-1)$col=-1;
                      }
                 }
-                echo "</table><table><tr><td colspace=3><input type=button value=Назад name=back $css_but></td></tr>
+                echo "</table><table><tr><td colspace=3><input type=button value=РќР°Р·Р°Рґ name=back $css_but></td></tr>
                              </table>";
               echo "</div></div></form>";
 
@@ -388,28 +388,28 @@ if($conf1[13]==2) $check_open[1]="checked";
 </td>
 </tr>
 <tr >
-   <td colspan=2><a href=# onclick=win1()>Таблица цветовых кодов</a>  </td>
+   <td colspan=2><a href=# onclick=win1()>РўР°Р±Р»РёС†Р° С†РІРµС‚РѕРІС‹С… РєРѕРґРѕРІ</a>  </td>
 </tr>
 <FORM ACTION="admin5.php?sel5=selected" METHOD="POST">
 
 <tr >
-   <td colspan=2><b>Оповещения</b></td>
+   <td colspan=2><b>РћРїРѕРІРµС‰РµРЅРёСЏ</b></td>
 </tr>
 <tr>
-   <td  width=35% valign=top>Фон</td>
+   <td  width=35% valign=top>Р¤РѕРЅ</td>
     <td>   <input name="war_fon" type="text"  size=10 value="<? echo @$conf1[0] ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf1[0] ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf1[0] ?> > С‚РµСЃС‚
 		</font></big></b><br><br>
     </td>
 </tr>
 
 <tr>
-   <td  width=35% valign=top style=" border-bottom:1px solid #d0c9ad;">Шрифт.
-     Цвет, размер в пунктах, начертание шрифта, жирность,
-   название</td>
+   <td  width=35% valign=top style=" border-bottom:1px solid #d0c9ad;">РЁСЂРёС„С‚.
+     Р¦РІРµС‚, СЂР°Р·РјРµСЂ РІ РїСѓРЅРєС‚Р°С…, РЅР°С‡РµСЂС‚Р°РЅРёРµ С€СЂРёС„С‚Р°, Р¶РёСЂРЅРѕСЃС‚СЊ,
+   РЅР°Р·РІР°РЅРёРµ</td>
              <td style=" border-bottom:1px solid #d0c9ad;">
        <input name="war_font_color" type="text"  size=10 value="<? echo @$conf1[1] ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf1[1]; ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf1[1]; ?> > С‚РµСЃС‚
 		</font></big></b>&nbsp;
 		<SELECT NAME="war_font_size">
 <OPTION value="10" <?  echo @$sel_war_font_size[0]; ?>>10</option>
@@ -421,8 +421,8 @@ if($conf1[13]==2) $check_open[1]="checked";
 </SELECT>&nbsp;&nbsp;pt&nbsp;
 
 <SELECT NAME="war_font_type">
-<OPTION value="normal" <?  echo @$sel_war_font_type[0]; ?> >Нормальный</option>
-<OPTION value="italic" <?  echo @$sel_war_font_type[1]; ?> >Наклонный</option>
+<OPTION value="normal" <?  echo @$sel_war_font_type[0]; ?> >РќРѕСЂРјР°Р»СЊРЅС‹Р№</option>
+<OPTION value="italic" <?  echo @$sel_war_font_type[1]; ?> >РќР°РєР»РѕРЅРЅС‹Р№</option>
 </SELECT>
 
 <SELECT NAME="war_font_width">
@@ -453,23 +453,23 @@ if($conf1[13]==2) $check_open[1]="checked";
 
 
 <tr >
-   <td colspan=2><b>Результаты</b></td>
+   <td colspan=2><b>Р РµР·СѓР»СЊС‚Р°С‚С‹</b></td>
 </tr>
 <tr>
-   <td  width=35% valign=top>Фон</td>
+   <td  width=35% valign=top>Р¤РѕРЅ</td>
     <td>   <input name="res_fon" type="text"  size=10 value="<? echo @$conf1[6] ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf1[6] ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf1[6] ?> > С‚РµСЃС‚
 		</font></big></b><br><br>
     </td>
 </tr>
 
 <tr>
-   <td  width=35% valign=top>Шрифт.
-     Цвет, размер в пунктах, начертание шрифта, жирность,
-   название</td>
+   <td  width=35% valign=top>РЁСЂРёС„С‚.
+     Р¦РІРµС‚, СЂР°Р·РјРµСЂ РІ РїСѓРЅРєС‚Р°С…, РЅР°С‡РµСЂС‚Р°РЅРёРµ С€СЂРёС„С‚Р°, Р¶РёСЂРЅРѕСЃС‚СЊ,
+   РЅР°Р·РІР°РЅРёРµ</td>
              <td >
        <input name="res_font_color" type="text"  size=10 value="<? echo @$conf1[7] ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf1[7]; ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf1[7]; ?> > С‚РµСЃС‚
 		</font></big></b>&nbsp;
 		<SELECT NAME="res_font_size">
 <OPTION value="10" <?  echo @$sel_res_font_size[0]; ?>>10</option>
@@ -481,8 +481,8 @@ if($conf1[13]==2) $check_open[1]="checked";
 </SELECT>&nbsp;&nbsp;pt&nbsp;
 
 <SELECT NAME="res_font_type">
-<OPTION value="normal" <?  echo @$sel_res_font_type[0]; ?> >Нормальный</option>
-<OPTION value="italic" <?  echo @$sel_res_font_type[1]; ?> >Наклонный</option>
+<OPTION value="normal" <?  echo @$sel_res_font_type[0]; ?> >РќРѕСЂРјР°Р»СЊРЅС‹Р№</option>
+<OPTION value="italic" <?  echo @$sel_res_font_type[1]; ?> >РќР°РєР»РѕРЅРЅС‹Р№</option>
 </SELECT>
 
 <SELECT NAME="res_font_width">
@@ -509,23 +509,23 @@ if($conf1[13]==2) $check_open[1]="checked";
 </tr>
 
 <tr>
-   <td  width=35% valign=top>Вывод результатов опроса</td>
+   <td  width=35% valign=top>Р’С‹РІРѕРґ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РѕРїСЂРѕСЃР°</td>
     <td>
-    <input name="view" type="radio" value="1" <?  echo @$check_view[0]; ?>>&nbsp; Графический&nbsp;&nbsp;
-    <input name="view" type="radio" value="2" <?  echo @$check_view[1]; ?>>&nbsp;Текстовый
+    <input name="view" type="radio" value="1" <?  echo @$check_view[0]; ?>>&nbsp; Р“СЂР°С„РёС‡РµСЃРєРёР№&nbsp;&nbsp;
+    <input name="view" type="radio" value="2" <?  echo @$check_view[1]; ?>>&nbsp;РўРµРєСЃС‚РѕРІС‹Р№
     </td>
 </tr>
 
 <tr>
-   <td  width=35% valign=top style=" border-bottom:1px solid #d0c9ad;">Где показывать результаты</td>
+   <td  width=35% valign=top style=" border-bottom:1px solid #d0c9ad;">Р“РґРµ РїРѕРєР°Р·С‹РІР°С‚СЊ СЂРµР·СѓР»СЊС‚Р°С‚С‹</td>
     <td style=" border-bottom:1px solid #d0c9ad;">
-    <input name="open" type="radio" value="1" <?  echo @$check_open[0]; ?>>&nbsp;В блоке опроса &nbsp;&nbsp;
-    <input name="open" type="radio" value="2" <?  echo @$check_open[1]; ?>>&nbsp;В отдельном окне
+    <input name="open" type="radio" value="1" <?  echo @$check_open[0]; ?>>&nbsp;Р’ Р±Р»РѕРєРµ РѕРїСЂРѕСЃР° &nbsp;&nbsp;
+    <input name="open" type="radio" value="2" <?  echo @$check_open[1]; ?>>&nbsp;Р’ РѕС‚РґРµР»СЊРЅРѕРј РѕРєРЅРµ
     </td>
 </tr>
 
 <tr >
-   <td colspan=2><input type="submit" value="Сохранить" name=go></td>
+   <td colspan=2><input type="submit" value="РЎРѕС…СЂР°РЅРёС‚СЊ" name=go></td>
 </tr>
 
 </form>

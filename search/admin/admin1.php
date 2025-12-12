@@ -3,47 +3,47 @@
  if(@$_POST['GO'])
   {
       $f=fopen("conf/mes.txt","w+");
-      //Заголовок
-      fwrite($f,"0*заголовок*".$_POST['head']."\r\n");
-      fwrite($f,"1*цвет заголовка*".$_POST['color_head']."\r\n");
-      fwrite($f,"2*размер заголовка*".$_POST['size_head']."\r\n");
-      fwrite($f,"3*тип заголовка*".$_POST['font_head']."\r\n");
-      fwrite($f,"4*жирность заголовка*".$_POST['width_head']."\r\n");
+      //Р—Р°РіРѕР»РѕРІРѕРє
+      fwrite($f,"0*Р·Р°РіРѕР»РѕРІРѕРє*".$_POST['head']."\r\n");
+      fwrite($f,"1*С†РІРµС‚ Р·Р°РіРѕР»РѕРІРєР°*".$_POST['color_head']."\r\n");
+      fwrite($f,"2*СЂР°Р·РјРµСЂ Р·Р°РіРѕР»РѕРІРєР°*".$_POST['size_head']."\r\n");
+      fwrite($f,"3*С‚РёРї Р·Р°РіРѕР»РѕРІРєР°*".$_POST['font_head']."\r\n");
+      fwrite($f,"4*Р¶РёСЂРЅРѕСЃС‚СЊ Р·Р°РіРѕР»РѕРІРєР°*".$_POST['width_head']."\r\n");
 
-      //Форма
-      fwrite($f,"5*размер формы*".$_POST['size_form']."\r\n");
-      fwrite($f,"6*размер строки*".$_POST['size_str']."\r\n");
-      fwrite($f,"7*фон формы*".$_POST['fon']."\r\n");
-      fwrite($f,"8*цвет шрифта формы*".$_POST['color_form']."\r\n");
-      fwrite($f,"9*размер шрифта формы*".$_POST['size_font_form']."\r\n");
-      fwrite($f,"10*тип шрифта формы*".$_POST['font_form']."\r\n");
-      fwrite($f,"11*жирность шрифта формы*".$_POST['width_form']."\r\n");
-      fwrite($f,"12*цвет рамки формы*".$_POST['line_color']."\r\n");
-      fwrite($f,"13*размер рамки формы*".$_POST['line_size']."\r\n");
-      fwrite($f,"14*тип рамки формы*".$_POST['border_form']."\r\n");
-     //Кнопка
-      fwrite($f,"15*надпись на кнопке*".$_POST['head_button']."\r\n");
-      fwrite($f,"16*цвет кнопки*".$_POST['color_button']."\r\n");
-      fwrite($f,"17*цвет шрифта кнопки*".$_POST['color_font_button']."\r\n");
-      fwrite($f,"18*размер шрифта кнопки*".$_POST['size_font_button']."\r\n");
-      fwrite($f,"19*тип шрифта кнопки*".$_POST['font_font_button']."\r\n");
-      fwrite($f,"20*жирность шрифта кнопки*".$_POST['width_font_button']."\r\n");
-      fwrite($f,"21*цвет рамки кнопки*".$_POST['line_color_button']."\r\n");
-      fwrite($f,"22*размер рамки кнопки*".$_POST['line_size_button']."\r\n");
-      fwrite($f,"23*тип рамки кнопки*".$_POST['border_button']."\r\n");
-      fwrite($f,"24*расположение формы*".$_POST['form_align']."\r\n");
+      //Р¤РѕСЂРјР°
+      fwrite($f,"5*СЂР°Р·РјРµСЂ С„РѕСЂРјС‹*".$_POST['size_form']."\r\n");
+      fwrite($f,"6*СЂР°Р·РјРµСЂ СЃС‚СЂРѕРєРё*".$_POST['size_str']."\r\n");
+      fwrite($f,"7*С„РѕРЅ С„РѕСЂРјС‹*".$_POST['fon']."\r\n");
+      fwrite($f,"8*С†РІРµС‚ С€СЂРёС„С‚Р° С„РѕСЂРјС‹*".$_POST['color_form']."\r\n");
+      fwrite($f,"9*СЂР°Р·РјРµСЂ С€СЂРёС„С‚Р° С„РѕСЂРјС‹*".$_POST['size_font_form']."\r\n");
+      fwrite($f,"10*С‚РёРї С€СЂРёС„С‚Р° С„РѕСЂРјС‹*".$_POST['font_form']."\r\n");
+      fwrite($f,"11*Р¶РёСЂРЅРѕСЃС‚СЊ С€СЂРёС„С‚Р° С„РѕСЂРјС‹*".$_POST['width_form']."\r\n");
+      fwrite($f,"12*С†РІРµС‚ СЂР°РјРєРё С„РѕСЂРјС‹*".$_POST['line_color']."\r\n");
+      fwrite($f,"13*СЂР°Р·РјРµСЂ СЂР°РјРєРё С„РѕСЂРјС‹*".$_POST['line_size']."\r\n");
+      fwrite($f,"14*С‚РёРї СЂР°РјРєРё С„РѕСЂРјС‹*".$_POST['border_form']."\r\n");
+     //РљРЅРѕРїРєР°
+      fwrite($f,"15*РЅР°РґРїРёСЃСЊ РЅР° РєРЅРѕРїРєРµ*".$_POST['head_button']."\r\n");
+      fwrite($f,"16*С†РІРµС‚ РєРЅРѕРїРєРё*".$_POST['color_button']."\r\n");
+      fwrite($f,"17*С†РІРµС‚ С€СЂРёС„С‚Р° РєРЅРѕРїРєРё*".$_POST['color_font_button']."\r\n");
+      fwrite($f,"18*СЂР°Р·РјРµСЂ С€СЂРёС„С‚Р° РєРЅРѕРїРєРё*".$_POST['size_font_button']."\r\n");
+      fwrite($f,"19*С‚РёРї С€СЂРёС„С‚Р° РєРЅРѕРїРєРё*".$_POST['font_font_button']."\r\n");
+      fwrite($f,"20*Р¶РёСЂРЅРѕСЃС‚СЊ С€СЂРёС„С‚Р° РєРЅРѕРїРєРё*".$_POST['width_font_button']."\r\n");
+      fwrite($f,"21*С†РІРµС‚ СЂР°РјРєРё РєРЅРѕРїРєРё*".$_POST['line_color_button']."\r\n");
+      fwrite($f,"22*СЂР°Р·РјРµСЂ СЂР°РјРєРё РєРЅРѕРїРєРё*".$_POST['line_size_button']."\r\n");
+      fwrite($f,"23*С‚РёРї СЂР°РјРєРё РєРЅРѕРїРєРё*".$_POST['border_button']."\r\n");
+      fwrite($f,"24*СЂР°СЃРїРѕР»РѕР¶РµРЅРёРµ С„РѕСЂРјС‹*".$_POST['form_align']."\r\n");
 
-      if(isset($_POST['search_panel'])) fwrite($f,"25*подробный поиск*1");
-      else fwrite($f,"25*подробный поиск*0");
+      if(isset($_POST['search_panel'])) fwrite($f,"25*РїРѕРґСЂРѕР±РЅС‹Р№ РїРѕРёСЃРє*1");
+      else fwrite($f,"25*РїРѕРґСЂРѕР±РЅС‹Р№ РїРѕРёСЃРє*0");
 
       fclose($f);
   }
 
 
-//Проверка данных---------------------------------------
+//РџСЂРѕРІРµСЂРєР° РґР°РЅРЅС‹С…---------------------------------------
 $config=file("conf/mes.txt");
 $n=0;
-//Очищаем
+//РћС‡РёС‰Р°РµРј
 foreach($config as $line)
   {
  	$expl=explode("*", $line);
@@ -52,8 +52,8 @@ foreach($config as $line)
   }
 
 
-//Шрифт заголовка
-//Размер заголовка
+//РЁСЂРёС„С‚ Р·Р°РіРѕР»РѕРІРєР°
+//Р Р°Р·РјРµСЂ Р·Р°РіРѕР»РѕРІРєР°
 for($i=10,$n=0; $i<22; $i+=2,$n++)
  {
    if($conf[2]==$i) $sel_size_head[$n]="selected";
@@ -61,11 +61,11 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
  }
 
- //Тип заголовка
+ //РўРёРї Р·Р°РіРѕР»РѕРІРєР°
  if($conf[3]=="normal") $sel_font_head[0]="selected";
  if($conf[3]=="italic") $sel_font_head[1]="selected";
 
- //Жирность заголовка
+ //Р–РёСЂРЅРѕСЃС‚СЊ Р·Р°РіРѕР»РѕРІРєР°
  for($i=100,$n=0; $i<800; $i+=100,$n++)
  {
    if($conf[4]==$i) $sel_width_head[$n]="selected";
@@ -74,7 +74,7 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
  }
 
 
-//Шрифт формы
+//РЁСЂРёС„С‚ С„РѕСЂРјС‹
 
 for($i=10,$n=0; $i<22; $i+=2,$n++)
  {
@@ -83,11 +83,11 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
  }
 
- //Тип заголовка
+ //РўРёРї Р·Р°РіРѕР»РѕРІРєР°
  if($conf[10]=="normal") $sel_font_form[0]="selected";
  if($conf[10]=="italic") $sel_font_form[1]="selected";
 
- //Жирность заголовка
+ //Р–РёСЂРЅРѕСЃС‚СЊ Р·Р°РіРѕР»РѕРІРєР°
  for($i=100,$n=0; $i<800; $i+=100,$n++)
  {
    if($conf[11]==$i) $sel_width_form[$n]="selected";
@@ -95,8 +95,8 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
  }
 
-//Рамка формы
-//Тип рамки
+//Р Р°РјРєР° С„РѕСЂРјС‹
+//РўРёРї СЂР°РјРєРё
 if($conf[14]=="none")$sel_border_form[0]="selected";
 if($conf[14]=="dotted")$sel_border_form[1]="selected";
 if($conf[14]=="dashed")$sel_border_form[2]="selected";
@@ -104,7 +104,7 @@ if($conf[14]=="solid")$sel_border_form[3]="selected";
 if($conf[14]=="double")$sel_border_form[4]="selected";
 
 
-//Ширина рамки
+//РЁРёСЂРёРЅР° СЂР°РјРєРё
 for($i=0; $i<6; $i++)
  {
    if($conf[13]==$i) $sel_line_size[$i]="selected";
@@ -112,12 +112,12 @@ for($i=0; $i<6; $i++)
 
  }
 
-//Расположение формы
+//Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ С„РѕСЂРјС‹
 if($conf[24]=='left') $check_align_form[0]="checked";
 if($conf[24]=='center') $check_align_form[1]="checked";
 if($conf[24]=='right') $check_align_form[2]="checked";
 
-//Кнопка
+//РљРЅРѕРїРєР°
 
 for($i=10,$n=0; $i<22; $i+=2,$n++)
  {
@@ -126,11 +126,11 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
  }
 
- //Тип заголовка
+ //РўРёРї Р·Р°РіРѕР»РѕРІРєР°
  if($conf[19]=="normal") $sel_font_button[0]="selected";
  if($conf[19]=="italic") $sel_font_button[1]="selected";
 
- //Жирность заголовка
+ //Р–РёСЂРЅРѕСЃС‚СЊ Р·Р°РіРѕР»РѕРІРєР°
  for($i=100,$n=0; $i<800; $i+=100,$n++)
  {
    if($conf[20]==$i) $sel_width_font_button[$n]="selected";
@@ -138,15 +138,15 @@ for($i=10,$n=0; $i<22; $i+=2,$n++)
 
  }
 
-//Рамка для кнопки
-//Тип рамки
+//Р Р°РјРєР° РґР»СЏ РєРЅРѕРїРєРё
+//РўРёРї СЂР°РјРєРё
 if($conf[23]=="none")$sel_border_button[0]="selected";
 if($conf[23]=="dotted")$sel_border_button[1]="selected";
 if($conf[23]=="dashed")$sel_border_button[2]="selected";
 if($conf[23]=="solid")$sel_border_button[3]="selected";
 if($conf[23]=="double")$sel_border_button[4]="selected";
 
-//Ширина рамки
+//РЁРёСЂРёРЅР° СЂР°РјРєРё
 for($i=0; $i<6; $i++)
  {
    if($conf[22]==$i) $sel_line_size_button[$i]="selected";
@@ -154,7 +154,7 @@ for($i=0; $i<6; $i++)
 
  }
 
-//Подробный поиск
+//РџРѕРґСЂРѕР±РЅС‹Р№ РїРѕРёСЃРє
 if($conf[25]==1)$check_search_panel="checked";
 else $check_search_panel="";
 
@@ -218,21 +218,21 @@ function ins(i)
       var p1=";  if ($conf[0]!="") echo "\"<div id=head_search>$conf[0]</div>\"+";
       echo  "\"<input name='quit' type='text' ID='quit' size=$conf[6]>&nbsp;&nbsp;\"+
         \"<input type='button' value=$conf[15] id=search_button>&nbsp;&nbsp;\"+
-        \"<a href='javascript:ins(2)'><img src='/search/img/down.png' alt='Подробный поиск' border=0></a>\";
+        \"<a href='javascript:ins(2)'><img src='/search/img/down.png' alt='РџРѕРґСЂРѕР±РЅС‹Р№ РїРѕРёСЃРє' border=0></a>\";
 
 
       var p2=";if ($conf[0]!="") echo "\"<div id=head_search>$conf[0]</div>\"+";
        echo "\"<input name='quit' type='text' ID='quit' size=$conf[6]>&nbsp;&nbsp;\"+
         \"<input type='button' value=$conf[15] id=search_button>&nbsp;&nbsp;\"+
-        \"<a href='javascript:ins(1)'><img src='/search/img/up.png' alt='Закрыть' border=0></a><br>\"+
+        \"<a href='javascript:ins(1)'><img src='/search/img/up.png' alt='Р—Р°РєСЂС‹С‚СЊ' border=0></a><br>\"+
         \"<input name='toch' type='checkbox' value='ON'>&nbsp;\"+
-        \"точное совпадение<br>\"+
+        \"С‚РѕС‡РЅРѕРµ СЃРѕРІРїР°РґРµРЅРёРµ<br>\"+
         \"<input name='registr' type='checkbox' value='ON'>&nbsp;\"+
-        \"учитывать регистр<br>\"+
+        \"СѓС‡РёС‚С‹РІР°С‚СЊ СЂРµРіРёСЃС‚СЂ<br>\"+
         \"<input name=log type=radio value='1' >&nbsp;\"+
-        \"любое слово<br>\"+
+        \"Р»СЋР±РѕРµ СЃР»РѕРІРѕ<br>\"+
          \"<input name=log type=radio value='2' checked>&nbsp;\"+
-        \"фраза целиком\";
+        \"С„СЂР°Р·Р° С†РµР»РёРєРѕРј\";
 
       var insp;
       switch (i)
@@ -254,7 +254,7 @@ function ins(i)
  <TABLE bgcolor=#EBEBEB width=80% CELLPADDING=10 CELLSPACING=0 border=0>
 
 <tr >
-   <td colspan=2><FONT COLOR="#408080" size=+1>Внешний вид формы</FONT></td>
+   <td colspan=2><FONT COLOR="#408080" size=+1>Р’РЅРµС€РЅРёР№ РІРёРґ С„РѕСЂРјС‹</FONT></td>
  </tr>
 
 
@@ -271,7 +271,7 @@ echo"<div align=$conf[24]><form name='search'  method=post>
         echo "<input name='quit' type='text'  ID='quit' size=$conf[6]>&nbsp;
         <input type='button' value=$conf[15] id=search_button>";
          if($conf[25]==1) echo "&nbsp;
-        <a href=\"javascript:ins(2);\"><img src='/search/img/down.png' alt='Подробный поиск' border=0></a>
+        <a href=\"javascript:ins(2);\"><img src='/search/img/down.png' alt='РџРѕРґСЂРѕР±РЅС‹Р№ РїРѕРёСЃРє' border=0></a>
         </div>
         </form></div>";
 
@@ -279,22 +279,22 @@ echo"<div align=$conf[24]><form name='search'  method=post>
       <td>
    </tr>
 
- <tr ><td colspan=2>  <a href=# onclick=win()>Таблица цветовых кодов</a></td></tr>
+ <tr ><td colspan=2>  <a href=# onclick=win()>РўР°Р±Р»РёС†Р° С†РІРµС‚РѕРІС‹С… РєРѕРґРѕРІ</a></td></tr>
 <FORM ACTION="admin1.php?sel1=selected" METHOD="POST" name="form">
- <tr ><td colspan=2>  <b>Параметры заголовка</b></td></tr>
+ <tr ><td colspan=2>  <b>РџР°СЂР°РјРµС‚СЂС‹ Р·Р°РіРѕР»РѕРІРєР°</b></td></tr>
 <tr>
-   <td  width=35% valign=top>Заголовок.  </td>
+   <td  width=35% valign=top>Р—Р°РіРѕР»РѕРІРѕРє.  </td>
    <td><input name="head" type="text" value="<? echo @$conf[0] ?>" size=40></td>
 </tr>
 
 <tr >
    <td  width=35% valign=top style=" border-bottom:1px solid #d0c9ad;">
-   Шрифт.Определите цвет, размер в пунктах, начертания шрифта и жирность
-   заголовка.<br>
-   Жирность измеряется единицами от 100 до 700<br>  </td>
+   РЁСЂРёС„С‚.РћРїСЂРµРґРµР»РёС‚Рµ С†РІРµС‚, СЂР°Р·РјРµСЂ РІ РїСѓРЅРєС‚Р°С…, РЅР°С‡РµСЂС‚Р°РЅРёСЏ С€СЂРёС„С‚Р° Рё Р¶РёСЂРЅРѕСЃС‚СЊ
+   Р·Р°РіРѕР»РѕРІРєР°.<br>
+   Р–РёСЂРЅРѕСЃС‚СЊ РёР·РјРµСЂСЏРµС‚СЃСЏ РµРґРёРЅРёС†Р°РјРё РѕС‚ 100 РґРѕ 700<br>  </td>
    <td style=" border-bottom:1px solid #d0c9ad;">
     <input name="color_head" type="text"  size=10 value="<? echo @$conf[1] ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[1]; ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[1]; ?> > С‚РµСЃС‚
 		</font></big></b>&nbsp;
 		<SELECT NAME="size_head">
 <OPTION value="10" <?  echo @$sel_size_head[0]; ?>>10</option>
@@ -306,8 +306,8 @@ echo"<div align=$conf[24]><form name='search'  method=post>
 </SELECT>&nbsp;&nbsp;pt&nbsp;
 
 <SELECT NAME="font_head">
-<OPTION value="normal" <?  echo @$sel_font_head[0]; ?> >Нормальный</option>
-<OPTION value="italic" <?  echo @$sel_font_head[1]; ?> >Наклонный</option>
+<OPTION value="normal" <?  echo @$sel_font_head[0]; ?> >РќРѕСЂРјР°Р»СЊРЅС‹Р№</option>
+<OPTION value="italic" <?  echo @$sel_font_head[1]; ?> >РќР°РєР»РѕРЅРЅС‹Р№</option>
 </SELECT>
 
 <SELECT NAME="width_head">
@@ -323,29 +323,29 @@ echo"<div align=$conf[24]><form name='search'  method=post>
    </td>
 </tr>
 
- <tr ><td colspan=2>  <b>Параметры формы</b></td></tr>
+ <tr ><td colspan=2>  <b>РџР°СЂР°РјРµС‚СЂС‹ С„РѕСЂРјС‹</b></td></tr>
  <tr>
-   <td  width=35% valign=top>Размер в пикселах  </td>
+   <td  width=35% valign=top>Р Р°Р·РјРµСЂ РІ РїРёРєСЃРµР»Р°С…  </td>
    <td><input name="size_form" type="text" value="<? echo @$conf[5]?>" size=10></td>
 </tr>
 
 <tr>
-   <td  width=35% valign=top>Размер поисковой строки  </td>
+   <td  width=35% valign=top>Р Р°Р·РјРµСЂ РїРѕРёСЃРєРѕРІРѕР№ СЃС‚СЂРѕРєРё  </td>
    <td><input name="size_str" type="text" value="<? echo @$conf[6] ?>" size=10></td>
 </tr>
 
 <tr>
-   <td  width=35% valign=top>Фон формы </td>
+   <td  width=35% valign=top>Р¤РѕРЅ С„РѕСЂРјС‹ </td>
     <td>   <input name="fon" type="text"  size=10 value="<? echo @$conf[7] ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[7]; ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[7]; ?> > С‚РµСЃС‚
 		</font></big></b>
     </td>
 </tr>
 
 <tr>
-   <td  width=35% valign=top>Шрифт формы</td>
+   <td  width=35% valign=top>РЁСЂРёС„С‚ С„РѕСЂРјС‹</td>
     <td>     <input name="color_form" type="text"  size=10 value="<? echo @$conf[8] ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[8]; ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[8]; ?> > С‚РµСЃС‚
 		</font></big></b>&nbsp;
 		<SELECT NAME="size_font_form">
 <OPTION value="10" <?  echo @$sel_size_form[0]; ?>>10</option>
@@ -357,8 +357,8 @@ echo"<div align=$conf[24]><form name='search'  method=post>
 </SELECT>&nbsp;&nbsp;pt&nbsp;
 
 <SELECT NAME="font_form">
-<OPTION value="normal" <?  echo @$sel_font_form[0]; ?> >Нормальный</option>
-<OPTION value="italic" <?  echo @$sel_font_form[1]; ?> >Наклонный</option>
+<OPTION value="normal" <?  echo @$sel_font_form[0]; ?> >РќРѕСЂРјР°Р»СЊРЅС‹Р№</option>
+<OPTION value="italic" <?  echo @$sel_font_form[1]; ?> >РќР°РєР»РѕРЅРЅС‹Р№</option>
 </SELECT>
 
 <SELECT NAME="width_form">
@@ -374,10 +374,10 @@ echo"<div align=$conf[24]><form name='search'  method=post>
 </tr>
 
 <tr>
-   <td>Цвет ширина и тип рамки</td>
+   <td>Р¦РІРµС‚ С€РёСЂРёРЅР° Рё С‚РёРї СЂР°РјРєРё</td>
    <td>
          <INPUT TYPE="text" NAME="line_color" SIZE="10"  VALUE="<? echo @$conf[12] ?>">
-         &nbsp;<font color="<? echo @$conf[12]; ?>">&nbsp;&nbsp;<b>тест</b></font>&nbsp;&nbsp;&nbsp;
+         &nbsp;<font color="<? echo @$conf[12]; ?>">&nbsp;&nbsp;<b>С‚РµСЃС‚</b></font>&nbsp;&nbsp;&nbsp;
 
          &nbsp;&nbsp;&nbsp;<select  name="line_size">
            <option value="0" <? echo @$sel_line_size[0] ?> >0</option>
@@ -388,53 +388,53 @@ echo"<div align=$conf[24]><form name='search'  method=post>
            <option value="5" <? echo @$sel_line_size[5] ?> >5</option>
         </select>&nbsp;px&nbsp;&nbsp;&nbsp;
         <SELECT NAME="border_form">
-<OPTION value="none" <?  echo @$sel_border_form[0]; ?>>Нет</option>
-<OPTION value="dotted" <?  echo @$sel_border_form[1]; ?>>Точки</option>
-<OPTION value="dashed" <? echo @$sel_border_form[2]; ?>>Пунктир</option>
-<OPTION value="solid" <? echo @$sel_border_form[3]; ?>>Сплошная</option>
-<OPTION value="double" <? echo @$sel_border_form[4]; ?>>Двойная</option>
+<OPTION value="none" <?  echo @$sel_border_form[0]; ?>>РќРµС‚</option>
+<OPTION value="dotted" <?  echo @$sel_border_form[1]; ?>>РўРѕС‡РєРё</option>
+<OPTION value="dashed" <? echo @$sel_border_form[2]; ?>>РџСѓРЅРєС‚РёСЂ</option>
+<OPTION value="solid" <? echo @$sel_border_form[3]; ?>>РЎРїР»РѕС€РЅР°СЏ</option>
+<OPTION value="double" <? echo @$sel_border_form[4]; ?>>Р”РІРѕР№РЅР°СЏ</option>
 </SELECT>
 
         </td>
 </tr>
 
 <tr>
-   <td  width=35% valign=top >Расположение на странице</td>
+   <td  width=35% valign=top >Р Р°СЃРїРѕР»РѕР¶РµРЅРёРµ РЅР° СЃС‚СЂР°РЅРёС†Рµ</td>
     <td>
-         <input name="form_align" type="radio" value="left" <? echo @$check_align_form[0]; ?>>&nbsp;Слева&nbsp;
-         <input name="form_align" type="radio" value="center" <? echo @$check_align_form[1]; ?>>&nbsp;По центру&nbsp;
-         <input name="form_align" type="radio" value="right" <? echo @$check_align_form[2]; ?>>&nbsp;Справа
+         <input name="form_align" type="radio" value="left" <? echo @$check_align_form[0]; ?>>&nbsp;РЎР»РµРІР°&nbsp;
+         <input name="form_align" type="radio" value="center" <? echo @$check_align_form[1]; ?>>&nbsp;РџРѕ С†РµРЅС‚СЂСѓ&nbsp;
+         <input name="form_align" type="radio" value="right" <? echo @$check_align_form[2]; ?>>&nbsp;РЎРїСЂР°РІР°
     </td>
 </tr>
 
 <tr>
-   <td  width=35% valign=top  style=" border-bottom:1px solid #d0c9ad;">Панель подробного поиска</td>
+   <td  width=35% valign=top  style=" border-bottom:1px solid #d0c9ad;">РџР°РЅРµР»СЊ РїРѕРґСЂРѕР±РЅРѕРіРѕ РїРѕРёСЃРєР°</td>
     <td  style=" border-bottom:1px solid #d0c9ad;">
-         <input name="search_panel" type="checkbox" value="ON" <? echo @$check_search_panel; ?> > &nbsp;Включить в форму
+         <input name="search_panel" type="checkbox" value="ON" <? echo @$check_search_panel; ?> > &nbsp;Р’РєР»СЋС‡РёС‚СЊ РІ С„РѕСЂРјСѓ
     </td>
 </tr>
 
-<tr ><td colspan=2>  <b>Параметры кнопки</b></td></tr>
+<tr ><td colspan=2>  <b>РџР°СЂР°РјРµС‚СЂС‹ РєРЅРѕРїРєРё</b></td></tr>
 
 <tr>
-   <td  width=35% valign=top>Надпись</td>
+   <td  width=35% valign=top>РќР°РґРїРёСЃСЊ</td>
     <td>   <input name="head_button" type="text"  size=20 value="<? echo @$conf[15]; ?>">
 
     </td>
 </tr>
 
 <tr>
-   <td  width=35% valign=top>Цвет</td>
+   <td  width=35% valign=top>Р¦РІРµС‚</td>
     <td><INPUT TYPE="text" NAME="color_button" SIZE="10"  VALUE="<? echo @$conf[16] ?>">
-         &nbsp;<font color="<? echo @$conf[16]; ?>">&nbsp;&nbsp;<b>тест</b></font>
+         &nbsp;<font color="<? echo @$conf[16]; ?>">&nbsp;&nbsp;<b>С‚РµСЃС‚</b></font>
 
     </td>
 </tr>
 
 <tr>
-   <td  width=35% valign=top>Шрифт</td>
+   <td  width=35% valign=top>РЁСЂРёС„С‚</td>
     <td> <input name="color_font_button" type="text"  size=10 value="<? echo @$conf[17]; ?>">
-   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[17]; ?> > тест
+   &nbsp;&nbsp;<b><big><font color= <? echo @$conf[17]; ?> > С‚РµСЃС‚
 		</font></big></b>&nbsp;
 		<SELECT NAME="size_font_button">
 <OPTION value="10" <?  echo @$sel_size_font_button[0]; ?>>10</option>
@@ -446,8 +446,8 @@ echo"<div align=$conf[24]><form name='search'  method=post>
 </SELECT>&nbsp;&nbsp;pt&nbsp;
 
 <SELECT NAME="font_font_button">
-<OPTION value="normal" <?  echo @$sel_font_button[0]; ?> >Нормальный</option>
-<OPTION value="italic" <?  echo @$sel_font_button[1]; ?> >Наклонный</option>
+<OPTION value="normal" <?  echo @$sel_font_button[0]; ?> >РќРѕСЂРјР°Р»СЊРЅС‹Р№</option>
+<OPTION value="italic" <?  echo @$sel_font_button[1]; ?> >РќР°РєР»РѕРЅРЅС‹Р№</option>
 </SELECT>
 
 <SELECT NAME="width_font_button">
@@ -464,10 +464,10 @@ echo"<div align=$conf[24]><form name='search'  method=post>
 </tr>
 
 <tr>
-   <td style=" border-bottom:1px solid #d0c9ad;">Цвет ширина и тип рамки</td>
+   <td style=" border-bottom:1px solid #d0c9ad;">Р¦РІРµС‚ С€РёСЂРёРЅР° Рё С‚РёРї СЂР°РјРєРё</td>
    <td style=" border-bottom:1px solid #d0c9ad;">
          <INPUT TYPE="text" NAME="line_color_button" SIZE="10"  VALUE="<? echo @$conf[21] ?>">
-         &nbsp;<font color="<? echo @$conf[21]; ?>">&nbsp;&nbsp;<b>тест</b></font>&nbsp;&nbsp;&nbsp;
+         &nbsp;<font color="<? echo @$conf[21]; ?>">&nbsp;&nbsp;<b>С‚РµСЃС‚</b></font>&nbsp;&nbsp;&nbsp;
 
          &nbsp;&nbsp;&nbsp;<select  name="line_size_button">
            <option value="0" <? echo @$sel_line_size_button[0] ?> >0</option>
@@ -478,18 +478,18 @@ echo"<div align=$conf[24]><form name='search'  method=post>
            <option value="5" <? echo @$sel_line_size_button[5] ?> >5</option>
         </select>&nbsp;px&nbsp;&nbsp;&nbsp;
         <SELECT NAME="border_button">
-<OPTION value="none" <?  echo @$sel_border_button[0]; ?>>Нет</option>
-<OPTION value="dotted" <?  echo @$sel_border_button[1]; ?>>Точки</option>
-<OPTION value="dashed" <? echo @$sel_border_button[2]; ?>>Пунктир</option>
-<OPTION value="solid" <? echo @$sel_border_button[3]; ?>>Сплошная</option>
-<OPTION value="double" <? echo @$sel_border_button[4]; ?>>Двойная</option>
+<OPTION value="none" <?  echo @$sel_border_button[0]; ?>>РќРµС‚</option>
+<OPTION value="dotted" <?  echo @$sel_border_button[1]; ?>>РўРѕС‡РєРё</option>
+<OPTION value="dashed" <? echo @$sel_border_button[2]; ?>>РџСѓРЅРєС‚РёСЂ</option>
+<OPTION value="solid" <? echo @$sel_border_button[3]; ?>>РЎРїР»РѕС€РЅР°СЏ</option>
+<OPTION value="double" <? echo @$sel_border_button[4]; ?>>Р”РІРѕР№РЅР°СЏ</option>
 </SELECT>
 
         </td>
 </tr>
 
 
-<tr><td align=bottom><INPUT TYPE="submit" VALUE="Сохранить" name='GO'></td></tr>
+<tr><td align=bottom><INPUT TYPE="submit" VALUE="РЎРѕС…СЂР°РЅРёС‚СЊ" name='GO'></td></tr>
 
 
 

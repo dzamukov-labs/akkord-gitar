@@ -1,12 +1,12 @@
 <?PHP
 session_start();
-//Получаем сессию
+//РџРѕР»СѓС‡Р°РµРј СЃРµСЃСЃРёСЋ
 $strpath="conf/conf.txt";
 $content=file($strpath);
 
 if (session_id()!=$content[2])
    {
-    $url=urlencode("Пройдите авторизацию!");
+    $url=urlencode("РџСЂРѕР№РґРёС‚Рµ Р°РІС‚РѕСЂРёР·Р°С†РёСЋ!");
     echo "<meta http-equiv=refresh content='0; url=index.php?acc=$url'>";
     exit();
    }
@@ -35,23 +35,23 @@ table {
 
 </style>
 
-<TITLE>Администрирование</TITLE>
+<TITLE>РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ</TITLE>
 </head>
 <BODY BGCOLOR='#E6E6E6'>
-<font color=#808000>Опросы 1.0</font>
+<font color=#808000>РћРїСЂРѕСЃС‹ 1.0</font>
 <CENTER><table border=0 CELLPADDING=0 CELLSPACING=0  width=70%><tr><td >
 
 <IMG SRC='img/log.png' ALIGN='center' >&nbsp&nbsp&nbsp&nbsp
-<font size=+3 color=#408080 ><b><tt>Администрирование</tt></b></font></td>
+<font size=+3 color=#408080 ><b><tt>РђРґРјРёРЅРёСЃС‚СЂРёСЂРѕРІР°РЅРёРµ</tt></b></font></td>
 <td align=right>
 
 <form  action='cap.php' method='post' name='cap'>
 <SELECT NAME="list" onchange="cap.submit();">
-<OPTION value="1" <? echo @$sel1; ?> >Создание опроса</option>
-<OPTION value="3" <? echo @$sel3; ?>   >Редактирование опросов</option>
-<OPTION value="4" <? echo @$sel4; ?>  >Внешний вид опросов</option>
-<OPTION value="5" <? echo @$sel5; ?>  >Внешний вид результатов</option>
-<OPTION value="6" <? echo @$sel6; ?>  >Логин и пароль</option>
+<OPTION value="1" <? echo @$sel1; ?> >РЎРѕР·РґР°РЅРёРµ РѕРїСЂРѕСЃР°</option>
+<OPTION value="3" <? echo @$sel3; ?>   >Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ РѕРїСЂРѕСЃРѕРІ</option>
+<OPTION value="4" <? echo @$sel4; ?>  >Р’РЅРµС€РЅРёР№ РІРёРґ РѕРїСЂРѕСЃРѕРІ</option>
+<OPTION value="5" <? echo @$sel5; ?>  >Р’РЅРµС€РЅРёР№ РІРёРґ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ</option>
+<OPTION value="6" <? echo @$sel6; ?>  >Р›РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ</option>
 
 </SELECT>
 
@@ -59,11 +59,11 @@ table {
 </form>
 
 <?php
-//Ссылка для возврата
+//РЎСЃС‹Р»РєР° РґР»СЏ РІРѕР·РІСЂР°С‚Р°
 $link=$_SERVER['PHP_SELF'];
 $expl=explode("/",$link);
 
-echo "<a href=http://$_SERVER[SERVER_NAME]><b>Выход</b></a>";
+echo "<a href=http://$_SERVER[SERVER_NAME]><b>Р’С‹С…РѕРґ</b></a>";
 
 ?>
 </td></tr>

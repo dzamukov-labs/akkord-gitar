@@ -22,7 +22,7 @@ $info="";
 <TABLE align=center bgcolor=#EBEBEB width=80% CELLPADDING=10 CELLSPACING=0 border=0>
 
 <tr >
-   <td colspan=3><FONT COLOR="#408080" size=+1>Редактирование опросов</FONT>
+   <td colspan=3><FONT COLOR="#408080" size=+1>Р РµРґР°РєС‚РёСЂРѕРІР°РЅРёРµ РѕРїСЂРѕСЃРѕРІ</FONT>
 
    </td>
 </tr>
@@ -33,8 +33,8 @@ $info="";
        $expl=explode("*",$line);
        $date=$expl[1]; $name=$expl[2];
 
-       if($expl[3]==0)$activ="Неактивен";
-       else $activ="Активен";
+       if($expl[3]==0)$activ="РќРµР°РєС‚РёРІРµРЅ";
+       else $activ="РђРєС‚РёРІРµРЅ";
 
        $opr=file("db/$expl[0].txt");
        echo  "<tr>
@@ -54,15 +54,15 @@ $info="";
          }
        $oll=$opr[(count($opr)-1)];
        echo "<tr><td colspan=2 style=\"border-top:1px solid #ffffff;\" >
-           <b>Всего голосов</b> $oll </td></tr></table>
+           <b>Р’СЃРµРіРѕ РіРѕР»РѕСЃРѕРІ</b> $oll </td></tr></table>
              </td></tr>
 
              <tr><td style=\"border-bottom:1px solid #d0c9ad;\" colspan=3 align=right>
-             <a href=red.php?id=$expl[0] class=l>Редактировать</a>
+             <a href=red.php?id=$expl[0] class=l>Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ</a>
              </td></tr>";
 
      }
-   if(count($file)==0)echo"<tr><td>Опросов не создано!</td></tr>";
+   if(count($file)==0)echo"<tr><td>РћРїСЂРѕСЃРѕРІ РЅРµ СЃРѕР·РґР°РЅРѕ!</td></tr>";
 
   ?>
 

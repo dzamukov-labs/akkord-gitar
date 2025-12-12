@@ -1,5 +1,5 @@
 <?php
-//Сообщение
+//РЎРѕРѕР±С‰РµРЅРёРµ
 if(file_exists("info.txt"))
  {
   $f=fopen("info.txt","r");
@@ -9,18 +9,18 @@ if(file_exists("info.txt"))
 
  }
 else
-  {  	exit("Интересно?");
+  {  	exit("РРЅС‚РµСЂРµСЃРЅРѕ?");
   }
 
 
-//Данные настроек
+//Р”Р°РЅРЅС‹Рµ РЅР°СЃС‚СЂРѕРµРє
 $conf1=file("admin/config/code/align.txt");
 foreach($conf1 as $line) $conf[]=rtrim($line);
 
 
 
 
-//Код==================================
+//РљРѕРґ==================================
 $strpath="admin/config/code/topcode.txt";
 $size=filesize($strpath);
 if($size)
@@ -64,7 +64,7 @@ fclose($f);
 <head>
 
 
-  <title>Настройка подписки </title>
+  <title>РќР°СЃС‚СЂРѕР№РєР° РїРѕРґРїРёСЃРєРё </title>
 <style>
 
 #nscript {
